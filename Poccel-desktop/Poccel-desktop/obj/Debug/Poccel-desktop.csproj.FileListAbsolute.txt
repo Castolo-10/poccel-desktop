@@ -8,3 +8,4 @@ C:\Users\ferna\Desktop\poccel-desktop\Poccel-desktop\Poccel-desktop\obj\Debug\Po
 C:\Users\ferna\Desktop\poccel-desktop\Poccel-desktop\Poccel-desktop\obj\Debug\Poccel-desktop.csproj.CoreCompileInputs.cache
 C:\Users\ferna\Desktop\poccel-desktop\Poccel-desktop\Poccel-desktop\obj\Debug\Poccel-desktop.exe
 C:\Users\ferna\Desktop\poccel-desktop\Poccel-desktop\Poccel-desktop\obj\Debug\Poccel-desktop.pdb
+C:\Users\ferna\Desktop\poccel-desktop\Poccel-desktop\Poccel-desktop\obj\Debug\Poccel_desktop.Administrador.resources

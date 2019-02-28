@@ -10,19 +10,16 @@ using System.Windows.Forms;
 
 namespace Poccel_desktop
 {
-    public partial class Login : Form
+    public partial class Administrador : Form
     {
-        public Login()
+        public Administrador()
         {
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void button8_Click(object sender, EventArgs e)
         {
-            Administrador form = new Administrador();
-            this.Hide();
-            form.ShowDialog();
-            this.Show();
+            this.Close();
         }
     }
 }

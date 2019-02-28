@@ -21,5 +21,78 @@ namespace Poccel_desktop
         {
             this.Close();
         }
+
+        #region Navegación entre pestañas
+
+        private void actualizar_botones(object sender)
+        {
+            Button[] buttons = new Button[7] { btnAbonos, btnChat, btnClientes, btnConfiguracion, btnEmpleados, btnInventario, btnVentas};
+            foreach(Button b in buttons)
+            {
+                if(sender == b)
+                {
+                    b.ForeColor = Color.Yellow;
+                    b.BackColor = Color.Navy;
+                }
+                else
+                {
+                    b.ForeColor = Color.White;
+                    b.BackColor = Color.Blue;
+
+                }
+            }
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            tabControlAdministrador.SelectedIndex = 0;
+            actualizar_botones(sender);
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            tabControlAdministrador.SelectedIndex = 1;
+            actualizar_botones(sender);
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            tabControlAdministrador.SelectedIndex = 2;
+            actualizar_botones(sender);
+
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            tabControlAdministrador.SelectedIndex = 3;
+            actualizar_botones(sender);
+
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            tabControlAdministrador.SelectedIndex = 4;
+            actualizar_botones(sender);
+
+
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            tabControlAdministrador.SelectedIndex = 5;
+            actualizar_botones(sender);
+
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            tabControlAdministrador.SelectedIndex = 6;
+            actualizar_botones(sender);
+
+        }
+        #endregion
     }
 }

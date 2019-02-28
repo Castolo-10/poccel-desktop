@@ -121,5 +121,6 @@ namespace Poccel_desktop
             VentaContado form = new VentaContado();
             form.ShowDialog();
         }
+
     }
 }

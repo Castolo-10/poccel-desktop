@@ -1,0 +1,10 @@
+C:\Users\ferna\Desktop\poccel-desktop\Poccel-desktop\Poccel-desktop\bin\Debug\Poccel-desktop.exe.config
+C:\Users\ferna\Desktop\poccel-desktop\Poccel-desktop\Poccel-desktop\bin\Debug\Poccel-desktop.exe
+C:\Users\ferna\Desktop\poccel-desktop\Poccel-desktop\Poccel-desktop\bin\Debug\Poccel-desktop.pdb
+C:\Users\ferna\Desktop\poccel-desktop\Poccel-desktop\Poccel-desktop\obj\Debug\Poccel-desktop.csprojAssemblyReference.cache
+C:\Users\ferna\Desktop\poccel-desktop\Poccel-desktop\Poccel-desktop\obj\Debug\Poccel_desktop.Login.resources
+C:\Users\ferna\Desktop\poccel-desktop\Poccel-desktop\Poccel-desktop\obj\Debug\Poccel_desktop.Properties.Resources.resources
+C:\Users\ferna\Desktop\poccel-desktop\Poccel-desktop\Poccel-desktop\obj\Debug\Poccel-desktop.csproj.GenerateResource.cache
+C:\Users\ferna\Desktop\poccel-desktop\Poccel-desktop\Poccel-desktop\obj\Debug\Poccel-desktop.csproj.CoreCompileInputs.cache
+C:\Users\ferna\Desktop\poccel-desktop\Poccel-desktop\Poccel-desktop\obj\Debug\Poccel-desktop.exe
+C:\Users\ferna\Desktop\poccel-desktop\Poccel-desktop\Poccel-desktop\obj\Debug\Poccel-desktop.pdb

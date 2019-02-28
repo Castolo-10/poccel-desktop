@@ -49,7 +49,7 @@
             this.tabPageEmpleados = new System.Windows.Forms.TabPage();
             this.tabPageConfiguración = new System.Windows.Forms.TabPage();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.listView1 = new System.Windows.Forms.ListView();
+            this.listvProductosVentas = new System.Windows.Forms.ListView();
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -66,9 +66,42 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.button3 = new System.Windows.Forms.Button();
+            this.btnBuscarAbonos = new System.Windows.Forms.Button();
+            this.txbBuscarAbonos = new System.Windows.Forms.TextBox();
+            this.lblClieneVentas = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.lvwCuentasAbonos = new System.Windows.Forms.ListView();
+            this.columnHeader6 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader7 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader8 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader9 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader10 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.label4 = new System.Windows.Forms.Label();
+            this.button4 = new System.Windows.Forms.Button();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.button5 = new System.Windows.Forms.Button();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.textBox11 = new System.Windows.Forms.TextBox();
+            this.textBox12 = new System.Windows.Forms.TextBox();
+            this.textBox13 = new System.Windows.Forms.TextBox();
+            this.textBox14 = new System.Windows.Forms.TextBox();
+            this.textBox15 = new System.Windows.Forms.TextBox();
+            this.textBox16 = new System.Windows.Forms.TextBox();
+            this.textBox17 = new System.Windows.Forms.TextBox();
+            this.button6 = new System.Windows.Forms.Button();
+            this.button7 = new System.Windows.Forms.Button();
+            this.button8 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.tabControlAdministrador.SuspendLayout();
             this.tabPageVentas.SuspendLayout();
+            this.tabPageAbonos.SuspendLayout();
+            this.tabPageClientes.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -252,11 +285,12 @@
             // tabPageVentas
             // 
             this.tabPageVentas.BackColor = System.Drawing.Color.LightCyan;
+            this.tabPageVentas.Controls.Add(this.lblClieneVentas);
             this.tabPageVentas.Controls.Add(this.button3);
             this.tabPageVentas.Controls.Add(this.panel3);
             this.tabPageVentas.Controls.Add(this.panel2);
             this.tabPageVentas.Controls.Add(this.lblTotalVentas);
-            this.tabPageVentas.Controls.Add(this.listView1);
+            this.tabPageVentas.Controls.Add(this.listvProductosVentas);
             this.tabPageVentas.Controls.Add(this.btnBuscarVentas);
             this.tabPageVentas.Controls.Add(this.txbBuscarVentas);
             this.tabPageVentas.ForeColor = System.Drawing.Color.White;
@@ -277,7 +311,7 @@
             this.btnBuscarVentas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBuscarVentas.Font = new System.Drawing.Font("Corbert DemiBold", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBuscarVentas.ForeColor = System.Drawing.Color.White;
-            this.btnBuscarVentas.Location = new System.Drawing.Point(229, 27);
+            this.btnBuscarVentas.Location = new System.Drawing.Point(219, 28);
             this.btnBuscarVentas.Name = "btnBuscarVentas";
             this.btnBuscarVentas.Size = new System.Drawing.Size(93, 30);
             this.btnBuscarVentas.TabIndex = 1;
@@ -294,16 +328,41 @@
             // 
             // tabPageAbonos
             // 
+            this.tabPageAbonos.BackColor = System.Drawing.Color.LightCyan;
+            this.tabPageAbonos.Controls.Add(this.button4);
+            this.tabPageAbonos.Controls.Add(this.textBox3);
+            this.tabPageAbonos.Controls.Add(this.label4);
+            this.tabPageAbonos.Controls.Add(this.lvwCuentasAbonos);
+            this.tabPageAbonos.Controls.Add(this.label3);
+            this.tabPageAbonos.Controls.Add(this.btnBuscarAbonos);
+            this.tabPageAbonos.Controls.Add(this.txbBuscarAbonos);
             this.tabPageAbonos.Location = new System.Drawing.Point(4, 22);
             this.tabPageAbonos.Name = "tabPageAbonos";
             this.tabPageAbonos.Padding = new System.Windows.Forms.Padding(3);
             this.tabPageAbonos.Size = new System.Drawing.Size(1150, 545);
             this.tabPageAbonos.TabIndex = 1;
             this.tabPageAbonos.Text = "tabPage2";
-            this.tabPageAbonos.UseVisualStyleBackColor = true;
             // 
             // tabPageClientes
             // 
+            this.tabPageClientes.Controls.Add(this.button8);
+            this.tabPageClientes.Controls.Add(this.button7);
+            this.tabPageClientes.Controls.Add(this.button6);
+            this.tabPageClientes.Controls.Add(this.textBox17);
+            this.tabPageClientes.Controls.Add(this.textBox16);
+            this.tabPageClientes.Controls.Add(this.textBox15);
+            this.tabPageClientes.Controls.Add(this.textBox14);
+            this.tabPageClientes.Controls.Add(this.textBox13);
+            this.tabPageClientes.Controls.Add(this.textBox12);
+            this.tabPageClientes.Controls.Add(this.textBox11);
+            this.tabPageClientes.Controls.Add(this.textBox10);
+            this.tabPageClientes.Controls.Add(this.textBox9);
+            this.tabPageClientes.Controls.Add(this.textBox8);
+            this.tabPageClientes.Controls.Add(this.textBox7);
+            this.tabPageClientes.Controls.Add(this.textBox6);
+            this.tabPageClientes.Controls.Add(this.textBox5);
+            this.tabPageClientes.Controls.Add(this.button5);
+            this.tabPageClientes.Controls.Add(this.textBox4);
             this.tabPageClientes.Location = new System.Drawing.Point(4, 22);
             this.tabPageClientes.Name = "tabPageClientes";
             this.tabPageClientes.Padding = new System.Windows.Forms.Padding(3);
@@ -362,20 +421,20 @@
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
-            // listView1
+            // listvProductosVentas
             // 
-            this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.listvProductosVentas.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader1,
             this.columnHeader2,
             this.columnHeader3,
             this.columnHeader4,
             this.columnHeader5});
-            this.listView1.Location = new System.Drawing.Point(52, 127);
-            this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(993, 194);
-            this.listView1.TabIndex = 2;
-            this.listView1.UseCompatibleStateImageBehavior = false;
-            this.listView1.View = System.Windows.Forms.View.Details;
+            this.listvProductosVentas.Location = new System.Drawing.Point(52, 127);
+            this.listvProductosVentas.Name = "listvProductosVentas";
+            this.listvProductosVentas.Size = new System.Drawing.Size(993, 194);
+            this.listvProductosVentas.TabIndex = 2;
+            this.listvProductosVentas.UseCompatibleStateImageBehavior = false;
+            this.listvProductosVentas.View = System.Windows.Forms.View.Details;
             // 
             // columnHeader1
             // 
@@ -544,6 +603,322 @@
             this.button3.Text = "Cancelar";
             this.button3.UseVisualStyleBackColor = false;
             // 
+            // btnBuscarAbonos
+            // 
+            this.btnBuscarAbonos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(101)))), ((int)(((byte)(176)))));
+            this.btnBuscarAbonos.FlatAppearance.BorderColor = System.Drawing.Color.Navy;
+            this.btnBuscarAbonos.FlatAppearance.BorderSize = 0;
+            this.btnBuscarAbonos.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Yellow;
+            this.btnBuscarAbonos.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Navy;
+            this.btnBuscarAbonos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBuscarAbonos.Font = new System.Drawing.Font("Corbert DemiBold", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBuscarAbonos.ForeColor = System.Drawing.Color.White;
+            this.btnBuscarAbonos.Location = new System.Drawing.Point(219, 28);
+            this.btnBuscarAbonos.Name = "btnBuscarAbonos";
+            this.btnBuscarAbonos.Size = new System.Drawing.Size(93, 30);
+            this.btnBuscarAbonos.TabIndex = 3;
+            this.btnBuscarAbonos.Text = "Buscar";
+            this.btnBuscarAbonos.UseVisualStyleBackColor = false;
+            // 
+            // txbBuscarAbonos
+            // 
+            this.txbBuscarAbonos.Font = new System.Drawing.Font("Corbert DemiBold", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txbBuscarAbonos.Location = new System.Drawing.Point(52, 28);
+            this.txbBuscarAbonos.Name = "txbBuscarAbonos";
+            this.txbBuscarAbonos.Size = new System.Drawing.Size(161, 30);
+            this.txbBuscarAbonos.TabIndex = 2;
+            // 
+            // lblClieneVentas
+            // 
+            this.lblClieneVentas.AutoSize = true;
+            this.lblClieneVentas.Font = new System.Drawing.Font("Corbert DemiBold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblClieneVentas.ForeColor = System.Drawing.Color.Black;
+            this.lblClieneVentas.Location = new System.Drawing.Point(56, 81);
+            this.lblClieneVentas.Name = "lblClieneVentas";
+            this.lblClieneVentas.Size = new System.Drawing.Size(87, 23);
+            this.lblClieneVentas.TabIndex = 14;
+            this.lblClieneVentas.Text = "Cliente: ";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Corbert DemiBold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.Black;
+            this.label3.Location = new System.Drawing.Point(48, 81);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(87, 23);
+            this.label3.TabIndex = 15;
+            this.label3.Text = "Cliente: ";
+            // 
+            // lvwCuentasAbonos
+            // 
+            this.lvwCuentasAbonos.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader6,
+            this.columnHeader7,
+            this.columnHeader8,
+            this.columnHeader9,
+            this.columnHeader10});
+            this.lvwCuentasAbonos.Location = new System.Drawing.Point(52, 145);
+            this.lvwCuentasAbonos.Name = "lvwCuentasAbonos";
+            this.lvwCuentasAbonos.Size = new System.Drawing.Size(706, 303);
+            this.lvwCuentasAbonos.TabIndex = 16;
+            this.lvwCuentasAbonos.UseCompatibleStateImageBehavior = false;
+            this.lvwCuentasAbonos.View = System.Windows.Forms.View.Details;
+            // 
+            // columnHeader6
+            // 
+            this.columnHeader6.Text = "Producto";
+            this.columnHeader6.Width = 210;
+            // 
+            // columnHeader7
+            // 
+            this.columnHeader7.Text = "Fecha Compra";
+            this.columnHeader7.Width = 120;
+            // 
+            // columnHeader8
+            // 
+            this.columnHeader8.Text = "Adeudo";
+            this.columnHeader8.Width = 127;
+            // 
+            // columnHeader9
+            // 
+            this.columnHeader9.Text = "Último Abono";
+            this.columnHeader9.Width = 123;
+            // 
+            // columnHeader10
+            // 
+            this.columnHeader10.Text = "Abono Mensual";
+            this.columnHeader10.Width = 122;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Corbert DemiBold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.Black;
+            this.label4.Location = new System.Drawing.Point(620, 464);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(62, 23);
+            this.label4.TabIndex = 17;
+            this.label4.Text = "Total:";
+            // 
+            // button4
+            // 
+            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(101)))), ((int)(((byte)(176)))));
+            this.button4.FlatAppearance.BorderColor = System.Drawing.Color.Navy;
+            this.button4.FlatAppearance.BorderSize = 0;
+            this.button4.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Yellow;
+            this.button4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Navy;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.Font = new System.Drawing.Font("Corbert DemiBold", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.ForeColor = System.Drawing.Color.White;
+            this.button4.Location = new System.Drawing.Point(959, 236);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(93, 30);
+            this.button4.TabIndex = 19;
+            this.button4.Text = "Abonar";
+            this.button4.UseVisualStyleBackColor = false;
+            // 
+            // textBox3
+            // 
+            this.textBox3.Font = new System.Drawing.Font("Corbert DemiBold", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox3.Location = new System.Drawing.Point(792, 236);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(161, 30);
+            this.textBox3.TabIndex = 18;
+            // 
+            // button5
+            // 
+            this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(101)))), ((int)(((byte)(176)))));
+            this.button5.FlatAppearance.BorderColor = System.Drawing.Color.Navy;
+            this.button5.FlatAppearance.BorderSize = 0;
+            this.button5.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Yellow;
+            this.button5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Navy;
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button5.Font = new System.Drawing.Font("Corbert DemiBold", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button5.ForeColor = System.Drawing.Color.White;
+            this.button5.Location = new System.Drawing.Point(219, 28);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(93, 30);
+            this.button5.TabIndex = 5;
+            this.button5.Text = "Buscar";
+            this.button5.UseVisualStyleBackColor = false;
+            // 
+            // textBox4
+            // 
+            this.textBox4.Font = new System.Drawing.Font("Corbert DemiBold", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox4.Location = new System.Drawing.Point(52, 28);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(161, 30);
+            this.textBox4.TabIndex = 4;
+            // 
+            // textBox5
+            // 
+            this.textBox5.Font = new System.Drawing.Font("Corbert DemiBold", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox5.Location = new System.Drawing.Point(53, 172);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(186, 30);
+            this.textBox5.TabIndex = 6;
+            this.textBox5.Text = "NOMBRE";
+            // 
+            // textBox6
+            // 
+            this.textBox6.Font = new System.Drawing.Font("Corbert DemiBold", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox6.Location = new System.Drawing.Point(245, 172);
+            this.textBox6.Name = "textBox6";
+            this.textBox6.Size = new System.Drawing.Size(199, 30);
+            this.textBox6.TabIndex = 7;
+            this.textBox6.Text = "APELLIDO PATERNO";
+            // 
+            // textBox7
+            // 
+            this.textBox7.Font = new System.Drawing.Font("Corbert DemiBold", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox7.Location = new System.Drawing.Point(450, 172);
+            this.textBox7.Name = "textBox7";
+            this.textBox7.Size = new System.Drawing.Size(205, 30);
+            this.textBox7.TabIndex = 8;
+            this.textBox7.Text = "APELLIDO MATERNO";
+            // 
+            // textBox8
+            // 
+            this.textBox8.Font = new System.Drawing.Font("Corbert DemiBold", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox8.Location = new System.Drawing.Point(52, 275);
+            this.textBox8.Name = "textBox8";
+            this.textBox8.Size = new System.Drawing.Size(260, 30);
+            this.textBox8.TabIndex = 9;
+            this.textBox8.Text = "CORREO ELECTRONICO";
+            // 
+            // textBox9
+            // 
+            this.textBox9.Font = new System.Drawing.Font("Corbert DemiBold", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox9.Location = new System.Drawing.Point(52, 326);
+            this.textBox9.Name = "textBox9";
+            this.textBox9.Size = new System.Drawing.Size(260, 30);
+            this.textBox9.TabIndex = 10;
+            this.textBox9.Text = "FECHA DE NACIMIENTO";
+            // 
+            // textBox10
+            // 
+            this.textBox10.Font = new System.Drawing.Font("Corbert DemiBold", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox10.Location = new System.Drawing.Point(52, 377);
+            this.textBox10.Name = "textBox10";
+            this.textBox10.Size = new System.Drawing.Size(260, 30);
+            this.textBox10.TabIndex = 11;
+            this.textBox10.Text = "SEXO";
+            // 
+            // textBox11
+            // 
+            this.textBox11.Font = new System.Drawing.Font("Corbert DemiBold", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox11.Location = new System.Drawing.Point(52, 119);
+            this.textBox11.Name = "textBox11";
+            this.textBox11.Size = new System.Drawing.Size(214, 30);
+            this.textBox11.TabIndex = 12;
+            this.textBox11.Text = "NÚMERO DE CLIENTE";
+            // 
+            // textBox12
+            // 
+            this.textBox12.Font = new System.Drawing.Font("Corbert DemiBold", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox12.Location = new System.Drawing.Point(52, 224);
+            this.textBox12.Name = "textBox12";
+            this.textBox12.Size = new System.Drawing.Size(240, 30);
+            this.textBox12.TabIndex = 13;
+            this.textBox12.Text = "CALLE";
+            // 
+            // textBox13
+            // 
+            this.textBox13.Font = new System.Drawing.Font("Corbert DemiBold", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox13.Location = new System.Drawing.Point(298, 224);
+            this.textBox13.Name = "textBox13";
+            this.textBox13.Size = new System.Drawing.Size(100, 30);
+            this.textBox13.TabIndex = 14;
+            this.textBox13.Text = "Nº INT";
+            // 
+            // textBox14
+            // 
+            this.textBox14.Font = new System.Drawing.Font("Corbert DemiBold", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox14.Location = new System.Drawing.Point(404, 224);
+            this.textBox14.Name = "textBox14";
+            this.textBox14.Size = new System.Drawing.Size(100, 30);
+            this.textBox14.TabIndex = 15;
+            this.textBox14.Text = "Nº EXT";
+            // 
+            // textBox15
+            // 
+            this.textBox15.Font = new System.Drawing.Font("Corbert DemiBold", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox15.Location = new System.Drawing.Point(510, 224);
+            this.textBox15.Name = "textBox15";
+            this.textBox15.Size = new System.Drawing.Size(87, 30);
+            this.textBox15.TabIndex = 16;
+            this.textBox15.Text = "C.P.";
+            // 
+            // textBox16
+            // 
+            this.textBox16.Font = new System.Drawing.Font("Corbert DemiBold", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox16.Location = new System.Drawing.Point(603, 224);
+            this.textBox16.Name = "textBox16";
+            this.textBox16.Size = new System.Drawing.Size(175, 30);
+            this.textBox16.TabIndex = 17;
+            this.textBox16.Text = "COLONIA";
+            // 
+            // textBox17
+            // 
+            this.textBox17.Font = new System.Drawing.Font("Corbert DemiBold", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox17.Location = new System.Drawing.Point(784, 224);
+            this.textBox17.Name = "textBox17";
+            this.textBox17.Size = new System.Drawing.Size(175, 30);
+            this.textBox17.TabIndex = 18;
+            this.textBox17.Text = "CIUDAD";
+            // 
+            // button6
+            // 
+            this.button6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(101)))), ((int)(((byte)(176)))));
+            this.button6.FlatAppearance.BorderColor = System.Drawing.Color.Navy;
+            this.button6.FlatAppearance.BorderSize = 0;
+            this.button6.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Yellow;
+            this.button6.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Navy;
+            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button6.Font = new System.Drawing.Font("Corbert DemiBold", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button6.ForeColor = System.Drawing.Color.White;
+            this.button6.Location = new System.Drawing.Point(43, 464);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(196, 30);
+            this.button6.TabIndex = 19;
+            this.button6.Text = "Modificar";
+            this.button6.UseVisualStyleBackColor = false;
+            // 
+            // button7
+            // 
+            this.button7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(101)))), ((int)(((byte)(176)))));
+            this.button7.FlatAppearance.BorderColor = System.Drawing.Color.Navy;
+            this.button7.FlatAppearance.BorderSize = 0;
+            this.button7.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Yellow;
+            this.button7.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Navy;
+            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button7.Font = new System.Drawing.Font("Corbert DemiBold", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button7.ForeColor = System.Drawing.Color.White;
+            this.button7.Location = new System.Drawing.Point(247, 464);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(197, 30);
+            this.button7.TabIndex = 20;
+            this.button7.Text = "Dar de Baja";
+            this.button7.UseVisualStyleBackColor = false;
+            // 
+            // button8
+            // 
+            this.button8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(101)))), ((int)(((byte)(176)))));
+            this.button8.FlatAppearance.BorderColor = System.Drawing.Color.Navy;
+            this.button8.FlatAppearance.BorderSize = 0;
+            this.button8.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Yellow;
+            this.button8.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Navy;
+            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button8.Font = new System.Drawing.Font("Corbert DemiBold", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button8.ForeColor = System.Drawing.Color.White;
+            this.button8.Location = new System.Drawing.Point(334, 27);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(196, 30);
+            this.button8.TabIndex = 21;
+            this.button8.Text = "Nuevo Registro";
+            this.button8.UseVisualStyleBackColor = false;
+            // 
             // Administrador
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -561,6 +936,10 @@
             this.tabControlAdministrador.ResumeLayout(false);
             this.tabPageVentas.ResumeLayout(false);
             this.tabPageVentas.PerformLayout();
+            this.tabPageAbonos.ResumeLayout(false);
+            this.tabPageAbonos.PerformLayout();
+            this.tabPageClientes.ResumeLayout(false);
+            this.tabPageClientes.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
@@ -592,7 +971,7 @@
         private System.Windows.Forms.Button btnBuscarVentas;
         private System.Windows.Forms.TextBox txbBuscarVentas;
         private System.Windows.Forms.Button btnAgregarVentas;
-        private System.Windows.Forms.ListView listView1;
+        private System.Windows.Forms.ListView listvProductosVentas;
         private System.Windows.Forms.ColumnHeader columnHeader1;
         private System.Windows.Forms.ColumnHeader columnHeader2;
         private System.Windows.Forms.ColumnHeader columnHeader3;
@@ -608,5 +987,36 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lblTotalVentas;
+        private System.Windows.Forms.Label lblClieneVentas;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button btnBuscarAbonos;
+        private System.Windows.Forms.TextBox txbBuscarAbonos;
+        private System.Windows.Forms.ListView lvwCuentasAbonos;
+        private System.Windows.Forms.ColumnHeader columnHeader6;
+        private System.Windows.Forms.ColumnHeader columnHeader7;
+        private System.Windows.Forms.ColumnHeader columnHeader8;
+        private System.Windows.Forms.ColumnHeader columnHeader9;
+        private System.Windows.Forms.ColumnHeader columnHeader10;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.TextBox textBox17;
+        private System.Windows.Forms.TextBox textBox16;
+        private System.Windows.Forms.TextBox textBox15;
+        private System.Windows.Forms.TextBox textBox14;
+        private System.Windows.Forms.TextBox textBox13;
+        private System.Windows.Forms.TextBox textBox12;
+        private System.Windows.Forms.TextBox textBox11;
+        private System.Windows.Forms.TextBox textBox10;
+        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.TextBox textBox4;
     }
 }

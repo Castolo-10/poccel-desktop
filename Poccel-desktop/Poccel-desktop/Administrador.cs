@@ -8,6 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+//Color Azul Poccel: System.Drawing.ColorTranslator.FromHtml("#0965B0");
+//Color Azul Poccel: System.Drawing.ColorTranslator.FromHtml("#FEE40B");
+//Color Gris Poccel: System.Drawing.ColorTranslator.FromHtml("#7E888F");
+//Color Rojo Poccel: System.Drawing.ColorTranslator.FromHtml("#DF2F3B");
+
+
+
 namespace Poccel_desktop
 {
     public partial class Administrador : Form
@@ -15,6 +22,14 @@ namespace Poccel_desktop
         public Administrador()
         {
             InitializeComponent();
+            bloquearBoton(btnAgregarVentas);
+        }
+
+        private void bloquearBoton(Button btn)
+        {
+            btn.Enabled = false;
+            btn.FlatAppearance.MouseDownBackColor = System.Drawing.ColorTranslator.FromHtml("#7E888F");
+            btn.ForeColor = Color.White;
         }
 
         private void button8_Click(object sender, EventArgs e)
@@ -37,7 +52,7 @@ namespace Poccel_desktop
                 else
                 {
                     b.ForeColor = Color.White;
-                    b.BackColor = Color.Blue;
+                    b.BackColor = System.Drawing.ColorTranslator.FromHtml("#0965B0");
 
                 }
             }
@@ -94,5 +109,17 @@ namespace Poccel_desktop
 
         }
         #endregion
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            VentaCredito form = new VentaCredito();
+            form.ShowDialog();
+        }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+            VentaContado form = new VentaContado();
+            form.ShowDialog();
+        }
     }
 }

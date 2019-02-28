@@ -122,5 +122,22 @@ namespace Poccel_desktop
             form.ShowDialog();
         }
 
+        private void button11_Click(object sender, EventArgs e)
+        {
+            AgregarProducto form = new AgregarProducto();
+            form.ShowDialog();
+        }
+
+        private void button21_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog ofd = new OpenFileDialog();
+            ofd.ShowDialog();
+        }
+
+        private void button22_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog ofd = new OpenFileDialog();
+            ofd.ShowDialog();
+        }
     }
 }

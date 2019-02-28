@@ -11,3 +11,4 @@ C:\Users\ferna\Desktop\poccel-desktop\Poccel-desktop\Poccel-desktop\obj\Debug\Po
 C:\Users\ferna\Desktop\poccel-desktop\Poccel-desktop\Poccel-desktop\obj\Debug\Poccel_desktop.Administrador.resources
 C:\Users\ferna\Desktop\poccel-desktop\Poccel-desktop\Poccel-desktop\obj\Debug\Poccel_desktop.VentaCredito.resources
 C:\Users\ferna\Desktop\poccel-desktop\Poccel-desktop\Poccel-desktop\obj\Debug\Poccel_desktop.VentaContado.resources
+C:\Users\ferna\Desktop\poccel-desktop\Poccel-desktop\Poccel-desktop\obj\Debug\Poccel_desktop.AgregarProducto.resources

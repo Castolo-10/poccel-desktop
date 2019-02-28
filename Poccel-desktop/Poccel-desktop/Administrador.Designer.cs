@@ -137,6 +137,12 @@
             this.textBox36 = new System.Windows.Forms.TextBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.textBox37 = new System.Windows.Forms.TextBox();
+            this.button19 = new System.Windows.Forms.Button();
+            this.button20 = new System.Windows.Forms.Button();
+            this.textBox38 = new System.Windows.Forms.TextBox();
+            this.textBox39 = new System.Windows.Forms.TextBox();
+            this.button21 = new System.Windows.Forms.Button();
+            this.button22 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.tabControlAdministrador.SuspendLayout();
             this.tabPageVentas.SuspendLayout();
@@ -148,6 +154,7 @@
             this.panel4.SuspendLayout();
             this.tabPageInventario.SuspendLayout();
             this.tabPageEmpleados.SuspendLayout();
+            this.tabPageConfiguración.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -1055,6 +1062,12 @@
             // 
             // tabPageConfiguración
             // 
+            this.tabPageConfiguración.Controls.Add(this.button22);
+            this.tabPageConfiguración.Controls.Add(this.button21);
+            this.tabPageConfiguración.Controls.Add(this.textBox39);
+            this.tabPageConfiguración.Controls.Add(this.textBox38);
+            this.tabPageConfiguración.Controls.Add(this.button19);
+            this.tabPageConfiguración.Controls.Add(this.button20);
             this.tabPageConfiguración.Location = new System.Drawing.Point(4, 22);
             this.tabPageConfiguración.Name = "tabPageConfiguración";
             this.tabPageConfiguración.Padding = new System.Windows.Forms.Padding(3);
@@ -1124,6 +1137,7 @@
             this.button11.TabIndex = 24;
             this.button11.Text = "Nuevo Registro";
             this.button11.UseVisualStyleBackColor = false;
+            this.button11.Click += new System.EventHandler(this.button11_Click);
             // 
             // button12
             // 
@@ -1474,6 +1488,92 @@
             this.textBox37.TabIndex = 43;
             this.textBox37.Text = "CONTRASEÑA";
             // 
+            // button19
+            // 
+            this.button19.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(101)))), ((int)(((byte)(176)))));
+            this.button19.FlatAppearance.BorderColor = System.Drawing.Color.Navy;
+            this.button19.FlatAppearance.BorderSize = 0;
+            this.button19.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Yellow;
+            this.button19.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Navy;
+            this.button19.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button19.Font = new System.Drawing.Font("Corbert DemiBold", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button19.ForeColor = System.Drawing.Color.White;
+            this.button19.Location = new System.Drawing.Point(20, 256);
+            this.button19.Name = "button19";
+            this.button19.Size = new System.Drawing.Size(197, 30);
+            this.button19.TabIndex = 41;
+            this.button19.Text = "Restaurar";
+            this.button19.UseVisualStyleBackColor = false;
+            // 
+            // button20
+            // 
+            this.button20.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(101)))), ((int)(((byte)(176)))));
+            this.button20.FlatAppearance.BorderColor = System.Drawing.Color.Navy;
+            this.button20.FlatAppearance.BorderSize = 0;
+            this.button20.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Yellow;
+            this.button20.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Navy;
+            this.button20.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button20.Font = new System.Drawing.Font("Corbert DemiBold", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button20.ForeColor = System.Drawing.Color.White;
+            this.button20.Location = new System.Drawing.Point(20, 71);
+            this.button20.Name = "button20";
+            this.button20.Size = new System.Drawing.Size(196, 30);
+            this.button20.TabIndex = 40;
+            this.button20.Text = "Respaldar";
+            this.button20.UseVisualStyleBackColor = false;
+            // 
+            // textBox38
+            // 
+            this.textBox38.Font = new System.Drawing.Font("Corbert DemiBold", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox38.Location = new System.Drawing.Point(20, 35);
+            this.textBox38.Name = "textBox38";
+            this.textBox38.Size = new System.Drawing.Size(503, 30);
+            this.textBox38.TabIndex = 42;
+            // 
+            // textBox39
+            // 
+            this.textBox39.Font = new System.Drawing.Font("Corbert DemiBold", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox39.Location = new System.Drawing.Point(20, 220);
+            this.textBox39.Name = "textBox39";
+            this.textBox39.Size = new System.Drawing.Size(503, 30);
+            this.textBox39.TabIndex = 43;
+            // 
+            // button21
+            // 
+            this.button21.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(101)))), ((int)(((byte)(176)))));
+            this.button21.FlatAppearance.BorderColor = System.Drawing.Color.Navy;
+            this.button21.FlatAppearance.BorderSize = 0;
+            this.button21.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Yellow;
+            this.button21.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Navy;
+            this.button21.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button21.Font = new System.Drawing.Font("Corbert DemiBold", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button21.ForeColor = System.Drawing.Color.White;
+            this.button21.Location = new System.Drawing.Point(529, 35);
+            this.button21.Name = "button21";
+            this.button21.Size = new System.Drawing.Size(104, 30);
+            this.button21.TabIndex = 44;
+            this.button21.Text = "Examinar";
+            this.button21.UseVisualStyleBackColor = false;
+            this.button21.Click += new System.EventHandler(this.button21_Click);
+            // 
+            // button22
+            // 
+            this.button22.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(101)))), ((int)(((byte)(176)))));
+            this.button22.FlatAppearance.BorderColor = System.Drawing.Color.Navy;
+            this.button22.FlatAppearance.BorderSize = 0;
+            this.button22.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Yellow;
+            this.button22.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Navy;
+            this.button22.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button22.Font = new System.Drawing.Font("Corbert DemiBold", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button22.ForeColor = System.Drawing.Color.White;
+            this.button22.Location = new System.Drawing.Point(529, 220);
+            this.button22.Name = "button22";
+            this.button22.Size = new System.Drawing.Size(104, 30);
+            this.button22.TabIndex = 45;
+            this.button22.Text = "Examinar";
+            this.button22.UseVisualStyleBackColor = false;
+            this.button22.Click += new System.EventHandler(this.button22_Click);
+            // 
             // Administrador
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1506,6 +1606,8 @@
             this.tabPageInventario.PerformLayout();
             this.tabPageEmpleados.ResumeLayout(false);
             this.tabPageEmpleados.PerformLayout();
+            this.tabPageConfiguración.ResumeLayout(false);
+            this.tabPageConfiguración.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
@@ -1623,5 +1725,11 @@
         private System.Windows.Forms.TextBox textBox36;
         private System.Windows.Forms.TextBox textBox37;
         private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Button button22;
+        private System.Windows.Forms.Button button21;
+        private System.Windows.Forms.TextBox textBox39;
+        private System.Windows.Forms.TextBox textBox38;
+        private System.Windows.Forms.Button button19;
+        private System.Windows.Forms.Button button20;
     }
 }

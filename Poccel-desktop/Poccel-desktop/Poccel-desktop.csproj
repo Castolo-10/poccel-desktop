@@ -58,6 +58,7 @@
     <Compile Include="AgregarProducto.Designer.cs">
       <DependentUpon>AgregarProducto.cs</DependentUpon>
     </Compile>
+    <Compile Include="Control.cs" />
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>

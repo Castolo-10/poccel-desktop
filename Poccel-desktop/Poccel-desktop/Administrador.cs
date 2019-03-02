@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 //Color Azul Poccel: System.Drawing.ColorTranslator.FromHtml("#0965B0");
-//Color Azul Poccel: System.Drawing.ColorTranslator.FromHtml("#FEE40B");
+//Color Amarillo Poccel: System.Drawing.ColorTranslator.FromHtml("#FEE40B");
 //Color Gris Poccel: System.Drawing.ColorTranslator.FromHtml("#7E888F");
 //Color Rojo Poccel: System.Drawing.ColorTranslator.FromHtml("#DF2F3B");
 
@@ -22,7 +22,9 @@ namespace Poccel_desktop
         public Administrador()
         {
             InitializeComponent();
-            bloquearBoton(btnAgregarVentas);
+            bloquearBoton(btnAgregar_Ventas);
+            dtpFechaCliente.MaxDate = DateTime.Today;
+            dtpFechaCliente.Value = DateTime.Today;
         }
 
         private void bloquearBoton(Button btn)
@@ -58,54 +60,12 @@ namespace Poccel_desktop
             }
 
         }
-
-        private void button1_Click(object sender, EventArgs e)
+        private void cambioMenu(object sender, EventArgs e)
         {
-            tabControlAdministrador.SelectedIndex = 0;
+            Button btn = (Button)sender;
+            tabControlAdministrador.SelectedIndex = btn.TabIndex;
             actualizar_botones(sender);
-
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            tabControlAdministrador.SelectedIndex = 1;
-            actualizar_botones(sender);
-
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-            tabControlAdministrador.SelectedIndex = 2;
-            actualizar_botones(sender);
-
-        }
-
-        private void button5_Click(object sender, EventArgs e)
-        {
-            tabControlAdministrador.SelectedIndex = 3;
-            actualizar_botones(sender);
-
-        }
-
-        private void button4_Click(object sender, EventArgs e)
-        {
-            tabControlAdministrador.SelectedIndex = 4;
-            actualizar_botones(sender);
-
-
-        }
-
-        private void button7_Click(object sender, EventArgs e)
-        {
-            tabControlAdministrador.SelectedIndex = 5;
-            actualizar_botones(sender);
-
-        }
-
-        private void button6_Click(object sender, EventArgs e)
-        {
-            tabControlAdministrador.SelectedIndex = 6;
-            actualizar_botones(sender);
+            btn.Focus();
 
         }
         #endregion
@@ -138,6 +98,31 @@ namespace Poccel_desktop
         {
             OpenFileDialog ofd = new OpenFileDialog();
             ofd.ShowDialog();
+        }
+
+        private void txb_Leave(object sender, EventArgs e)
+        {
+            TextBox txb = (TextBox)sender;
+            if(txb.Text == "")
+            {
+                Control.Text(txb, txb.Tag.ToString());
+                Control.ForeColor(txb, Color.Silver);
+            }
+        }
+
+        private void txb_Enter(object sender, EventArgs e)
+        {
+            TextBox txb = (TextBox)sender;
+            if (txb.Text == txb.Tag.ToString())
+            {
+                Control.Text(txb, "");
+                Control.ForeColor(txb, Color.Black);
+            }
+        }
+
+        private void btnBuscar_Ventas_Click(object sender, EventArgs e)
+        {
+            Control.EnabledUnabled(btnCancelar_Ventas);
         }
     }
 }

@@ -40,6 +40,7 @@
             this.btnVentas = new System.Windows.Forms.Button();
             this.tabControlAdministrador = new System.Windows.Forms.TabControl();
             this.tabPageVentas = new System.Windows.Forms.TabPage();
+            this.btnEliminar_Ventas = new System.Windows.Forms.Button();
             this.lblCliente_Ventas = new System.Windows.Forms.Label();
             this.btnCancelar_Ventas = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -77,34 +78,34 @@
             this.tabPageClientes = new System.Windows.Forms.TabPage();
             this.panel9 = new System.Windows.Forms.Panel();
             this.label12 = new System.Windows.Forms.Label();
-            this.textBox17 = new System.Windows.Forms.TextBox();
-            this.textBox15 = new System.Windows.Forms.TextBox();
-            this.textBox14 = new System.Windows.Forms.TextBox();
-            this.textBox12 = new System.Windows.Forms.TextBox();
-            this.textBox16 = new System.Windows.Forms.TextBox();
+            this.txbCiudad_Clientes = new System.Windows.Forms.TextBox();
+            this.txbCP_Clientes = new System.Windows.Forms.TextBox();
+            this.txbNumeroDom_Clientes = new System.Windows.Forms.TextBox();
+            this.txbCalle_Clientes = new System.Windows.Forms.TextBox();
+            this.txbColonia_Clientes = new System.Windows.Forms.TextBox();
             this.panel8 = new System.Windows.Forms.Panel();
             this.label11 = new System.Windows.Forms.Label();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.txbTelefono_Clientes = new System.Windows.Forms.TextBox();
+            this.txbEmail_Clientes = new System.Windows.Forms.TextBox();
             this.panel7 = new System.Windows.Forms.Panel();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.dtpFechaCliente = new System.Windows.Forms.DateTimePicker();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.cboxSexo_Clientes = new System.Windows.Forms.ComboBox();
+            this.dtpFecha_Clientes = new System.Windows.Forms.DateTimePicker();
+            this.txbAMaterno_Clientes = new System.Windows.Forms.TextBox();
+            this.txbAPaterno_Clientes = new System.Windows.Forms.TextBox();
+            this.txbNombre_Clientes = new System.Windows.Forms.TextBox();
             this.panel6 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox40 = new System.Windows.Forms.TextBox();
-            this.textBox18 = new System.Windows.Forms.TextBox();
-            this.textBox11 = new System.Windows.Forms.TextBox();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txbContraseña_Clientes = new System.Windows.Forms.TextBox();
+            this.txbContraseñaRep_Clientes = new System.Windows.Forms.TextBox();
+            this.txbNumero_Clientes = new System.Windows.Forms.TextBox();
+            this.btnNuevo_Clientes = new System.Windows.Forms.Button();
+            this.btnBaja_Clientes = new System.Windows.Forms.Button();
+            this.btnModificar_Clientes = new System.Windows.Forms.Button();
+            this.btnBuscar_Clientes = new System.Windows.Forms.Button();
+            this.txbBuscar_Clientes = new System.Windows.Forms.TextBox();
             this.tabPageChat = new System.Windows.Forms.TabPage();
             this.panel5 = new System.Windows.Forms.Panel();
             this.btnNuevoMensaje_Chat = new System.Windows.Forms.Button();
@@ -129,36 +130,36 @@
             this.tabPageEmpleados = new System.Windows.Forms.TabPage();
             this.panel10 = new System.Windows.Forms.Panel();
             this.label13 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            this.textBox13 = new System.Windows.Forms.TextBox();
+            this.txbCiudad_Empleados = new System.Windows.Forms.TextBox();
+            this.txbCP_Empleados = new System.Windows.Forms.TextBox();
+            this.txbNumeroDom_Empleados = new System.Windows.Forms.TextBox();
+            this.txbCalle_Empleados = new System.Windows.Forms.TextBox();
+            this.txbColonia_Empleados = new System.Windows.Forms.TextBox();
             this.panel11 = new System.Windows.Forms.Panel();
             this.label14 = new System.Windows.Forms.Label();
-            this.textBox19 = new System.Windows.Forms.TextBox();
-            this.textBox20 = new System.Windows.Forms.TextBox();
+            this.txbTelefono_Empleados = new System.Windows.Forms.TextBox();
+            this.txbEmail_Empleados = new System.Windows.Forms.TextBox();
             this.panel12 = new System.Windows.Forms.Panel();
             this.label19 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.cboxPuesto_Empleados = new System.Windows.Forms.ComboBox();
             this.label15 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.textBox21 = new System.Windows.Forms.TextBox();
-            this.textBox22 = new System.Windows.Forms.TextBox();
-            this.textBox23 = new System.Windows.Forms.TextBox();
+            this.cboxSexo_Empleados = new System.Windows.Forms.ComboBox();
+            this.dtpFecha_Empleados = new System.Windows.Forms.DateTimePicker();
+            this.txbAMaterno_Empleados = new System.Windows.Forms.TextBox();
+            this.txbAPaterno_Empleados = new System.Windows.Forms.TextBox();
+            this.txbNombre_Empleados = new System.Windows.Forms.TextBox();
             this.panel13 = new System.Windows.Forms.Panel();
             this.label18 = new System.Windows.Forms.Label();
-            this.textBox24 = new System.Windows.Forms.TextBox();
-            this.textBox25 = new System.Windows.Forms.TextBox();
-            this.textBox26 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.textBox27 = new System.Windows.Forms.TextBox();
+            this.txbContraseña_Empleados = new System.Windows.Forms.TextBox();
+            this.txbContraseñaRep_Empleados = new System.Windows.Forms.TextBox();
+            this.txbNumero_Empleados = new System.Windows.Forms.TextBox();
+            this.btnNuevo_Empleados = new System.Windows.Forms.Button();
+            this.btnBaja_Empleados = new System.Windows.Forms.Button();
+            this.btnModificar_Empleados = new System.Windows.Forms.Button();
+            this.btnBuscarEmpleados = new System.Windows.Forms.Button();
+            this.txbBuscar_Empleados = new System.Windows.Forms.TextBox();
             this.tabPageConfiguración = new System.Windows.Forms.TabPage();
             this.button22 = new System.Windows.Forms.Button();
             this.button21 = new System.Windows.Forms.Button();
@@ -371,6 +372,7 @@
             // tabPageVentas
             // 
             this.tabPageVentas.BackColor = System.Drawing.Color.LightCyan;
+            this.tabPageVentas.Controls.Add(this.btnEliminar_Ventas);
             this.tabPageVentas.Controls.Add(this.lblCliente_Ventas);
             this.tabPageVentas.Controls.Add(this.btnCancelar_Ventas);
             this.tabPageVentas.Controls.Add(this.panel3);
@@ -387,6 +389,25 @@
             this.tabPageVentas.TabIndex = 0;
             this.tabPageVentas.Text = "tabPage1";
             // 
+            // btnEliminar_Ventas
+            // 
+            this.btnEliminar_Ventas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(47)))), ((int)(((byte)(59)))));
+            this.btnEliminar_Ventas.Enabled = false;
+            this.btnEliminar_Ventas.FlatAppearance.BorderColor = System.Drawing.Color.Navy;
+            this.btnEliminar_Ventas.FlatAppearance.BorderSize = 0;
+            this.btnEliminar_Ventas.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
+            this.btnEliminar_Ventas.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Navy;
+            this.btnEliminar_Ventas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEliminar_Ventas.Font = new System.Drawing.Font("Corbert DemiBold", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEliminar_Ventas.ForeColor = System.Drawing.Color.White;
+            this.btnEliminar_Ventas.Location = new System.Drawing.Point(902, 127);
+            this.btnEliminar_Ventas.Name = "btnEliminar_Ventas";
+            this.btnEliminar_Ventas.Size = new System.Drawing.Size(103, 30);
+            this.btnEliminar_Ventas.TabIndex = 15;
+            this.btnEliminar_Ventas.Text = "Eliminar";
+            this.btnEliminar_Ventas.UseVisualStyleBackColor = false;
+            this.btnEliminar_Ventas.Visible = false;
+            // 
             // lblCliente_Ventas
             // 
             this.lblCliente_Ventas.AutoSize = true;
@@ -400,7 +421,8 @@
             // 
             // btnCancelar_Ventas
             // 
-            this.btnCancelar_Ventas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(101)))), ((int)(((byte)(176)))));
+            this.btnCancelar_Ventas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(47)))), ((int)(((byte)(59)))));
+            this.btnCancelar_Ventas.Enabled = false;
             this.btnCancelar_Ventas.FlatAppearance.BorderColor = System.Drawing.Color.Navy;
             this.btnCancelar_Ventas.FlatAppearance.BorderSize = 0;
             this.btnCancelar_Ventas.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
@@ -414,6 +436,7 @@
             this.btnCancelar_Ventas.TabIndex = 7;
             this.btnCancelar_Ventas.Text = "Cancelar";
             this.btnCancelar_Ventas.UseVisualStyleBackColor = false;
+            this.btnCancelar_Ventas.Visible = false;
             // 
             // panel3
             // 
@@ -466,7 +489,8 @@
             // 
             // btnAgregar_Ventas
             // 
-            this.btnAgregar_Ventas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(101)))), ((int)(((byte)(176)))));
+            this.btnAgregar_Ventas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(136)))), ((int)(((byte)(143)))));
+            this.btnAgregar_Ventas.Enabled = false;
             this.btnAgregar_Ventas.FlatAppearance.BorderColor = System.Drawing.Color.Navy;
             this.btnAgregar_Ventas.FlatAppearance.BorderSize = 0;
             this.btnAgregar_Ventas.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
@@ -480,6 +504,7 @@
             this.btnAgregar_Ventas.TabIndex = 4;
             this.btnAgregar_Ventas.Text = "Agregar";
             this.btnAgregar_Ventas.UseVisualStyleBackColor = false;
+            this.btnAgregar_Ventas.Click += new System.EventHandler(this.btnAgregar_Ventas_Click);
             // 
             // panel2
             // 
@@ -494,7 +519,8 @@
             // 
             // btnContado_Ventas
             // 
-            this.btnContado_Ventas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(101)))), ((int)(((byte)(176)))));
+            this.btnContado_Ventas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(136)))), ((int)(((byte)(143)))));
+            this.btnContado_Ventas.Enabled = false;
             this.btnContado_Ventas.FlatAppearance.BorderColor = System.Drawing.Color.Navy;
             this.btnContado_Ventas.FlatAppearance.BorderSize = 0;
             this.btnContado_Ventas.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
@@ -512,7 +538,8 @@
             // 
             // btnCredito_Ventas
             // 
-            this.btnCredito_Ventas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(101)))), ((int)(((byte)(176)))));
+            this.btnCredito_Ventas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(136)))), ((int)(((byte)(143)))));
+            this.btnCredito_Ventas.Enabled = false;
             this.btnCredito_Ventas.FlatAppearance.BorderColor = System.Drawing.Color.Navy;
             this.btnCredito_Ventas.FlatAppearance.BorderSize = 0;
             this.btnCredito_Ventas.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
@@ -544,7 +571,7 @@
             this.lblTotal_Ventas.AutoSize = true;
             this.lblTotal_Ventas.Font = new System.Drawing.Font("Corbert DemiBold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTotal_Ventas.ForeColor = System.Drawing.Color.Black;
-            this.lblTotal_Ventas.Location = new System.Drawing.Point(890, 336);
+            this.lblTotal_Ventas.Location = new System.Drawing.Point(773, 334);
             this.lblTotal_Ventas.Name = "lblTotal_Ventas";
             this.lblTotal_Ventas.Size = new System.Drawing.Size(123, 23);
             this.lblTotal_Ventas.TabIndex = 6;
@@ -560,7 +587,7 @@
             this.columnHeader5});
             this.listvProductos_Ventas.Location = new System.Drawing.Point(52, 127);
             this.listvProductos_Ventas.Name = "listvProductos_Ventas";
-            this.listvProductos_Ventas.Size = new System.Drawing.Size(993, 194);
+            this.listvProductos_Ventas.Size = new System.Drawing.Size(844, 194);
             this.listvProductos_Ventas.TabIndex = 2;
             this.listvProductos_Ventas.UseCompatibleStateImageBehavior = false;
             this.listvProductos_Ventas.View = System.Windows.Forms.View.Details;
@@ -573,7 +600,7 @@
             // columnHeader2
             // 
             this.columnHeader2.Text = "Descripción";
-            this.columnHeader2.Width = 449;
+            this.columnHeader2.Width = 300;
             // 
             // columnHeader3
             // 
@@ -654,7 +681,8 @@
             // 
             // btnAbonar_Abonos
             // 
-            this.btnAbonar_Abonos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(101)))), ((int)(((byte)(176)))));
+            this.btnAbonar_Abonos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(136)))), ((int)(((byte)(143)))));
+            this.btnAbonar_Abonos.Enabled = false;
             this.btnAbonar_Abonos.FlatAppearance.BorderColor = System.Drawing.Color.Navy;
             this.btnAbonar_Abonos.FlatAppearance.BorderSize = 0;
             this.btnAbonar_Abonos.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
@@ -760,6 +788,7 @@
             this.btnBuscar_Abonos.TabIndex = 3;
             this.btnBuscar_Abonos.Text = "Buscar";
             this.btnBuscar_Abonos.UseVisualStyleBackColor = false;
+            this.btnBuscar_Abonos.Click += new System.EventHandler(this.btnBuscar_Abonos_Click);
             // 
             // txbBuscar_Abonos
             // 
@@ -781,11 +810,11 @@
             this.tabPageClientes.Controls.Add(this.panel8);
             this.tabPageClientes.Controls.Add(this.panel7);
             this.tabPageClientes.Controls.Add(this.panel6);
-            this.tabPageClientes.Controls.Add(this.button8);
-            this.tabPageClientes.Controls.Add(this.button7);
-            this.tabPageClientes.Controls.Add(this.button6);
-            this.tabPageClientes.Controls.Add(this.button5);
-            this.tabPageClientes.Controls.Add(this.textBox4);
+            this.tabPageClientes.Controls.Add(this.btnNuevo_Clientes);
+            this.tabPageClientes.Controls.Add(this.btnBaja_Clientes);
+            this.tabPageClientes.Controls.Add(this.btnModificar_Clientes);
+            this.tabPageClientes.Controls.Add(this.btnBuscar_Clientes);
+            this.tabPageClientes.Controls.Add(this.txbBuscar_Clientes);
             this.tabPageClientes.ForeColor = System.Drawing.Color.Silver;
             this.tabPageClientes.Location = new System.Drawing.Point(4, 22);
             this.tabPageClientes.Name = "tabPageClientes";
@@ -799,11 +828,11 @@
             this.panel9.BackColor = System.Drawing.Color.Azure;
             this.panel9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel9.Controls.Add(this.label12);
-            this.panel9.Controls.Add(this.textBox17);
-            this.panel9.Controls.Add(this.textBox15);
-            this.panel9.Controls.Add(this.textBox14);
-            this.panel9.Controls.Add(this.textBox12);
-            this.panel9.Controls.Add(this.textBox16);
+            this.panel9.Controls.Add(this.txbCiudad_Clientes);
+            this.panel9.Controls.Add(this.txbCP_Clientes);
+            this.panel9.Controls.Add(this.txbNumeroDom_Clientes);
+            this.panel9.Controls.Add(this.txbCalle_Clientes);
+            this.panel9.Controls.Add(this.txbColonia_Clientes);
             this.panel9.Font = new System.Drawing.Font("Corbert DemiBold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel9.ForeColor = System.Drawing.Color.Black;
             this.panel9.Location = new System.Drawing.Point(385, 293);
@@ -820,78 +849,83 @@
             this.label12.TabIndex = 30;
             this.label12.Text = "Domicilio";
             // 
-            // textBox17
+            // txbCiudad_Clientes
             // 
-            this.textBox17.Font = new System.Drawing.Font("Corbert DemiBold", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox17.ForeColor = System.Drawing.Color.Silver;
-            this.textBox17.Location = new System.Drawing.Point(296, 88);
-            this.textBox17.Name = "textBox17";
-            this.textBox17.Size = new System.Drawing.Size(195, 30);
-            this.textBox17.TabIndex = 18;
-            this.textBox17.Tag = "Ciudad";
-            this.textBox17.Text = "Ciudad";
-            this.textBox17.Enter += new System.EventHandler(this.txb_Enter);
-            this.textBox17.Leave += new System.EventHandler(this.txb_Leave);
+            this.txbCiudad_Clientes.Enabled = false;
+            this.txbCiudad_Clientes.Font = new System.Drawing.Font("Corbert DemiBold", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txbCiudad_Clientes.ForeColor = System.Drawing.Color.Silver;
+            this.txbCiudad_Clientes.Location = new System.Drawing.Point(296, 88);
+            this.txbCiudad_Clientes.Name = "txbCiudad_Clientes";
+            this.txbCiudad_Clientes.Size = new System.Drawing.Size(195, 30);
+            this.txbCiudad_Clientes.TabIndex = 18;
+            this.txbCiudad_Clientes.Tag = "Ciudad";
+            this.txbCiudad_Clientes.Text = "Ciudad";
+            this.txbCiudad_Clientes.Enter += new System.EventHandler(this.txb_Enter);
+            this.txbCiudad_Clientes.Leave += new System.EventHandler(this.txb_Leave);
             // 
-            // textBox15
+            // txbCP_Clientes
             // 
-            this.textBox15.Font = new System.Drawing.Font("Corbert DemiBold", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox15.ForeColor = System.Drawing.Color.Silver;
-            this.textBox15.Location = new System.Drawing.Point(497, 88);
-            this.textBox15.Name = "textBox15";
-            this.textBox15.Size = new System.Drawing.Size(89, 30);
-            this.textBox15.TabIndex = 16;
-            this.textBox15.Tag = "C.P.";
-            this.textBox15.Text = "C.P.";
-            this.textBox15.Enter += new System.EventHandler(this.txb_Enter);
-            this.textBox15.Leave += new System.EventHandler(this.txb_Leave);
+            this.txbCP_Clientes.Enabled = false;
+            this.txbCP_Clientes.Font = new System.Drawing.Font("Corbert DemiBold", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txbCP_Clientes.ForeColor = System.Drawing.Color.Silver;
+            this.txbCP_Clientes.Location = new System.Drawing.Point(497, 88);
+            this.txbCP_Clientes.Name = "txbCP_Clientes";
+            this.txbCP_Clientes.Size = new System.Drawing.Size(89, 30);
+            this.txbCP_Clientes.TabIndex = 16;
+            this.txbCP_Clientes.Tag = "C.P.";
+            this.txbCP_Clientes.Text = "C.P.";
+            this.txbCP_Clientes.Enter += new System.EventHandler(this.txb_Enter);
+            this.txbCP_Clientes.Leave += new System.EventHandler(this.txb_Leave);
             // 
-            // textBox14
+            // txbNumeroDom_Clientes
             // 
-            this.textBox14.Font = new System.Drawing.Font("Corbert DemiBold", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox14.ForeColor = System.Drawing.Color.Silver;
-            this.textBox14.Location = new System.Drawing.Point(296, 43);
-            this.textBox14.Name = "textBox14";
-            this.textBox14.Size = new System.Drawing.Size(100, 30);
-            this.textBox14.TabIndex = 15;
-            this.textBox14.Tag = "Nº";
-            this.textBox14.Text = "Nº";
-            this.textBox14.Enter += new System.EventHandler(this.txb_Enter);
-            this.textBox14.Leave += new System.EventHandler(this.txb_Leave);
+            this.txbNumeroDom_Clientes.Enabled = false;
+            this.txbNumeroDom_Clientes.Font = new System.Drawing.Font("Corbert DemiBold", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txbNumeroDom_Clientes.ForeColor = System.Drawing.Color.Silver;
+            this.txbNumeroDom_Clientes.Location = new System.Drawing.Point(296, 43);
+            this.txbNumeroDom_Clientes.Name = "txbNumeroDom_Clientes";
+            this.txbNumeroDom_Clientes.Size = new System.Drawing.Size(100, 30);
+            this.txbNumeroDom_Clientes.TabIndex = 15;
+            this.txbNumeroDom_Clientes.Tag = "Nº";
+            this.txbNumeroDom_Clientes.Text = "Nº";
+            this.txbNumeroDom_Clientes.Enter += new System.EventHandler(this.txb_Enter);
+            this.txbNumeroDom_Clientes.Leave += new System.EventHandler(this.txb_Leave);
             // 
-            // textBox12
+            // txbCalle_Clientes
             // 
-            this.textBox12.Font = new System.Drawing.Font("Corbert DemiBold", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox12.ForeColor = System.Drawing.Color.Silver;
-            this.textBox12.Location = new System.Drawing.Point(30, 43);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(260, 30);
-            this.textBox12.TabIndex = 13;
-            this.textBox12.Tag = "Calle";
-            this.textBox12.Text = "Calle";
-            this.textBox12.Enter += new System.EventHandler(this.txb_Enter);
-            this.textBox12.Leave += new System.EventHandler(this.txb_Leave);
+            this.txbCalle_Clientes.Enabled = false;
+            this.txbCalle_Clientes.Font = new System.Drawing.Font("Corbert DemiBold", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txbCalle_Clientes.ForeColor = System.Drawing.Color.Silver;
+            this.txbCalle_Clientes.Location = new System.Drawing.Point(30, 43);
+            this.txbCalle_Clientes.Name = "txbCalle_Clientes";
+            this.txbCalle_Clientes.Size = new System.Drawing.Size(260, 30);
+            this.txbCalle_Clientes.TabIndex = 13;
+            this.txbCalle_Clientes.Tag = "Calle";
+            this.txbCalle_Clientes.Text = "Calle";
+            this.txbCalle_Clientes.Enter += new System.EventHandler(this.txb_Enter);
+            this.txbCalle_Clientes.Leave += new System.EventHandler(this.txb_Leave);
             // 
-            // textBox16
+            // txbColonia_Clientes
             // 
-            this.textBox16.Font = new System.Drawing.Font("Corbert DemiBold", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox16.ForeColor = System.Drawing.Color.Silver;
-            this.textBox16.Location = new System.Drawing.Point(30, 88);
-            this.textBox16.Name = "textBox16";
-            this.textBox16.Size = new System.Drawing.Size(260, 30);
-            this.textBox16.TabIndex = 17;
-            this.textBox16.Tag = "Colonia";
-            this.textBox16.Text = "Colonia";
-            this.textBox16.Enter += new System.EventHandler(this.txb_Enter);
-            this.textBox16.Leave += new System.EventHandler(this.txb_Leave);
+            this.txbColonia_Clientes.Enabled = false;
+            this.txbColonia_Clientes.Font = new System.Drawing.Font("Corbert DemiBold", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txbColonia_Clientes.ForeColor = System.Drawing.Color.Silver;
+            this.txbColonia_Clientes.Location = new System.Drawing.Point(30, 88);
+            this.txbColonia_Clientes.Name = "txbColonia_Clientes";
+            this.txbColonia_Clientes.Size = new System.Drawing.Size(260, 30);
+            this.txbColonia_Clientes.TabIndex = 17;
+            this.txbColonia_Clientes.Tag = "Colonia";
+            this.txbColonia_Clientes.Text = "Colonia";
+            this.txbColonia_Clientes.Enter += new System.EventHandler(this.txb_Enter);
+            this.txbColonia_Clientes.Leave += new System.EventHandler(this.txb_Leave);
             // 
             // panel8
             // 
             this.panel8.BackColor = System.Drawing.Color.Azure;
             this.panel8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel8.Controls.Add(this.label11);
-            this.panel8.Controls.Add(this.textBox9);
-            this.panel8.Controls.Add(this.textBox8);
+            this.panel8.Controls.Add(this.txbTelefono_Clientes);
+            this.panel8.Controls.Add(this.txbEmail_Clientes);
             this.panel8.Font = new System.Drawing.Font("Corbert DemiBold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel8.ForeColor = System.Drawing.Color.Black;
             this.panel8.Location = new System.Drawing.Point(52, 293);
@@ -908,31 +942,33 @@
             this.label11.TabIndex = 29;
             this.label11.Text = "Datos de Contacto";
             // 
-            // textBox9
+            // txbTelefono_Clientes
             // 
-            this.textBox9.Font = new System.Drawing.Font("Corbert DemiBold", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox9.ForeColor = System.Drawing.Color.Silver;
-            this.textBox9.Location = new System.Drawing.Point(31, 88);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(260, 30);
-            this.textBox9.TabIndex = 26;
-            this.textBox9.Tag = "Teléfono";
-            this.textBox9.Text = "Teléfono";
-            this.textBox9.Enter += new System.EventHandler(this.txb_Enter);
-            this.textBox9.Leave += new System.EventHandler(this.txb_Leave);
+            this.txbTelefono_Clientes.Enabled = false;
+            this.txbTelefono_Clientes.Font = new System.Drawing.Font("Corbert DemiBold", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txbTelefono_Clientes.ForeColor = System.Drawing.Color.Silver;
+            this.txbTelefono_Clientes.Location = new System.Drawing.Point(31, 88);
+            this.txbTelefono_Clientes.Name = "txbTelefono_Clientes";
+            this.txbTelefono_Clientes.Size = new System.Drawing.Size(260, 30);
+            this.txbTelefono_Clientes.TabIndex = 26;
+            this.txbTelefono_Clientes.Tag = "Teléfono";
+            this.txbTelefono_Clientes.Text = "Teléfono";
+            this.txbTelefono_Clientes.Enter += new System.EventHandler(this.txb_Enter);
+            this.txbTelefono_Clientes.Leave += new System.EventHandler(this.txb_Leave);
             // 
-            // textBox8
+            // txbEmail_Clientes
             // 
-            this.textBox8.Font = new System.Drawing.Font("Corbert DemiBold", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox8.ForeColor = System.Drawing.Color.Silver;
-            this.textBox8.Location = new System.Drawing.Point(31, 43);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(260, 30);
-            this.textBox8.TabIndex = 9;
-            this.textBox8.Tag = "Correo Electrónico";
-            this.textBox8.Text = "Correo Electrónico";
-            this.textBox8.Enter += new System.EventHandler(this.txb_Enter);
-            this.textBox8.Leave += new System.EventHandler(this.txb_Leave);
+            this.txbEmail_Clientes.Enabled = false;
+            this.txbEmail_Clientes.Font = new System.Drawing.Font("Corbert DemiBold", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txbEmail_Clientes.ForeColor = System.Drawing.Color.Silver;
+            this.txbEmail_Clientes.Location = new System.Drawing.Point(31, 43);
+            this.txbEmail_Clientes.Name = "txbEmail_Clientes";
+            this.txbEmail_Clientes.Size = new System.Drawing.Size(260, 30);
+            this.txbEmail_Clientes.TabIndex = 9;
+            this.txbEmail_Clientes.Tag = "Correo Electrónico";
+            this.txbEmail_Clientes.Text = "Correo Electrónico";
+            this.txbEmail_Clientes.Enter += new System.EventHandler(this.txb_Enter);
+            this.txbEmail_Clientes.Leave += new System.EventHandler(this.txb_Leave);
             // 
             // panel7
             // 
@@ -941,11 +977,11 @@
             this.panel7.Controls.Add(this.label10);
             this.panel7.Controls.Add(this.label9);
             this.panel7.Controls.Add(this.label4);
-            this.panel7.Controls.Add(this.comboBox3);
-            this.panel7.Controls.Add(this.dtpFechaCliente);
-            this.panel7.Controls.Add(this.textBox7);
-            this.panel7.Controls.Add(this.textBox6);
-            this.panel7.Controls.Add(this.textBox5);
+            this.panel7.Controls.Add(this.cboxSexo_Clientes);
+            this.panel7.Controls.Add(this.dtpFecha_Clientes);
+            this.panel7.Controls.Add(this.txbAMaterno_Clientes);
+            this.panel7.Controls.Add(this.txbAPaterno_Clientes);
+            this.panel7.Controls.Add(this.txbNombre_Clientes);
             this.panel7.Font = new System.Drawing.Font("Corbert DemiBold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel7.ForeColor = System.Drawing.Color.Black;
             this.panel7.Location = new System.Drawing.Point(385, 84);
@@ -981,83 +1017,89 @@
             this.label4.TabIndex = 26;
             this.label4.Text = "Datos Personales";
             // 
-            // comboBox3
+            // cboxSexo_Clientes
             // 
-            this.comboBox3.AutoCompleteCustomSource.AddRange(new string[] {
+            this.cboxSexo_Clientes.AutoCompleteCustomSource.AddRange(new string[] {
             "Hombre",
             "Mujer"});
-            this.comboBox3.Font = new System.Drawing.Font("Corbert DemiBold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox3.ForeColor = System.Drawing.Color.Silver;
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(461, 91);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(78, 31);
-            this.comboBox3.TabIndex = 25;
-            this.comboBox3.Tag = "Sexo";
+            this.cboxSexo_Clientes.Enabled = false;
+            this.cboxSexo_Clientes.Font = new System.Drawing.Font("Corbert DemiBold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cboxSexo_Clientes.ForeColor = System.Drawing.Color.Silver;
+            this.cboxSexo_Clientes.FormattingEnabled = true;
+            this.cboxSexo_Clientes.Location = new System.Drawing.Point(461, 91);
+            this.cboxSexo_Clientes.Name = "cboxSexo_Clientes";
+            this.cboxSexo_Clientes.Size = new System.Drawing.Size(78, 31);
+            this.cboxSexo_Clientes.TabIndex = 25;
+            this.cboxSexo_Clientes.Tag = "Sexo";
             // 
-            // dtpFechaCliente
+            // dtpFecha_Clientes
             // 
-            this.dtpFechaCliente.CalendarFont = new System.Drawing.Font("Corbert DemiBold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtpFechaCliente.CalendarTitleBackColor = System.Drawing.SystemColors.ControlText;
-            this.dtpFechaCliente.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.dtpFechaCliente.CustomFormat = "dd/MM/yyyyy";
-            this.dtpFechaCliente.Font = new System.Drawing.Font("Corbert DemiBold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtpFechaCliente.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtpFechaCliente.Location = new System.Drawing.Point(461, 47);
-            this.dtpFechaCliente.MaxDate = new System.DateTime(2019, 3, 1, 0, 0, 0, 0);
-            this.dtpFechaCliente.MinDate = new System.DateTime(1920, 1, 1, 0, 0, 0, 0);
-            this.dtpFechaCliente.Name = "dtpFechaCliente";
-            this.dtpFechaCliente.Size = new System.Drawing.Size(137, 30);
-            this.dtpFechaCliente.TabIndex = 24;
-            this.dtpFechaCliente.Value = new System.DateTime(2019, 3, 1, 0, 0, 0, 0);
+            this.dtpFecha_Clientes.CalendarFont = new System.Drawing.Font("Corbert DemiBold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpFecha_Clientes.CalendarTitleBackColor = System.Drawing.SystemColors.ControlText;
+            this.dtpFecha_Clientes.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.dtpFecha_Clientes.CustomFormat = "dd/MM/yyyyy";
+            this.dtpFecha_Clientes.Enabled = false;
+            this.dtpFecha_Clientes.Font = new System.Drawing.Font("Corbert DemiBold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpFecha_Clientes.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtpFecha_Clientes.Location = new System.Drawing.Point(461, 47);
+            this.dtpFecha_Clientes.MaxDate = new System.DateTime(2019, 3, 1, 0, 0, 0, 0);
+            this.dtpFecha_Clientes.MinDate = new System.DateTime(1920, 1, 1, 0, 0, 0, 0);
+            this.dtpFecha_Clientes.Name = "dtpFecha_Clientes";
+            this.dtpFecha_Clientes.Size = new System.Drawing.Size(137, 30);
+            this.dtpFecha_Clientes.TabIndex = 24;
+            this.dtpFecha_Clientes.Value = new System.DateTime(2019, 3, 1, 0, 0, 0, 0);
             // 
-            // textBox7
+            // txbAMaterno_Clientes
             // 
-            this.textBox7.Font = new System.Drawing.Font("Corbert DemiBold", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox7.ForeColor = System.Drawing.Color.Silver;
-            this.textBox7.Location = new System.Drawing.Point(29, 137);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(199, 30);
-            this.textBox7.TabIndex = 8;
-            this.textBox7.Tag = "Apellido Paterno";
-            this.textBox7.Text = "Apellido Paterno";
-            this.textBox7.Enter += new System.EventHandler(this.txb_Enter);
-            this.textBox7.Leave += new System.EventHandler(this.txb_Leave);
+            this.txbAMaterno_Clientes.Enabled = false;
+            this.txbAMaterno_Clientes.Font = new System.Drawing.Font("Corbert DemiBold", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txbAMaterno_Clientes.ForeColor = System.Drawing.Color.Silver;
+            this.txbAMaterno_Clientes.Location = new System.Drawing.Point(29, 137);
+            this.txbAMaterno_Clientes.Name = "txbAMaterno_Clientes";
+            this.txbAMaterno_Clientes.Size = new System.Drawing.Size(199, 30);
+            this.txbAMaterno_Clientes.TabIndex = 8;
+            this.txbAMaterno_Clientes.Tag = "Apellido Paterno";
+            this.txbAMaterno_Clientes.Text = "Apellido Paterno";
+            this.txbAMaterno_Clientes.Enter += new System.EventHandler(this.txb_Enter);
+            this.txbAMaterno_Clientes.Leave += new System.EventHandler(this.txb_Leave);
             // 
-            // textBox6
+            // txbAPaterno_Clientes
             // 
-            this.textBox6.Font = new System.Drawing.Font("Corbert DemiBold", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox6.ForeColor = System.Drawing.Color.Silver;
-            this.textBox6.Location = new System.Drawing.Point(29, 91);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(199, 30);
-            this.textBox6.TabIndex = 7;
-            this.textBox6.Tag = "Apellido Paterno";
-            this.textBox6.Text = "Apellido Paterno";
-            this.textBox6.Enter += new System.EventHandler(this.txb_Enter);
-            this.textBox6.Leave += new System.EventHandler(this.txb_Leave);
+            this.txbAPaterno_Clientes.Enabled = false;
+            this.txbAPaterno_Clientes.Font = new System.Drawing.Font("Corbert DemiBold", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txbAPaterno_Clientes.ForeColor = System.Drawing.Color.Silver;
+            this.txbAPaterno_Clientes.Location = new System.Drawing.Point(29, 91);
+            this.txbAPaterno_Clientes.Name = "txbAPaterno_Clientes";
+            this.txbAPaterno_Clientes.Size = new System.Drawing.Size(199, 30);
+            this.txbAPaterno_Clientes.TabIndex = 7;
+            this.txbAPaterno_Clientes.Tag = "Apellido Paterno";
+            this.txbAPaterno_Clientes.Text = "Apellido Paterno";
+            this.txbAPaterno_Clientes.Enter += new System.EventHandler(this.txb_Enter);
+            this.txbAPaterno_Clientes.Leave += new System.EventHandler(this.txb_Leave);
             // 
-            // textBox5
+            // txbNombre_Clientes
             // 
-            this.textBox5.Font = new System.Drawing.Font("Corbert DemiBold", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.ForeColor = System.Drawing.Color.Silver;
-            this.textBox5.Location = new System.Drawing.Point(29, 47);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(199, 30);
-            this.textBox5.TabIndex = 6;
-            this.textBox5.Tag = "Nombre";
-            this.textBox5.Text = "Nombre";
-            this.textBox5.Enter += new System.EventHandler(this.txb_Enter);
-            this.textBox5.Leave += new System.EventHandler(this.txb_Leave);
+            this.txbNombre_Clientes.AcceptsReturn = true;
+            this.txbNombre_Clientes.Enabled = false;
+            this.txbNombre_Clientes.Font = new System.Drawing.Font("Corbert DemiBold", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txbNombre_Clientes.ForeColor = System.Drawing.Color.Silver;
+            this.txbNombre_Clientes.Location = new System.Drawing.Point(29, 47);
+            this.txbNombre_Clientes.Name = "txbNombre_Clientes";
+            this.txbNombre_Clientes.Size = new System.Drawing.Size(199, 30);
+            this.txbNombre_Clientes.TabIndex = 6;
+            this.txbNombre_Clientes.Tag = "Nombre";
+            this.txbNombre_Clientes.Text = "Nombre";
+            this.txbNombre_Clientes.Enter += new System.EventHandler(this.txb_Enter);
+            this.txbNombre_Clientes.Leave += new System.EventHandler(this.txb_Leave);
             // 
             // panel6
             // 
             this.panel6.BackColor = System.Drawing.Color.Azure;
             this.panel6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel6.Controls.Add(this.label3);
-            this.panel6.Controls.Add(this.textBox40);
-            this.panel6.Controls.Add(this.textBox18);
-            this.panel6.Controls.Add(this.textBox11);
+            this.panel6.Controls.Add(this.txbContraseña_Clientes);
+            this.panel6.Controls.Add(this.txbContraseñaRep_Clientes);
+            this.panel6.Controls.Add(this.txbNumero_Clientes);
             this.panel6.Font = new System.Drawing.Font("Corbert DemiBold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel6.ForeColor = System.Drawing.Color.Black;
             this.panel6.Location = new System.Drawing.Point(52, 84);
@@ -1075,125 +1117,134 @@
             this.label3.TabIndex = 24;
             this.label3.Text = "Cuenta";
             // 
-            // textBox40
+            // txbContraseña_Clientes
             // 
-            this.textBox40.Font = new System.Drawing.Font("Corbert DemiBold", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox40.ForeColor = System.Drawing.Color.Silver;
-            this.textBox40.Location = new System.Drawing.Point(26, 90);
-            this.textBox40.Name = "textBox40";
-            this.textBox40.Size = new System.Drawing.Size(260, 30);
-            this.textBox40.TabIndex = 23;
-            this.textBox40.Tag = "Contraseña";
-            this.textBox40.Text = "Contraseña";
-            this.textBox40.Enter += new System.EventHandler(this.txb_Enter);
-            this.textBox40.Leave += new System.EventHandler(this.txb_Leave);
+            this.txbContraseña_Clientes.Enabled = false;
+            this.txbContraseña_Clientes.Font = new System.Drawing.Font("Corbert DemiBold", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txbContraseña_Clientes.ForeColor = System.Drawing.Color.Silver;
+            this.txbContraseña_Clientes.Location = new System.Drawing.Point(26, 90);
+            this.txbContraseña_Clientes.Name = "txbContraseña_Clientes";
+            this.txbContraseña_Clientes.Size = new System.Drawing.Size(260, 30);
+            this.txbContraseña_Clientes.TabIndex = 23;
+            this.txbContraseña_Clientes.Tag = "Contraseña";
+            this.txbContraseña_Clientes.Text = "Contraseña";
+            this.txbContraseña_Clientes.Enter += new System.EventHandler(this.txb_Enter);
+            this.txbContraseña_Clientes.Leave += new System.EventHandler(this.txb_Leave);
             // 
-            // textBox18
+            // txbContraseñaRep_Clientes
             // 
-            this.textBox18.Font = new System.Drawing.Font("Corbert DemiBold", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox18.ForeColor = System.Drawing.Color.Silver;
-            this.textBox18.Location = new System.Drawing.Point(26, 136);
-            this.textBox18.Name = "textBox18";
-            this.textBox18.Size = new System.Drawing.Size(260, 30);
-            this.textBox18.TabIndex = 22;
-            this.textBox18.Tag = "Repite Contraseña";
-            this.textBox18.Text = "Repite Contraseña";
-            this.textBox18.Enter += new System.EventHandler(this.txb_Enter);
-            this.textBox18.Leave += new System.EventHandler(this.txb_Leave);
+            this.txbContraseñaRep_Clientes.Enabled = false;
+            this.txbContraseñaRep_Clientes.Font = new System.Drawing.Font("Corbert DemiBold", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txbContraseñaRep_Clientes.ForeColor = System.Drawing.Color.Silver;
+            this.txbContraseñaRep_Clientes.Location = new System.Drawing.Point(26, 136);
+            this.txbContraseñaRep_Clientes.Name = "txbContraseñaRep_Clientes";
+            this.txbContraseñaRep_Clientes.Size = new System.Drawing.Size(260, 30);
+            this.txbContraseñaRep_Clientes.TabIndex = 22;
+            this.txbContraseñaRep_Clientes.Tag = "Repite Contraseña";
+            this.txbContraseñaRep_Clientes.Text = "Repite Contraseña";
+            this.txbContraseñaRep_Clientes.Enter += new System.EventHandler(this.txb_Enter);
+            this.txbContraseñaRep_Clientes.Leave += new System.EventHandler(this.txb_Leave);
             // 
-            // textBox11
+            // txbNumero_Clientes
             // 
-            this.textBox11.Font = new System.Drawing.Font("Corbert DemiBold", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox11.ForeColor = System.Drawing.Color.Silver;
-            this.textBox11.Location = new System.Drawing.Point(26, 46);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(260, 30);
-            this.textBox11.TabIndex = 12;
-            this.textBox11.Tag = "Nº de Cliente";
-            this.textBox11.Text = "Nº de Cliente";
-            this.textBox11.Enter += new System.EventHandler(this.txb_Enter);
-            this.textBox11.Leave += new System.EventHandler(this.txb_Leave);
+            this.txbNumero_Clientes.Enabled = false;
+            this.txbNumero_Clientes.Font = new System.Drawing.Font("Corbert DemiBold", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txbNumero_Clientes.ForeColor = System.Drawing.Color.Silver;
+            this.txbNumero_Clientes.Location = new System.Drawing.Point(26, 46);
+            this.txbNumero_Clientes.Name = "txbNumero_Clientes";
+            this.txbNumero_Clientes.Size = new System.Drawing.Size(260, 30);
+            this.txbNumero_Clientes.TabIndex = 12;
+            this.txbNumero_Clientes.Tag = "Nº de Cliente";
+            this.txbNumero_Clientes.Text = "Nº de Cliente";
+            this.txbNumero_Clientes.Enter += new System.EventHandler(this.txb_Enter);
+            this.txbNumero_Clientes.Leave += new System.EventHandler(this.txb_Leave);
             // 
-            // button8
+            // btnNuevo_Clientes
             // 
-            this.button8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(101)))), ((int)(((byte)(176)))));
-            this.button8.FlatAppearance.BorderColor = System.Drawing.Color.Navy;
-            this.button8.FlatAppearance.BorderSize = 0;
-            this.button8.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
-            this.button8.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Navy;
-            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button8.Font = new System.Drawing.Font("Corbert DemiBold", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button8.ForeColor = System.Drawing.Color.White;
-            this.button8.Location = new System.Drawing.Point(385, 28);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(196, 30);
-            this.button8.TabIndex = 21;
-            this.button8.Text = "Nuevo Registro";
-            this.button8.UseVisualStyleBackColor = false;
+            this.btnNuevo_Clientes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(101)))), ((int)(((byte)(176)))));
+            this.btnNuevo_Clientes.FlatAppearance.BorderColor = System.Drawing.Color.Navy;
+            this.btnNuevo_Clientes.FlatAppearance.BorderSize = 0;
+            this.btnNuevo_Clientes.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
+            this.btnNuevo_Clientes.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Navy;
+            this.btnNuevo_Clientes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnNuevo_Clientes.Font = new System.Drawing.Font("Corbert DemiBold", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNuevo_Clientes.ForeColor = System.Drawing.Color.White;
+            this.btnNuevo_Clientes.Location = new System.Drawing.Point(385, 28);
+            this.btnNuevo_Clientes.Name = "btnNuevo_Clientes";
+            this.btnNuevo_Clientes.Size = new System.Drawing.Size(196, 30);
+            this.btnNuevo_Clientes.TabIndex = 21;
+            this.btnNuevo_Clientes.Text = "Nuevo Registro";
+            this.btnNuevo_Clientes.UseVisualStyleBackColor = false;
+            this.btnNuevo_Clientes.Click += new System.EventHandler(this.btnNuevo_Clientes_Click);
             // 
-            // button7
+            // btnBaja_Clientes
             // 
-            this.button7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(101)))), ((int)(((byte)(176)))));
-            this.button7.FlatAppearance.BorderColor = System.Drawing.Color.Navy;
-            this.button7.FlatAppearance.BorderSize = 0;
-            this.button7.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
-            this.button7.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Navy;
-            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button7.Font = new System.Drawing.Font("Corbert DemiBold", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button7.ForeColor = System.Drawing.Color.White;
-            this.button7.Location = new System.Drawing.Point(254, 482);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(197, 30);
-            this.button7.TabIndex = 20;
-            this.button7.Text = "Dar de Baja";
-            this.button7.UseVisualStyleBackColor = false;
+            this.btnBaja_Clientes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(47)))), ((int)(((byte)(59)))));
+            this.btnBaja_Clientes.Enabled = false;
+            this.btnBaja_Clientes.FlatAppearance.BorderColor = System.Drawing.Color.Navy;
+            this.btnBaja_Clientes.FlatAppearance.BorderSize = 0;
+            this.btnBaja_Clientes.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
+            this.btnBaja_Clientes.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Navy;
+            this.btnBaja_Clientes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBaja_Clientes.Font = new System.Drawing.Font("Corbert DemiBold", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBaja_Clientes.ForeColor = System.Drawing.Color.White;
+            this.btnBaja_Clientes.Location = new System.Drawing.Point(254, 482);
+            this.btnBaja_Clientes.Name = "btnBaja_Clientes";
+            this.btnBaja_Clientes.Size = new System.Drawing.Size(197, 30);
+            this.btnBaja_Clientes.TabIndex = 20;
+            this.btnBaja_Clientes.Text = "Dar de Baja";
+            this.btnBaja_Clientes.UseVisualStyleBackColor = false;
+            this.btnBaja_Clientes.Visible = false;
             // 
-            // button6
+            // btnModificar_Clientes
             // 
-            this.button6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(101)))), ((int)(((byte)(176)))));
-            this.button6.FlatAppearance.BorderColor = System.Drawing.Color.Navy;
-            this.button6.FlatAppearance.BorderSize = 0;
-            this.button6.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
-            this.button6.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Navy;
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Font = new System.Drawing.Font("Corbert DemiBold", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.ForeColor = System.Drawing.Color.White;
-            this.button6.Location = new System.Drawing.Point(52, 482);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(196, 30);
-            this.button6.TabIndex = 19;
-            this.button6.Text = "Modificar";
-            this.button6.UseVisualStyleBackColor = false;
+            this.btnModificar_Clientes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(101)))), ((int)(((byte)(176)))));
+            this.btnModificar_Clientes.Enabled = false;
+            this.btnModificar_Clientes.FlatAppearance.BorderColor = System.Drawing.Color.Navy;
+            this.btnModificar_Clientes.FlatAppearance.BorderSize = 0;
+            this.btnModificar_Clientes.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
+            this.btnModificar_Clientes.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Navy;
+            this.btnModificar_Clientes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnModificar_Clientes.Font = new System.Drawing.Font("Corbert DemiBold", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnModificar_Clientes.ForeColor = System.Drawing.Color.White;
+            this.btnModificar_Clientes.Location = new System.Drawing.Point(52, 482);
+            this.btnModificar_Clientes.Name = "btnModificar_Clientes";
+            this.btnModificar_Clientes.Size = new System.Drawing.Size(196, 30);
+            this.btnModificar_Clientes.TabIndex = 19;
+            this.btnModificar_Clientes.Text = "Modificar";
+            this.btnModificar_Clientes.UseVisualStyleBackColor = false;
+            this.btnModificar_Clientes.Visible = false;
             // 
-            // button5
+            // btnBuscar_Clientes
             // 
-            this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(101)))), ((int)(((byte)(176)))));
-            this.button5.FlatAppearance.BorderColor = System.Drawing.Color.Navy;
-            this.button5.FlatAppearance.BorderSize = 0;
-            this.button5.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
-            this.button5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Navy;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("Corbert DemiBold", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.ForeColor = System.Drawing.Color.White;
-            this.button5.Location = new System.Drawing.Point(260, 28);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(93, 30);
-            this.button5.TabIndex = 5;
-            this.button5.Text = "Buscar";
-            this.button5.UseVisualStyleBackColor = false;
+            this.btnBuscar_Clientes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(101)))), ((int)(((byte)(176)))));
+            this.btnBuscar_Clientes.FlatAppearance.BorderColor = System.Drawing.Color.Navy;
+            this.btnBuscar_Clientes.FlatAppearance.BorderSize = 0;
+            this.btnBuscar_Clientes.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
+            this.btnBuscar_Clientes.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Navy;
+            this.btnBuscar_Clientes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBuscar_Clientes.Font = new System.Drawing.Font("Corbert DemiBold", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBuscar_Clientes.ForeColor = System.Drawing.Color.White;
+            this.btnBuscar_Clientes.Location = new System.Drawing.Point(260, 28);
+            this.btnBuscar_Clientes.Name = "btnBuscar_Clientes";
+            this.btnBuscar_Clientes.Size = new System.Drawing.Size(93, 30);
+            this.btnBuscar_Clientes.TabIndex = 5;
+            this.btnBuscar_Clientes.Text = "Buscar";
+            this.btnBuscar_Clientes.UseVisualStyleBackColor = false;
+            this.btnBuscar_Clientes.Click += new System.EventHandler(this.btnBuscar_Clientes_Click);
             // 
-            // textBox4
+            // txbBuscar_Clientes
             // 
-            this.textBox4.Font = new System.Drawing.Font("Corbert DemiBold", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.ForeColor = System.Drawing.Color.Silver;
-            this.textBox4.Location = new System.Drawing.Point(52, 28);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(202, 30);
-            this.textBox4.TabIndex = 4;
-            this.textBox4.Tag = "Nº Cliente";
-            this.textBox4.Text = "Nº Cliente";
-            this.textBox4.Enter += new System.EventHandler(this.txb_Enter);
-            this.textBox4.Leave += new System.EventHandler(this.txb_Leave);
+            this.txbBuscar_Clientes.Font = new System.Drawing.Font("Corbert DemiBold", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txbBuscar_Clientes.ForeColor = System.Drawing.Color.Silver;
+            this.txbBuscar_Clientes.Location = new System.Drawing.Point(52, 28);
+            this.txbBuscar_Clientes.Name = "txbBuscar_Clientes";
+            this.txbBuscar_Clientes.Size = new System.Drawing.Size(202, 30);
+            this.txbBuscar_Clientes.TabIndex = 4;
+            this.txbBuscar_Clientes.Tag = "Nº Cliente";
+            this.txbBuscar_Clientes.Text = "Nº Cliente";
+            this.txbBuscar_Clientes.Enter += new System.EventHandler(this.txb_Enter);
+            this.txbBuscar_Clientes.Leave += new System.EventHandler(this.txb_Leave);
             // 
             // tabPageChat
             // 
@@ -1329,7 +1380,8 @@
             // 
             // btnEliminar_Inventario
             // 
-            this.btnEliminar_Inventario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(101)))), ((int)(((byte)(176)))));
+            this.btnEliminar_Inventario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(47)))), ((int)(((byte)(59)))));
+            this.btnEliminar_Inventario.Enabled = false;
             this.btnEliminar_Inventario.FlatAppearance.BorderColor = System.Drawing.Color.Navy;
             this.btnEliminar_Inventario.FlatAppearance.BorderSize = 0;
             this.btnEliminar_Inventario.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
@@ -1343,10 +1395,12 @@
             this.btnEliminar_Inventario.TabIndex = 31;
             this.btnEliminar_Inventario.Text = "Eliminar";
             this.btnEliminar_Inventario.UseVisualStyleBackColor = false;
+            this.btnEliminar_Inventario.Visible = false;
             // 
             // btnModificar_Inventario
             // 
             this.btnModificar_Inventario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(101)))), ((int)(((byte)(176)))));
+            this.btnModificar_Inventario.Enabled = false;
             this.btnModificar_Inventario.FlatAppearance.BorderColor = System.Drawing.Color.Navy;
             this.btnModificar_Inventario.FlatAppearance.BorderSize = 0;
             this.btnModificar_Inventario.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
@@ -1360,6 +1414,7 @@
             this.btnModificar_Inventario.TabIndex = 30;
             this.btnModificar_Inventario.Text = "Modificar";
             this.btnModificar_Inventario.UseVisualStyleBackColor = false;
+            this.btnModificar_Inventario.Visible = false;
             // 
             // pboxProducto_Inventario
             // 
@@ -1468,11 +1523,11 @@
             this.tabPageEmpleados.Controls.Add(this.panel11);
             this.tabPageEmpleados.Controls.Add(this.panel12);
             this.tabPageEmpleados.Controls.Add(this.panel13);
-            this.tabPageEmpleados.Controls.Add(this.button1);
-            this.tabPageEmpleados.Controls.Add(this.button2);
-            this.tabPageEmpleados.Controls.Add(this.button3);
-            this.tabPageEmpleados.Controls.Add(this.button4);
-            this.tabPageEmpleados.Controls.Add(this.textBox27);
+            this.tabPageEmpleados.Controls.Add(this.btnNuevo_Empleados);
+            this.tabPageEmpleados.Controls.Add(this.btnBaja_Empleados);
+            this.tabPageEmpleados.Controls.Add(this.btnModificar_Empleados);
+            this.tabPageEmpleados.Controls.Add(this.btnBuscarEmpleados);
+            this.tabPageEmpleados.Controls.Add(this.txbBuscar_Empleados);
             this.tabPageEmpleados.Location = new System.Drawing.Point(4, 22);
             this.tabPageEmpleados.Name = "tabPageEmpleados";
             this.tabPageEmpleados.Padding = new System.Windows.Forms.Padding(3);
@@ -1485,11 +1540,11 @@
             this.panel10.BackColor = System.Drawing.Color.Azure;
             this.panel10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel10.Controls.Add(this.label13);
-            this.panel10.Controls.Add(this.textBox1);
-            this.panel10.Controls.Add(this.textBox2);
-            this.panel10.Controls.Add(this.textBox3);
-            this.panel10.Controls.Add(this.textBox10);
-            this.panel10.Controls.Add(this.textBox13);
+            this.panel10.Controls.Add(this.txbCiudad_Empleados);
+            this.panel10.Controls.Add(this.txbCP_Empleados);
+            this.panel10.Controls.Add(this.txbNumeroDom_Empleados);
+            this.panel10.Controls.Add(this.txbCalle_Empleados);
+            this.panel10.Controls.Add(this.txbColonia_Empleados);
             this.panel10.Font = new System.Drawing.Font("Corbert DemiBold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel10.ForeColor = System.Drawing.Color.Black;
             this.panel10.Location = new System.Drawing.Point(385, 293);
@@ -1506,78 +1561,83 @@
             this.label13.TabIndex = 30;
             this.label13.Text = "Domicilio";
             // 
-            // textBox1
+            // txbCiudad_Empleados
             // 
-            this.textBox1.Font = new System.Drawing.Font("Corbert DemiBold", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.ForeColor = System.Drawing.Color.Silver;
-            this.textBox1.Location = new System.Drawing.Point(296, 88);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(195, 30);
-            this.textBox1.TabIndex = 18;
-            this.textBox1.Tag = "Ciudad";
-            this.textBox1.Text = "Ciudad";
-            this.textBox1.Enter += new System.EventHandler(this.txb_Enter);
-            this.textBox1.Leave += new System.EventHandler(this.txb_Leave);
+            this.txbCiudad_Empleados.Enabled = false;
+            this.txbCiudad_Empleados.Font = new System.Drawing.Font("Corbert DemiBold", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txbCiudad_Empleados.ForeColor = System.Drawing.Color.Silver;
+            this.txbCiudad_Empleados.Location = new System.Drawing.Point(296, 88);
+            this.txbCiudad_Empleados.Name = "txbCiudad_Empleados";
+            this.txbCiudad_Empleados.Size = new System.Drawing.Size(195, 30);
+            this.txbCiudad_Empleados.TabIndex = 18;
+            this.txbCiudad_Empleados.Tag = "Ciudad";
+            this.txbCiudad_Empleados.Text = "Ciudad";
+            this.txbCiudad_Empleados.Enter += new System.EventHandler(this.txb_Enter);
+            this.txbCiudad_Empleados.Leave += new System.EventHandler(this.txb_Leave);
             // 
-            // textBox2
+            // txbCP_Empleados
             // 
-            this.textBox2.Font = new System.Drawing.Font("Corbert DemiBold", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.ForeColor = System.Drawing.Color.Silver;
-            this.textBox2.Location = new System.Drawing.Point(497, 88);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(89, 30);
-            this.textBox2.TabIndex = 16;
-            this.textBox2.Tag = "C.P.";
-            this.textBox2.Text = "C.P.";
-            this.textBox2.Enter += new System.EventHandler(this.txb_Enter);
-            this.textBox2.Leave += new System.EventHandler(this.txb_Leave);
+            this.txbCP_Empleados.Enabled = false;
+            this.txbCP_Empleados.Font = new System.Drawing.Font("Corbert DemiBold", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txbCP_Empleados.ForeColor = System.Drawing.Color.Silver;
+            this.txbCP_Empleados.Location = new System.Drawing.Point(497, 88);
+            this.txbCP_Empleados.Name = "txbCP_Empleados";
+            this.txbCP_Empleados.Size = new System.Drawing.Size(89, 30);
+            this.txbCP_Empleados.TabIndex = 16;
+            this.txbCP_Empleados.Tag = "C.P.";
+            this.txbCP_Empleados.Text = "C.P.";
+            this.txbCP_Empleados.Enter += new System.EventHandler(this.txb_Enter);
+            this.txbCP_Empleados.Leave += new System.EventHandler(this.txb_Leave);
             // 
-            // textBox3
+            // txbNumeroDom_Empleados
             // 
-            this.textBox3.Font = new System.Drawing.Font("Corbert DemiBold", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.ForeColor = System.Drawing.Color.Silver;
-            this.textBox3.Location = new System.Drawing.Point(296, 43);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 30);
-            this.textBox3.TabIndex = 15;
-            this.textBox3.Tag = "Nº";
-            this.textBox3.Text = "Nº";
-            this.textBox3.Enter += new System.EventHandler(this.txb_Enter);
-            this.textBox3.Leave += new System.EventHandler(this.txb_Leave);
+            this.txbNumeroDom_Empleados.Enabled = false;
+            this.txbNumeroDom_Empleados.Font = new System.Drawing.Font("Corbert DemiBold", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txbNumeroDom_Empleados.ForeColor = System.Drawing.Color.Silver;
+            this.txbNumeroDom_Empleados.Location = new System.Drawing.Point(296, 43);
+            this.txbNumeroDom_Empleados.Name = "txbNumeroDom_Empleados";
+            this.txbNumeroDom_Empleados.Size = new System.Drawing.Size(100, 30);
+            this.txbNumeroDom_Empleados.TabIndex = 15;
+            this.txbNumeroDom_Empleados.Tag = "Nº";
+            this.txbNumeroDom_Empleados.Text = "Nº";
+            this.txbNumeroDom_Empleados.Enter += new System.EventHandler(this.txb_Enter);
+            this.txbNumeroDom_Empleados.Leave += new System.EventHandler(this.txb_Leave);
             // 
-            // textBox10
+            // txbCalle_Empleados
             // 
-            this.textBox10.Font = new System.Drawing.Font("Corbert DemiBold", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox10.ForeColor = System.Drawing.Color.Silver;
-            this.textBox10.Location = new System.Drawing.Point(30, 43);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(260, 30);
-            this.textBox10.TabIndex = 13;
-            this.textBox10.Tag = "Calle";
-            this.textBox10.Text = "Calle";
-            this.textBox10.Enter += new System.EventHandler(this.txb_Enter);
-            this.textBox10.Leave += new System.EventHandler(this.txb_Leave);
+            this.txbCalle_Empleados.Enabled = false;
+            this.txbCalle_Empleados.Font = new System.Drawing.Font("Corbert DemiBold", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txbCalle_Empleados.ForeColor = System.Drawing.Color.Silver;
+            this.txbCalle_Empleados.Location = new System.Drawing.Point(30, 43);
+            this.txbCalle_Empleados.Name = "txbCalle_Empleados";
+            this.txbCalle_Empleados.Size = new System.Drawing.Size(260, 30);
+            this.txbCalle_Empleados.TabIndex = 13;
+            this.txbCalle_Empleados.Tag = "Calle";
+            this.txbCalle_Empleados.Text = "Calle";
+            this.txbCalle_Empleados.Enter += new System.EventHandler(this.txb_Enter);
+            this.txbCalle_Empleados.Leave += new System.EventHandler(this.txb_Leave);
             // 
-            // textBox13
+            // txbColonia_Empleados
             // 
-            this.textBox13.Font = new System.Drawing.Font("Corbert DemiBold", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox13.ForeColor = System.Drawing.Color.Silver;
-            this.textBox13.Location = new System.Drawing.Point(30, 88);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(260, 30);
-            this.textBox13.TabIndex = 17;
-            this.textBox13.Tag = "Colonia";
-            this.textBox13.Text = "Colonia";
-            this.textBox13.Enter += new System.EventHandler(this.txb_Enter);
-            this.textBox13.Leave += new System.EventHandler(this.txb_Leave);
+            this.txbColonia_Empleados.Enabled = false;
+            this.txbColonia_Empleados.Font = new System.Drawing.Font("Corbert DemiBold", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txbColonia_Empleados.ForeColor = System.Drawing.Color.Silver;
+            this.txbColonia_Empleados.Location = new System.Drawing.Point(30, 88);
+            this.txbColonia_Empleados.Name = "txbColonia_Empleados";
+            this.txbColonia_Empleados.Size = new System.Drawing.Size(260, 30);
+            this.txbColonia_Empleados.TabIndex = 17;
+            this.txbColonia_Empleados.Tag = "Colonia";
+            this.txbColonia_Empleados.Text = "Colonia";
+            this.txbColonia_Empleados.Enter += new System.EventHandler(this.txb_Enter);
+            this.txbColonia_Empleados.Leave += new System.EventHandler(this.txb_Leave);
             // 
             // panel11
             // 
             this.panel11.BackColor = System.Drawing.Color.Azure;
             this.panel11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel11.Controls.Add(this.label14);
-            this.panel11.Controls.Add(this.textBox19);
-            this.panel11.Controls.Add(this.textBox20);
+            this.panel11.Controls.Add(this.txbTelefono_Empleados);
+            this.panel11.Controls.Add(this.txbEmail_Empleados);
             this.panel11.Font = new System.Drawing.Font("Corbert DemiBold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel11.ForeColor = System.Drawing.Color.Black;
             this.panel11.Location = new System.Drawing.Point(52, 293);
@@ -1594,46 +1654,48 @@
             this.label14.TabIndex = 29;
             this.label14.Text = "Datos de Contacto";
             // 
-            // textBox19
+            // txbTelefono_Empleados
             // 
-            this.textBox19.Font = new System.Drawing.Font("Corbert DemiBold", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox19.ForeColor = System.Drawing.Color.Silver;
-            this.textBox19.Location = new System.Drawing.Point(31, 88);
-            this.textBox19.Name = "textBox19";
-            this.textBox19.Size = new System.Drawing.Size(260, 30);
-            this.textBox19.TabIndex = 26;
-            this.textBox19.Tag = "Teléfono";
-            this.textBox19.Text = "Teléfono";
-            this.textBox19.Enter += new System.EventHandler(this.txb_Enter);
-            this.textBox19.Leave += new System.EventHandler(this.txb_Leave);
+            this.txbTelefono_Empleados.Enabled = false;
+            this.txbTelefono_Empleados.Font = new System.Drawing.Font("Corbert DemiBold", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txbTelefono_Empleados.ForeColor = System.Drawing.Color.Silver;
+            this.txbTelefono_Empleados.Location = new System.Drawing.Point(31, 88);
+            this.txbTelefono_Empleados.Name = "txbTelefono_Empleados";
+            this.txbTelefono_Empleados.Size = new System.Drawing.Size(260, 30);
+            this.txbTelefono_Empleados.TabIndex = 26;
+            this.txbTelefono_Empleados.Tag = "Teléfono";
+            this.txbTelefono_Empleados.Text = "Teléfono";
+            this.txbTelefono_Empleados.Enter += new System.EventHandler(this.txb_Enter);
+            this.txbTelefono_Empleados.Leave += new System.EventHandler(this.txb_Leave);
             // 
-            // textBox20
+            // txbEmail_Empleados
             // 
-            this.textBox20.Font = new System.Drawing.Font("Corbert DemiBold", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox20.ForeColor = System.Drawing.Color.Silver;
-            this.textBox20.Location = new System.Drawing.Point(31, 43);
-            this.textBox20.Name = "textBox20";
-            this.textBox20.Size = new System.Drawing.Size(260, 30);
-            this.textBox20.TabIndex = 9;
-            this.textBox20.Tag = "Correo Electrónico";
-            this.textBox20.Text = "Correo Electrónico";
-            this.textBox20.Enter += new System.EventHandler(this.txb_Enter);
-            this.textBox20.Leave += new System.EventHandler(this.txb_Leave);
+            this.txbEmail_Empleados.Enabled = false;
+            this.txbEmail_Empleados.Font = new System.Drawing.Font("Corbert DemiBold", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txbEmail_Empleados.ForeColor = System.Drawing.Color.Silver;
+            this.txbEmail_Empleados.Location = new System.Drawing.Point(31, 43);
+            this.txbEmail_Empleados.Name = "txbEmail_Empleados";
+            this.txbEmail_Empleados.Size = new System.Drawing.Size(260, 30);
+            this.txbEmail_Empleados.TabIndex = 9;
+            this.txbEmail_Empleados.Tag = "Correo Electrónico";
+            this.txbEmail_Empleados.Text = "Correo Electrónico";
+            this.txbEmail_Empleados.Enter += new System.EventHandler(this.txb_Enter);
+            this.txbEmail_Empleados.Leave += new System.EventHandler(this.txb_Leave);
             // 
             // panel12
             // 
             this.panel12.BackColor = System.Drawing.Color.Azure;
             this.panel12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel12.Controls.Add(this.label19);
-            this.panel12.Controls.Add(this.comboBox2);
+            this.panel12.Controls.Add(this.cboxPuesto_Empleados);
             this.panel12.Controls.Add(this.label15);
             this.panel12.Controls.Add(this.label16);
             this.panel12.Controls.Add(this.label17);
-            this.panel12.Controls.Add(this.comboBox1);
-            this.panel12.Controls.Add(this.dateTimePicker1);
-            this.panel12.Controls.Add(this.textBox21);
-            this.panel12.Controls.Add(this.textBox22);
-            this.panel12.Controls.Add(this.textBox23);
+            this.panel12.Controls.Add(this.cboxSexo_Empleados);
+            this.panel12.Controls.Add(this.dtpFecha_Empleados);
+            this.panel12.Controls.Add(this.txbAMaterno_Empleados);
+            this.panel12.Controls.Add(this.txbAPaterno_Empleados);
+            this.panel12.Controls.Add(this.txbNombre_Empleados);
             this.panel12.Font = new System.Drawing.Font("Corbert DemiBold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel12.ForeColor = System.Drawing.Color.Black;
             this.panel12.Location = new System.Drawing.Point(385, 84);
@@ -1651,22 +1713,23 @@
             this.label19.TabIndex = 30;
             this.label19.Text = "Puesto";
             // 
-            // comboBox2
+            // cboxPuesto_Empleados
             // 
-            this.comboBox2.AutoCompleteCustomSource.AddRange(new string[] {
+            this.cboxPuesto_Empleados.AutoCompleteCustomSource.AddRange(new string[] {
             "Hombre",
             "Mujer"});
-            this.comboBox2.Font = new System.Drawing.Font("Corbert DemiBold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox2.ForeColor = System.Drawing.Color.Silver;
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
+            this.cboxPuesto_Empleados.Enabled = false;
+            this.cboxPuesto_Empleados.Font = new System.Drawing.Font("Corbert DemiBold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cboxPuesto_Empleados.ForeColor = System.Drawing.Color.Silver;
+            this.cboxPuesto_Empleados.FormattingEnabled = true;
+            this.cboxPuesto_Empleados.Items.AddRange(new object[] {
             "Administrador",
             "Empleado"});
-            this.comboBox2.Location = new System.Drawing.Point(461, 135);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(137, 31);
-            this.comboBox2.TabIndex = 29;
-            this.comboBox2.Tag = "Sexo";
+            this.cboxPuesto_Empleados.Location = new System.Drawing.Point(461, 135);
+            this.cboxPuesto_Empleados.Name = "cboxPuesto_Empleados";
+            this.cboxPuesto_Empleados.Size = new System.Drawing.Size(137, 31);
+            this.cboxPuesto_Empleados.TabIndex = 29;
+            this.cboxPuesto_Empleados.Tag = "Sexo";
             // 
             // label15
             // 
@@ -1695,83 +1758,88 @@
             this.label17.TabIndex = 26;
             this.label17.Text = "Datos Personales";
             // 
-            // comboBox1
+            // cboxSexo_Empleados
             // 
-            this.comboBox1.AutoCompleteCustomSource.AddRange(new string[] {
+            this.cboxSexo_Empleados.AutoCompleteCustomSource.AddRange(new string[] {
             "Hombre",
             "Mujer"});
-            this.comboBox1.Font = new System.Drawing.Font("Corbert DemiBold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.ForeColor = System.Drawing.Color.Silver;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(461, 91);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(78, 31);
-            this.comboBox1.TabIndex = 25;
-            this.comboBox1.Tag = "Sexo";
+            this.cboxSexo_Empleados.Enabled = false;
+            this.cboxSexo_Empleados.Font = new System.Drawing.Font("Corbert DemiBold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cboxSexo_Empleados.ForeColor = System.Drawing.Color.Silver;
+            this.cboxSexo_Empleados.FormattingEnabled = true;
+            this.cboxSexo_Empleados.Location = new System.Drawing.Point(461, 91);
+            this.cboxSexo_Empleados.Name = "cboxSexo_Empleados";
+            this.cboxSexo_Empleados.Size = new System.Drawing.Size(78, 31);
+            this.cboxSexo_Empleados.TabIndex = 25;
+            this.cboxSexo_Empleados.Tag = "Sexo";
             // 
-            // dateTimePicker1
+            // dtpFecha_Empleados
             // 
-            this.dateTimePicker1.CalendarFont = new System.Drawing.Font("Corbert DemiBold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker1.CalendarTitleBackColor = System.Drawing.SystemColors.ControlText;
-            this.dateTimePicker1.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.dateTimePicker1.CustomFormat = "dd/MM/yyyyy";
-            this.dateTimePicker1.Font = new System.Drawing.Font("Corbert DemiBold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker1.Location = new System.Drawing.Point(461, 47);
-            this.dateTimePicker1.MaxDate = new System.DateTime(2019, 3, 1, 0, 0, 0, 0);
-            this.dateTimePicker1.MinDate = new System.DateTime(1920, 1, 1, 0, 0, 0, 0);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(137, 30);
-            this.dateTimePicker1.TabIndex = 24;
-            this.dateTimePicker1.Value = new System.DateTime(2019, 3, 1, 0, 0, 0, 0);
+            this.dtpFecha_Empleados.CalendarFont = new System.Drawing.Font("Corbert DemiBold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpFecha_Empleados.CalendarTitleBackColor = System.Drawing.SystemColors.ControlText;
+            this.dtpFecha_Empleados.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.dtpFecha_Empleados.CustomFormat = "dd/MM/yyyyy";
+            this.dtpFecha_Empleados.Enabled = false;
+            this.dtpFecha_Empleados.Font = new System.Drawing.Font("Corbert DemiBold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpFecha_Empleados.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtpFecha_Empleados.Location = new System.Drawing.Point(461, 47);
+            this.dtpFecha_Empleados.MaxDate = new System.DateTime(2019, 3, 1, 0, 0, 0, 0);
+            this.dtpFecha_Empleados.MinDate = new System.DateTime(1920, 1, 1, 0, 0, 0, 0);
+            this.dtpFecha_Empleados.Name = "dtpFecha_Empleados";
+            this.dtpFecha_Empleados.Size = new System.Drawing.Size(137, 30);
+            this.dtpFecha_Empleados.TabIndex = 24;
+            this.dtpFecha_Empleados.Value = new System.DateTime(2019, 3, 1, 0, 0, 0, 0);
             // 
-            // textBox21
+            // txbAMaterno_Empleados
             // 
-            this.textBox21.Font = new System.Drawing.Font("Corbert DemiBold", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox21.ForeColor = System.Drawing.Color.Silver;
-            this.textBox21.Location = new System.Drawing.Point(29, 137);
-            this.textBox21.Name = "textBox21";
-            this.textBox21.Size = new System.Drawing.Size(199, 30);
-            this.textBox21.TabIndex = 8;
-            this.textBox21.Tag = "Apellido Paterno";
-            this.textBox21.Text = "Apellido Paterno";
-            this.textBox21.Enter += new System.EventHandler(this.txb_Enter);
-            this.textBox21.Leave += new System.EventHandler(this.txb_Leave);
+            this.txbAMaterno_Empleados.Enabled = false;
+            this.txbAMaterno_Empleados.Font = new System.Drawing.Font("Corbert DemiBold", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txbAMaterno_Empleados.ForeColor = System.Drawing.Color.Silver;
+            this.txbAMaterno_Empleados.Location = new System.Drawing.Point(29, 137);
+            this.txbAMaterno_Empleados.Name = "txbAMaterno_Empleados";
+            this.txbAMaterno_Empleados.Size = new System.Drawing.Size(199, 30);
+            this.txbAMaterno_Empleados.TabIndex = 8;
+            this.txbAMaterno_Empleados.Tag = "Apellido Materno";
+            this.txbAMaterno_Empleados.Text = "Apellido Materno";
+            this.txbAMaterno_Empleados.Enter += new System.EventHandler(this.txb_Enter);
+            this.txbAMaterno_Empleados.Leave += new System.EventHandler(this.txb_Leave);
             // 
-            // textBox22
+            // txbAPaterno_Empleados
             // 
-            this.textBox22.Font = new System.Drawing.Font("Corbert DemiBold", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox22.ForeColor = System.Drawing.Color.Silver;
-            this.textBox22.Location = new System.Drawing.Point(29, 91);
-            this.textBox22.Name = "textBox22";
-            this.textBox22.Size = new System.Drawing.Size(199, 30);
-            this.textBox22.TabIndex = 7;
-            this.textBox22.Tag = "Apellido Paterno";
-            this.textBox22.Text = "Apellido Paterno";
-            this.textBox22.Enter += new System.EventHandler(this.txb_Enter);
-            this.textBox22.Leave += new System.EventHandler(this.txb_Leave);
+            this.txbAPaterno_Empleados.Enabled = false;
+            this.txbAPaterno_Empleados.Font = new System.Drawing.Font("Corbert DemiBold", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txbAPaterno_Empleados.ForeColor = System.Drawing.Color.Silver;
+            this.txbAPaterno_Empleados.Location = new System.Drawing.Point(29, 91);
+            this.txbAPaterno_Empleados.Name = "txbAPaterno_Empleados";
+            this.txbAPaterno_Empleados.Size = new System.Drawing.Size(199, 30);
+            this.txbAPaterno_Empleados.TabIndex = 7;
+            this.txbAPaterno_Empleados.Tag = "Apellido Paterno";
+            this.txbAPaterno_Empleados.Text = "Apellido Paterno";
+            this.txbAPaterno_Empleados.Enter += new System.EventHandler(this.txb_Enter);
+            this.txbAPaterno_Empleados.Leave += new System.EventHandler(this.txb_Leave);
             // 
-            // textBox23
+            // txbNombre_Empleados
             // 
-            this.textBox23.Font = new System.Drawing.Font("Corbert DemiBold", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox23.ForeColor = System.Drawing.Color.Silver;
-            this.textBox23.Location = new System.Drawing.Point(29, 47);
-            this.textBox23.Name = "textBox23";
-            this.textBox23.Size = new System.Drawing.Size(199, 30);
-            this.textBox23.TabIndex = 6;
-            this.textBox23.Tag = "Nombre";
-            this.textBox23.Text = "Nombre";
-            this.textBox23.Enter += new System.EventHandler(this.txb_Enter);
-            this.textBox23.Leave += new System.EventHandler(this.txb_Leave);
+            this.txbNombre_Empleados.Enabled = false;
+            this.txbNombre_Empleados.Font = new System.Drawing.Font("Corbert DemiBold", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txbNombre_Empleados.ForeColor = System.Drawing.Color.Silver;
+            this.txbNombre_Empleados.Location = new System.Drawing.Point(29, 47);
+            this.txbNombre_Empleados.Name = "txbNombre_Empleados";
+            this.txbNombre_Empleados.Size = new System.Drawing.Size(199, 30);
+            this.txbNombre_Empleados.TabIndex = 6;
+            this.txbNombre_Empleados.Tag = "Nombre";
+            this.txbNombre_Empleados.Text = "Nombre";
+            this.txbNombre_Empleados.Enter += new System.EventHandler(this.txb_Enter);
+            this.txbNombre_Empleados.Leave += new System.EventHandler(this.txb_Leave);
             // 
             // panel13
             // 
             this.panel13.BackColor = System.Drawing.Color.Azure;
             this.panel13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel13.Controls.Add(this.label18);
-            this.panel13.Controls.Add(this.textBox24);
-            this.panel13.Controls.Add(this.textBox25);
-            this.panel13.Controls.Add(this.textBox26);
+            this.panel13.Controls.Add(this.txbContraseña_Empleados);
+            this.panel13.Controls.Add(this.txbContraseñaRep_Empleados);
+            this.panel13.Controls.Add(this.txbNumero_Empleados);
             this.panel13.Font = new System.Drawing.Font("Corbert DemiBold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel13.ForeColor = System.Drawing.Color.Black;
             this.panel13.Location = new System.Drawing.Point(52, 84);
@@ -1789,125 +1857,134 @@
             this.label18.TabIndex = 24;
             this.label18.Text = "Cuenta";
             // 
-            // textBox24
+            // txbContraseña_Empleados
             // 
-            this.textBox24.Font = new System.Drawing.Font("Corbert DemiBold", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox24.ForeColor = System.Drawing.Color.Silver;
-            this.textBox24.Location = new System.Drawing.Point(26, 90);
-            this.textBox24.Name = "textBox24";
-            this.textBox24.Size = new System.Drawing.Size(260, 30);
-            this.textBox24.TabIndex = 23;
-            this.textBox24.Tag = "Contraseña";
-            this.textBox24.Text = "Contraseña";
-            this.textBox24.Enter += new System.EventHandler(this.txb_Enter);
-            this.textBox24.Leave += new System.EventHandler(this.txb_Leave);
+            this.txbContraseña_Empleados.Enabled = false;
+            this.txbContraseña_Empleados.Font = new System.Drawing.Font("Corbert DemiBold", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txbContraseña_Empleados.ForeColor = System.Drawing.Color.Silver;
+            this.txbContraseña_Empleados.Location = new System.Drawing.Point(26, 90);
+            this.txbContraseña_Empleados.Name = "txbContraseña_Empleados";
+            this.txbContraseña_Empleados.Size = new System.Drawing.Size(260, 30);
+            this.txbContraseña_Empleados.TabIndex = 23;
+            this.txbContraseña_Empleados.Tag = "Contraseña";
+            this.txbContraseña_Empleados.Text = "Contraseña";
+            this.txbContraseña_Empleados.Enter += new System.EventHandler(this.txb_Enter);
+            this.txbContraseña_Empleados.Leave += new System.EventHandler(this.txb_Leave);
             // 
-            // textBox25
+            // txbContraseñaRep_Empleados
             // 
-            this.textBox25.Font = new System.Drawing.Font("Corbert DemiBold", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox25.ForeColor = System.Drawing.Color.Silver;
-            this.textBox25.Location = new System.Drawing.Point(26, 136);
-            this.textBox25.Name = "textBox25";
-            this.textBox25.Size = new System.Drawing.Size(260, 30);
-            this.textBox25.TabIndex = 22;
-            this.textBox25.Tag = "Repite Contraseña";
-            this.textBox25.Text = "Repite Contraseña";
-            this.textBox25.Enter += new System.EventHandler(this.txb_Enter);
-            this.textBox25.Leave += new System.EventHandler(this.txb_Leave);
+            this.txbContraseñaRep_Empleados.Enabled = false;
+            this.txbContraseñaRep_Empleados.Font = new System.Drawing.Font("Corbert DemiBold", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txbContraseñaRep_Empleados.ForeColor = System.Drawing.Color.Silver;
+            this.txbContraseñaRep_Empleados.Location = new System.Drawing.Point(26, 136);
+            this.txbContraseñaRep_Empleados.Name = "txbContraseñaRep_Empleados";
+            this.txbContraseñaRep_Empleados.Size = new System.Drawing.Size(260, 30);
+            this.txbContraseñaRep_Empleados.TabIndex = 22;
+            this.txbContraseñaRep_Empleados.Tag = "Repite Contraseña";
+            this.txbContraseñaRep_Empleados.Text = "Repite Contraseña";
+            this.txbContraseñaRep_Empleados.Enter += new System.EventHandler(this.txb_Enter);
+            this.txbContraseñaRep_Empleados.Leave += new System.EventHandler(this.txb_Leave);
             // 
-            // textBox26
+            // txbNumero_Empleados
             // 
-            this.textBox26.Font = new System.Drawing.Font("Corbert DemiBold", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox26.ForeColor = System.Drawing.Color.Silver;
-            this.textBox26.Location = new System.Drawing.Point(26, 46);
-            this.textBox26.Name = "textBox26";
-            this.textBox26.Size = new System.Drawing.Size(260, 30);
-            this.textBox26.TabIndex = 12;
-            this.textBox26.Tag = "Nº de Empleado";
-            this.textBox26.Text = "Nº de Empleado";
-            this.textBox26.Enter += new System.EventHandler(this.txb_Enter);
-            this.textBox26.Leave += new System.EventHandler(this.txb_Leave);
+            this.txbNumero_Empleados.Enabled = false;
+            this.txbNumero_Empleados.Font = new System.Drawing.Font("Corbert DemiBold", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txbNumero_Empleados.ForeColor = System.Drawing.Color.Silver;
+            this.txbNumero_Empleados.Location = new System.Drawing.Point(26, 46);
+            this.txbNumero_Empleados.Name = "txbNumero_Empleados";
+            this.txbNumero_Empleados.Size = new System.Drawing.Size(260, 30);
+            this.txbNumero_Empleados.TabIndex = 12;
+            this.txbNumero_Empleados.Tag = "Nº de Empleado";
+            this.txbNumero_Empleados.Text = "Nº de Empleado";
+            this.txbNumero_Empleados.Enter += new System.EventHandler(this.txb_Enter);
+            this.txbNumero_Empleados.Leave += new System.EventHandler(this.txb_Leave);
             // 
-            // button1
+            // btnNuevo_Empleados
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(101)))), ((int)(((byte)(176)))));
-            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.Navy;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Navy;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Corbert DemiBold", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(385, 28);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(196, 30);
-            this.button1.TabIndex = 36;
-            this.button1.Text = "Nuevo Registro";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnNuevo_Empleados.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(101)))), ((int)(((byte)(176)))));
+            this.btnNuevo_Empleados.FlatAppearance.BorderColor = System.Drawing.Color.Navy;
+            this.btnNuevo_Empleados.FlatAppearance.BorderSize = 0;
+            this.btnNuevo_Empleados.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
+            this.btnNuevo_Empleados.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Navy;
+            this.btnNuevo_Empleados.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnNuevo_Empleados.Font = new System.Drawing.Font("Corbert DemiBold", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNuevo_Empleados.ForeColor = System.Drawing.Color.White;
+            this.btnNuevo_Empleados.Location = new System.Drawing.Point(385, 28);
+            this.btnNuevo_Empleados.Name = "btnNuevo_Empleados";
+            this.btnNuevo_Empleados.Size = new System.Drawing.Size(196, 30);
+            this.btnNuevo_Empleados.TabIndex = 36;
+            this.btnNuevo_Empleados.Text = "Nuevo Registro";
+            this.btnNuevo_Empleados.UseVisualStyleBackColor = false;
+            this.btnNuevo_Empleados.Click += new System.EventHandler(this.btnNuevo_Empleados_Click);
             // 
-            // button2
+            // btnBaja_Empleados
             // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(101)))), ((int)(((byte)(176)))));
-            this.button2.FlatAppearance.BorderColor = System.Drawing.Color.Navy;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
-            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Navy;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Corbert DemiBold", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(275, 484);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(197, 30);
-            this.button2.TabIndex = 35;
-            this.button2.Text = "Dar de Baja";
-            this.button2.UseVisualStyleBackColor = false;
+            this.btnBaja_Empleados.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(47)))), ((int)(((byte)(59)))));
+            this.btnBaja_Empleados.Enabled = false;
+            this.btnBaja_Empleados.FlatAppearance.BorderColor = System.Drawing.Color.Navy;
+            this.btnBaja_Empleados.FlatAppearance.BorderSize = 0;
+            this.btnBaja_Empleados.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
+            this.btnBaja_Empleados.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Navy;
+            this.btnBaja_Empleados.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBaja_Empleados.Font = new System.Drawing.Font("Corbert DemiBold", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBaja_Empleados.ForeColor = System.Drawing.Color.White;
+            this.btnBaja_Empleados.Location = new System.Drawing.Point(275, 484);
+            this.btnBaja_Empleados.Name = "btnBaja_Empleados";
+            this.btnBaja_Empleados.Size = new System.Drawing.Size(197, 30);
+            this.btnBaja_Empleados.TabIndex = 35;
+            this.btnBaja_Empleados.Text = "Dar de Baja";
+            this.btnBaja_Empleados.UseVisualStyleBackColor = false;
+            this.btnBaja_Empleados.Visible = false;
             // 
-            // button3
+            // btnModificar_Empleados
             // 
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(101)))), ((int)(((byte)(176)))));
-            this.button3.FlatAppearance.BorderColor = System.Drawing.Color.Navy;
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
-            this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Navy;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Corbert DemiBold", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(71, 484);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(196, 30);
-            this.button3.TabIndex = 34;
-            this.button3.Text = "Modificar";
-            this.button3.UseVisualStyleBackColor = false;
+            this.btnModificar_Empleados.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(101)))), ((int)(((byte)(176)))));
+            this.btnModificar_Empleados.Enabled = false;
+            this.btnModificar_Empleados.FlatAppearance.BorderColor = System.Drawing.Color.Navy;
+            this.btnModificar_Empleados.FlatAppearance.BorderSize = 0;
+            this.btnModificar_Empleados.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
+            this.btnModificar_Empleados.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Navy;
+            this.btnModificar_Empleados.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnModificar_Empleados.Font = new System.Drawing.Font("Corbert DemiBold", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnModificar_Empleados.ForeColor = System.Drawing.Color.White;
+            this.btnModificar_Empleados.Location = new System.Drawing.Point(71, 484);
+            this.btnModificar_Empleados.Name = "btnModificar_Empleados";
+            this.btnModificar_Empleados.Size = new System.Drawing.Size(196, 30);
+            this.btnModificar_Empleados.TabIndex = 34;
+            this.btnModificar_Empleados.Text = "Modificar";
+            this.btnModificar_Empleados.UseVisualStyleBackColor = false;
+            this.btnModificar_Empleados.Visible = false;
             // 
-            // button4
+            // btnBuscarEmpleados
             // 
-            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(101)))), ((int)(((byte)(176)))));
-            this.button4.FlatAppearance.BorderColor = System.Drawing.Color.Navy;
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
-            this.button4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Navy;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Corbert DemiBold", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Location = new System.Drawing.Point(260, 28);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(93, 30);
-            this.button4.TabIndex = 33;
-            this.button4.Text = "Buscar";
-            this.button4.UseVisualStyleBackColor = false;
+            this.btnBuscarEmpleados.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(101)))), ((int)(((byte)(176)))));
+            this.btnBuscarEmpleados.FlatAppearance.BorderColor = System.Drawing.Color.Navy;
+            this.btnBuscarEmpleados.FlatAppearance.BorderSize = 0;
+            this.btnBuscarEmpleados.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
+            this.btnBuscarEmpleados.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Navy;
+            this.btnBuscarEmpleados.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBuscarEmpleados.Font = new System.Drawing.Font("Corbert DemiBold", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBuscarEmpleados.ForeColor = System.Drawing.Color.White;
+            this.btnBuscarEmpleados.Location = new System.Drawing.Point(260, 28);
+            this.btnBuscarEmpleados.Name = "btnBuscarEmpleados";
+            this.btnBuscarEmpleados.Size = new System.Drawing.Size(93, 30);
+            this.btnBuscarEmpleados.TabIndex = 33;
+            this.btnBuscarEmpleados.Text = "Buscar";
+            this.btnBuscarEmpleados.UseVisualStyleBackColor = false;
+            this.btnBuscarEmpleados.Click += new System.EventHandler(this.btnBuscarEmpleados_Click);
             // 
-            // textBox27
+            // txbBuscar_Empleados
             // 
-            this.textBox27.Font = new System.Drawing.Font("Corbert DemiBold", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox27.ForeColor = System.Drawing.Color.Silver;
-            this.textBox27.Location = new System.Drawing.Point(52, 28);
-            this.textBox27.Name = "textBox27";
-            this.textBox27.Size = new System.Drawing.Size(202, 30);
-            this.textBox27.TabIndex = 32;
-            this.textBox27.Tag = "Nº Empleado";
-            this.textBox27.Text = "Nº Empleado";
-            this.textBox27.Enter += new System.EventHandler(this.txb_Enter);
-            this.textBox27.Leave += new System.EventHandler(this.txb_Leave);
+            this.txbBuscar_Empleados.Font = new System.Drawing.Font("Corbert DemiBold", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txbBuscar_Empleados.ForeColor = System.Drawing.Color.Silver;
+            this.txbBuscar_Empleados.Location = new System.Drawing.Point(52, 28);
+            this.txbBuscar_Empleados.Name = "txbBuscar_Empleados";
+            this.txbBuscar_Empleados.Size = new System.Drawing.Size(202, 30);
+            this.txbBuscar_Empleados.TabIndex = 32;
+            this.txbBuscar_Empleados.Tag = "Nº Empleado";
+            this.txbBuscar_Empleados.Text = "Nº Empleado";
+            this.txbBuscar_Empleados.Enter += new System.EventHandler(this.txb_Enter);
+            this.txbBuscar_Empleados.Leave += new System.EventHandler(this.txb_Leave);
             // 
             // tabPageConfiguración
             // 
@@ -1979,7 +2056,8 @@
             // 
             // button19
             // 
-            this.button19.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(101)))), ((int)(((byte)(176)))));
+            this.button19.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(136)))), ((int)(((byte)(143)))));
+            this.button19.Enabled = false;
             this.button19.FlatAppearance.BorderColor = System.Drawing.Color.Navy;
             this.button19.FlatAppearance.BorderSize = 0;
             this.button19.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
@@ -1996,7 +2074,8 @@
             // 
             // button20
             // 
-            this.button20.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(101)))), ((int)(((byte)(176)))));
+            this.button20.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(136)))), ((int)(((byte)(143)))));
+            this.button20.Enabled = false;
             this.button20.FlatAppearance.BorderColor = System.Drawing.Color.Navy;
             this.button20.FlatAppearance.BorderSize = 0;
             this.button20.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
@@ -2127,18 +2206,18 @@
         private System.Windows.Forms.Button btnAbonar_Abonos;
         private System.Windows.Forms.TextBox txbCantida_Abonos;
         private System.Windows.Forms.Label lblTotal_Abonos;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.TextBox textBox16;
-        private System.Windows.Forms.TextBox textBox11;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox18;
+        private System.Windows.Forms.Button btnNuevo_Clientes;
+        private System.Windows.Forms.Button btnBaja_Clientes;
+        private System.Windows.Forms.Button btnModificar_Clientes;
+        private System.Windows.Forms.TextBox txbColonia_Clientes;
+        private System.Windows.Forms.TextBox txbNumero_Clientes;
+        private System.Windows.Forms.TextBox txbEmail_Clientes;
+        private System.Windows.Forms.TextBox txbAMaterno_Clientes;
+        private System.Windows.Forms.TextBox txbAPaterno_Clientes;
+        private System.Windows.Forms.TextBox txbNombre_Clientes;
+        private System.Windows.Forms.Button btnBuscar_Clientes;
+        private System.Windows.Forms.TextBox txbBuscar_Clientes;
+        private System.Windows.Forms.TextBox txbContraseñaRep_Clientes;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Button btnNuevoChat_Chat;
         private System.Windows.Forms.TextBox txbEmpleado_Chat;
@@ -2167,16 +2246,16 @@
         private System.Windows.Forms.ComboBox cboxCuenta_Abonos;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.TabPage tabPageClientes;
-        private System.Windows.Forms.DateTimePicker dtpFechaCliente;
-        private System.Windows.Forms.TextBox textBox40;
-        private System.Windows.Forms.ComboBox comboBox3;
-        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.DateTimePicker dtpFecha_Clientes;
+        private System.Windows.Forms.TextBox txbContraseña_Clientes;
+        private System.Windows.Forms.ComboBox cboxSexo_Clientes;
+        private System.Windows.Forms.TextBox txbTelefono_Clientes;
         private System.Windows.Forms.Panel panel9;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.TextBox textBox17;
-        private System.Windows.Forms.TextBox textBox15;
-        private System.Windows.Forms.TextBox textBox14;
-        private System.Windows.Forms.TextBox textBox12;
+        private System.Windows.Forms.TextBox txbCiudad_Clientes;
+        private System.Windows.Forms.TextBox txbCP_Clientes;
+        private System.Windows.Forms.TextBox txbNumeroDom_Clientes;
+        private System.Windows.Forms.TextBox txbCalle_Clientes;
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Panel panel7;
@@ -2188,35 +2267,36 @@
         private System.Windows.Forms.ColumnHeader columnHeader12;
         private System.Windows.Forms.Panel panel10;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox10;
-        private System.Windows.Forms.TextBox textBox13;
+        private System.Windows.Forms.TextBox txbCiudad_Empleados;
+        private System.Windows.Forms.TextBox txbCP_Empleados;
+        private System.Windows.Forms.TextBox txbNumeroDom_Empleados;
+        private System.Windows.Forms.TextBox txbCalle_Empleados;
+        private System.Windows.Forms.TextBox txbColonia_Empleados;
         private System.Windows.Forms.Panel panel11;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.TextBox textBox19;
-        private System.Windows.Forms.TextBox textBox20;
+        private System.Windows.Forms.TextBox txbTelefono_Empleados;
+        private System.Windows.Forms.TextBox txbEmail_Empleados;
         private System.Windows.Forms.Panel panel12;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.TextBox textBox21;
-        private System.Windows.Forms.TextBox textBox22;
-        private System.Windows.Forms.TextBox textBox23;
+        private System.Windows.Forms.ComboBox cboxSexo_Empleados;
+        private System.Windows.Forms.DateTimePicker dtpFecha_Empleados;
+        private System.Windows.Forms.TextBox txbAMaterno_Empleados;
+        private System.Windows.Forms.TextBox txbAPaterno_Empleados;
+        private System.Windows.Forms.TextBox txbNombre_Empleados;
         private System.Windows.Forms.Panel panel13;
         private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.TextBox textBox24;
-        private System.Windows.Forms.TextBox textBox25;
-        private System.Windows.Forms.TextBox textBox26;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.TextBox textBox27;
+        private System.Windows.Forms.TextBox txbContraseña_Empleados;
+        private System.Windows.Forms.TextBox txbContraseñaRep_Empleados;
+        private System.Windows.Forms.TextBox txbNumero_Empleados;
+        private System.Windows.Forms.Button btnNuevo_Empleados;
+        private System.Windows.Forms.Button btnBaja_Empleados;
+        private System.Windows.Forms.Button btnModificar_Empleados;
+        private System.Windows.Forms.Button btnBuscarEmpleados;
+        private System.Windows.Forms.TextBox txbBuscar_Empleados;
         private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox cboxPuesto_Empleados;
+        private System.Windows.Forms.Button btnEliminar_Ventas;
     }
 }

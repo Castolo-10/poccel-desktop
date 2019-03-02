@@ -31,8 +31,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txbUsuario = new System.Windows.Forms.TextBox();
+            this.txbContraseña = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -60,22 +60,28 @@
             this.pictureBox2.TabIndex = 1;
             this.pictureBox2.TabStop = false;
             // 
-            // textBox1
+            // txbUsuario
             // 
-            this.textBox1.Font = new System.Drawing.Font("Corbert DemiBold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(841, 302);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(264, 33);
-            this.textBox1.TabIndex = 2;
+            this.txbUsuario.Font = new System.Drawing.Font("Corbert DemiBold", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txbUsuario.ForeColor = System.Drawing.Color.Silver;
+            this.txbUsuario.Location = new System.Drawing.Point(841, 302);
+            this.txbUsuario.Name = "txbUsuario";
+            this.txbUsuario.Size = new System.Drawing.Size(264, 33);
+            this.txbUsuario.TabIndex = 2;
+            this.txbUsuario.Tag = "Nº de Cliente";
+            this.txbUsuario.Text = "Nº de Cliente";
+            this.txbUsuario.Enter += new System.EventHandler(this.txbUsuario_Enter);
+            this.txbUsuario.Leave += new System.EventHandler(this.txbUsuario_Leave);
             // 
-            // textBox2
+            // txbContraseña
             // 
-            this.textBox2.Font = new System.Drawing.Font("Corbert DemiBold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(841, 386);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.PasswordChar = '♥';
-            this.textBox2.Size = new System.Drawing.Size(264, 33);
-            this.textBox2.TabIndex = 3;
+            this.txbContraseña.Font = new System.Drawing.Font("Corbert DemiBold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txbContraseña.Location = new System.Drawing.Point(841, 386);
+            this.txbContraseña.Name = "txbContraseña";
+            this.txbContraseña.PasswordChar = '•';
+            this.txbContraseña.Size = new System.Drawing.Size(264, 33);
+            this.txbContraseña.TabIndex = 3;
+            this.txbContraseña.Tag = "";
             // 
             // button1
             // 
@@ -119,13 +125,13 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.ColorTranslator.FromHtml("#FEE40B");
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(228)))), ((int)(((byte)(11)))));
             this.ClientSize = new System.Drawing.Size(1364, 701);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txbContraseña);
+            this.Controls.Add(this.txbUsuario);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
             this.MaximumSize = new System.Drawing.Size(1380, 740);
@@ -144,11 +150,11 @@
 
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txbUsuario;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
+        public System.Windows.Forms.TextBox txbContraseña;
     }
 }
 

@@ -371,9 +371,5 @@ namespace Poccel_desktop
             Control.validar(txb, "telefono");
         }
 
-        private void prueba(object sender, EventArgs e)
-        {
-            MessageBox.Show("Test");
-        }
     }
 }

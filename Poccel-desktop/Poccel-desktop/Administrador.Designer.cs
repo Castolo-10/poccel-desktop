@@ -908,7 +908,6 @@
             this.txbCalle_Clientes.TabIndex = 13;
             this.txbCalle_Clientes.Tag = "Calle";
             this.txbCalle_Clientes.Text = "Calle";
-            this.txbCalle_Clientes.TextChanged += new System.EventHandler(this.prueba);
             this.txbCalle_Clientes.Enter += new System.EventHandler(this.txb_Enter);
             this.txbCalle_Clientes.Leave += new System.EventHandler(this.txb_Leave);
             this.txbCalle_Clientes.Validated += new System.EventHandler(this.validarTexto);
@@ -924,7 +923,6 @@
             this.txbColonia_Clientes.TabIndex = 17;
             this.txbColonia_Clientes.Tag = "Colonia";
             this.txbColonia_Clientes.Text = "Colonia";
-            this.txbColonia_Clientes.TextChanged += new System.EventHandler(this.prueba);
             this.txbColonia_Clientes.Enter += new System.EventHandler(this.txb_Enter);
             this.txbColonia_Clientes.Leave += new System.EventHandler(this.txb_Leave);
             this.txbColonia_Clientes.Validated += new System.EventHandler(this.validarTexto);

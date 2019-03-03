@@ -63,6 +63,7 @@
       <DependentUpon>AgregarProducto.cs</DependentUpon>
     </Compile>
     <Compile Include="BdConexion.cs" />
+    <Compile Include="Cliente.cs" />
     <Compile Include="Control.cs" />
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
@@ -72,6 +73,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Venta.cs" />
     <Compile Include="VentaContado.cs">
       <SubType>Form</SubType>
     </Compile>

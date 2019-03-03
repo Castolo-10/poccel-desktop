@@ -102,8 +102,8 @@
             this.txbContraseñaRep_Clientes = new System.Windows.Forms.TextBox();
             this.txbNumero_Clientes = new System.Windows.Forms.TextBox();
             this.btnNuevo_Clientes = new System.Windows.Forms.Button();
-            this.btnBaja_Clientes = new System.Windows.Forms.Button();
-            this.btnModificar_Clientes = new System.Windows.Forms.Button();
+            this.btnBajaCancelar_Clientes = new System.Windows.Forms.Button();
+            this.btnAceptarModificar_Clientes = new System.Windows.Forms.Button();
             this.btnBuscar_Clientes = new System.Windows.Forms.Button();
             this.txbBuscar_Clientes = new System.Windows.Forms.TextBox();
             this.tabPageChat = new System.Windows.Forms.TabPage();
@@ -437,6 +437,7 @@
             this.btnCancelar_Ventas.Text = "Cancelar";
             this.btnCancelar_Ventas.UseVisualStyleBackColor = false;
             this.btnCancelar_Ventas.Visible = false;
+            this.btnCancelar_Ventas.Click += new System.EventHandler(this.btnCancelar_Ventas_Click);
             // 
             // panel3
             // 
@@ -463,6 +464,7 @@
             // 
             // txbCantidad_Ventas
             // 
+            this.txbCantidad_Ventas.Enabled = false;
             this.txbCantidad_Ventas.Font = new System.Drawing.Font("Corbert DemiBold", 14F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txbCantidad_Ventas.ForeColor = System.Drawing.Color.Silver;
             this.txbCantidad_Ventas.Location = new System.Drawing.Point(213, 65);
@@ -476,6 +478,7 @@
             // 
             // txbProducto_Ventas
             // 
+            this.txbProducto_Ventas.Enabled = false;
             this.txbProducto_Ventas.Font = new System.Drawing.Font("Corbert DemiBold", 14F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txbProducto_Ventas.ForeColor = System.Drawing.Color.Silver;
             this.txbProducto_Ventas.Location = new System.Drawing.Point(7, 65);
@@ -811,8 +814,8 @@
             this.tabPageClientes.Controls.Add(this.panel7);
             this.tabPageClientes.Controls.Add(this.panel6);
             this.tabPageClientes.Controls.Add(this.btnNuevo_Clientes);
-            this.tabPageClientes.Controls.Add(this.btnBaja_Clientes);
-            this.tabPageClientes.Controls.Add(this.btnModificar_Clientes);
+            this.tabPageClientes.Controls.Add(this.btnBajaCancelar_Clientes);
+            this.tabPageClientes.Controls.Add(this.btnAceptarModificar_Clientes);
             this.tabPageClientes.Controls.Add(this.btnBuscar_Clientes);
             this.tabPageClientes.Controls.Add(this.txbBuscar_Clientes);
             this.tabPageClientes.ForeColor = System.Drawing.Color.Silver;
@@ -862,6 +865,7 @@
             this.txbCiudad_Clientes.Text = "Ciudad";
             this.txbCiudad_Clientes.Enter += new System.EventHandler(this.txb_Enter);
             this.txbCiudad_Clientes.Leave += new System.EventHandler(this.txb_Leave);
+            this.txbCiudad_Clientes.Validating += new System.ComponentModel.CancelEventHandler(this.validarTexto);
             // 
             // txbCP_Clientes
             // 
@@ -876,6 +880,7 @@
             this.txbCP_Clientes.Text = "C.P.";
             this.txbCP_Clientes.Enter += new System.EventHandler(this.txb_Enter);
             this.txbCP_Clientes.Leave += new System.EventHandler(this.txb_Leave);
+            this.txbCP_Clientes.Validated += new System.EventHandler(this.validarNumeros);
             // 
             // txbNumeroDom_Clientes
             // 
@@ -890,6 +895,7 @@
             this.txbNumeroDom_Clientes.Text = "Nº";
             this.txbNumeroDom_Clientes.Enter += new System.EventHandler(this.txb_Enter);
             this.txbNumeroDom_Clientes.Leave += new System.EventHandler(this.txb_Leave);
+            this.txbNumeroDom_Clientes.Validated += new System.EventHandler(this.validarNumeros);
             // 
             // txbCalle_Clientes
             // 
@@ -902,8 +908,10 @@
             this.txbCalle_Clientes.TabIndex = 13;
             this.txbCalle_Clientes.Tag = "Calle";
             this.txbCalle_Clientes.Text = "Calle";
+            this.txbCalle_Clientes.TextChanged += new System.EventHandler(this.prueba);
             this.txbCalle_Clientes.Enter += new System.EventHandler(this.txb_Enter);
             this.txbCalle_Clientes.Leave += new System.EventHandler(this.txb_Leave);
+            this.txbCalle_Clientes.Validated += new System.EventHandler(this.validarTexto);
             // 
             // txbColonia_Clientes
             // 
@@ -916,8 +924,10 @@
             this.txbColonia_Clientes.TabIndex = 17;
             this.txbColonia_Clientes.Tag = "Colonia";
             this.txbColonia_Clientes.Text = "Colonia";
+            this.txbColonia_Clientes.TextChanged += new System.EventHandler(this.prueba);
             this.txbColonia_Clientes.Enter += new System.EventHandler(this.txb_Enter);
             this.txbColonia_Clientes.Leave += new System.EventHandler(this.txb_Leave);
+            this.txbColonia_Clientes.Validated += new System.EventHandler(this.validarTexto);
             // 
             // panel8
             // 
@@ -955,6 +965,7 @@
             this.txbTelefono_Clientes.Text = "Teléfono";
             this.txbTelefono_Clientes.Enter += new System.EventHandler(this.txb_Enter);
             this.txbTelefono_Clientes.Leave += new System.EventHandler(this.txb_Leave);
+            this.txbTelefono_Clientes.Validated += new System.EventHandler(this.validarTelefono);
             // 
             // txbEmail_Clientes
             // 
@@ -969,6 +980,7 @@
             this.txbEmail_Clientes.Text = "Correo Electrónico";
             this.txbEmail_Clientes.Enter += new System.EventHandler(this.txb_Enter);
             this.txbEmail_Clientes.Leave += new System.EventHandler(this.txb_Leave);
+            this.txbEmail_Clientes.Validating += new System.ComponentModel.CancelEventHandler(this.validarCorreo);
             // 
             // panel7
             // 
@@ -1062,6 +1074,7 @@
             this.txbAMaterno_Clientes.Text = "Apellido Paterno";
             this.txbAMaterno_Clientes.Enter += new System.EventHandler(this.txb_Enter);
             this.txbAMaterno_Clientes.Leave += new System.EventHandler(this.txb_Leave);
+            this.txbAMaterno_Clientes.Validated += new System.EventHandler(this.validarTexto);
             // 
             // txbAPaterno_Clientes
             // 
@@ -1076,6 +1089,7 @@
             this.txbAPaterno_Clientes.Text = "Apellido Paterno";
             this.txbAPaterno_Clientes.Enter += new System.EventHandler(this.txb_Enter);
             this.txbAPaterno_Clientes.Leave += new System.EventHandler(this.txb_Leave);
+            this.txbAPaterno_Clientes.Validated += new System.EventHandler(this.validarTexto);
             // 
             // txbNombre_Clientes
             // 
@@ -1091,6 +1105,7 @@
             this.txbNombre_Clientes.Text = "Nombre";
             this.txbNombre_Clientes.Enter += new System.EventHandler(this.txb_Enter);
             this.txbNombre_Clientes.Leave += new System.EventHandler(this.txb_Leave);
+            this.txbNombre_Clientes.Validated += new System.EventHandler(this.validarTexto);
             // 
             // panel6
             // 
@@ -1177,43 +1192,45 @@
             this.btnNuevo_Clientes.UseVisualStyleBackColor = false;
             this.btnNuevo_Clientes.Click += new System.EventHandler(this.btnNuevo_Clientes_Click);
             // 
-            // btnBaja_Clientes
+            // btnBajaCancelar_Clientes
             // 
-            this.btnBaja_Clientes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(47)))), ((int)(((byte)(59)))));
-            this.btnBaja_Clientes.Enabled = false;
-            this.btnBaja_Clientes.FlatAppearance.BorderColor = System.Drawing.Color.Navy;
-            this.btnBaja_Clientes.FlatAppearance.BorderSize = 0;
-            this.btnBaja_Clientes.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
-            this.btnBaja_Clientes.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Navy;
-            this.btnBaja_Clientes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBaja_Clientes.Font = new System.Drawing.Font("Corbert DemiBold", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBaja_Clientes.ForeColor = System.Drawing.Color.White;
-            this.btnBaja_Clientes.Location = new System.Drawing.Point(254, 482);
-            this.btnBaja_Clientes.Name = "btnBaja_Clientes";
-            this.btnBaja_Clientes.Size = new System.Drawing.Size(197, 30);
-            this.btnBaja_Clientes.TabIndex = 20;
-            this.btnBaja_Clientes.Text = "Dar de Baja";
-            this.btnBaja_Clientes.UseVisualStyleBackColor = false;
-            this.btnBaja_Clientes.Visible = false;
+            this.btnBajaCancelar_Clientes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(47)))), ((int)(((byte)(59)))));
+            this.btnBajaCancelar_Clientes.Enabled = false;
+            this.btnBajaCancelar_Clientes.FlatAppearance.BorderColor = System.Drawing.Color.Navy;
+            this.btnBajaCancelar_Clientes.FlatAppearance.BorderSize = 0;
+            this.btnBajaCancelar_Clientes.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
+            this.btnBajaCancelar_Clientes.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Navy;
+            this.btnBajaCancelar_Clientes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBajaCancelar_Clientes.Font = new System.Drawing.Font("Corbert DemiBold", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBajaCancelar_Clientes.ForeColor = System.Drawing.Color.White;
+            this.btnBajaCancelar_Clientes.Location = new System.Drawing.Point(254, 482);
+            this.btnBajaCancelar_Clientes.Name = "btnBajaCancelar_Clientes";
+            this.btnBajaCancelar_Clientes.Size = new System.Drawing.Size(197, 30);
+            this.btnBajaCancelar_Clientes.TabIndex = 20;
+            this.btnBajaCancelar_Clientes.Text = "boton";
+            this.btnBajaCancelar_Clientes.UseVisualStyleBackColor = false;
+            this.btnBajaCancelar_Clientes.Visible = false;
+            this.btnBajaCancelar_Clientes.Click += new System.EventHandler(this.btnBajaCancelar_Clientes_Click);
             // 
-            // btnModificar_Clientes
+            // btnAceptarModificar_Clientes
             // 
-            this.btnModificar_Clientes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(101)))), ((int)(((byte)(176)))));
-            this.btnModificar_Clientes.Enabled = false;
-            this.btnModificar_Clientes.FlatAppearance.BorderColor = System.Drawing.Color.Navy;
-            this.btnModificar_Clientes.FlatAppearance.BorderSize = 0;
-            this.btnModificar_Clientes.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
-            this.btnModificar_Clientes.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Navy;
-            this.btnModificar_Clientes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnModificar_Clientes.Font = new System.Drawing.Font("Corbert DemiBold", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnModificar_Clientes.ForeColor = System.Drawing.Color.White;
-            this.btnModificar_Clientes.Location = new System.Drawing.Point(52, 482);
-            this.btnModificar_Clientes.Name = "btnModificar_Clientes";
-            this.btnModificar_Clientes.Size = new System.Drawing.Size(196, 30);
-            this.btnModificar_Clientes.TabIndex = 19;
-            this.btnModificar_Clientes.Text = "Modificar";
-            this.btnModificar_Clientes.UseVisualStyleBackColor = false;
-            this.btnModificar_Clientes.Visible = false;
+            this.btnAceptarModificar_Clientes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(101)))), ((int)(((byte)(176)))));
+            this.btnAceptarModificar_Clientes.Enabled = false;
+            this.btnAceptarModificar_Clientes.FlatAppearance.BorderColor = System.Drawing.Color.Navy;
+            this.btnAceptarModificar_Clientes.FlatAppearance.BorderSize = 0;
+            this.btnAceptarModificar_Clientes.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
+            this.btnAceptarModificar_Clientes.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Navy;
+            this.btnAceptarModificar_Clientes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAceptarModificar_Clientes.Font = new System.Drawing.Font("Corbert DemiBold", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAceptarModificar_Clientes.ForeColor = System.Drawing.Color.White;
+            this.btnAceptarModificar_Clientes.Location = new System.Drawing.Point(52, 482);
+            this.btnAceptarModificar_Clientes.Name = "btnAceptarModificar_Clientes";
+            this.btnAceptarModificar_Clientes.Size = new System.Drawing.Size(196, 30);
+            this.btnAceptarModificar_Clientes.TabIndex = 19;
+            this.btnAceptarModificar_Clientes.Text = "boton";
+            this.btnAceptarModificar_Clientes.UseVisualStyleBackColor = false;
+            this.btnAceptarModificar_Clientes.Visible = false;
+            this.btnAceptarModificar_Clientes.Click += new System.EventHandler(this.btnAceptarModificar_Clientes_Click);
             // 
             // btnBuscar_Clientes
             // 
@@ -2207,8 +2224,8 @@
         private System.Windows.Forms.TextBox txbCantida_Abonos;
         private System.Windows.Forms.Label lblTotal_Abonos;
         private System.Windows.Forms.Button btnNuevo_Clientes;
-        private System.Windows.Forms.Button btnBaja_Clientes;
-        private System.Windows.Forms.Button btnModificar_Clientes;
+        private System.Windows.Forms.Button btnBajaCancelar_Clientes;
+        private System.Windows.Forms.Button btnAceptarModificar_Clientes;
         private System.Windows.Forms.TextBox txbColonia_Clientes;
         private System.Windows.Forms.TextBox txbNumero_Clientes;
         private System.Windows.Forms.TextBox txbEmail_Clientes;

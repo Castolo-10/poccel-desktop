@@ -5,7 +5,7 @@ using System.IO;
 using System.Diagnostics;
 using System.Windows.Forms;
 
-namespace Práctica_1_v._2._0._0
+namespace DataBase
 {
     public class ConfigBd
     {
@@ -17,8 +17,8 @@ namespace Práctica_1_v._2._0._0
 
         public ConfigBd()
         {
-            user = "fernando";
-            password = "fernando";
+            user = "postgres";
+            password = "admin";
             host = "localhost";
             port = "5432";
             database = "poccel";
@@ -113,9 +113,11 @@ namespace Práctica_1_v._2._0._0
             DataTable data = new DataTable();
             try
             {
+                BdConexion.conectar();
                 NpgsqlCommand command = new NpgsqlCommand(cSql, connection);
                 NpgsqlDataAdapter dataAdapter = new NpgsqlDataAdapter(command);
                 dataAdapter.Fill(data);
+                BdConexion.desconectar();
             }
             catch (Exception e)
             {

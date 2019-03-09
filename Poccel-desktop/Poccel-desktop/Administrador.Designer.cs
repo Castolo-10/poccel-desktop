@@ -895,7 +895,6 @@
             this.txbNumeroDom_Clientes.Text = "Nº";
             this.txbNumeroDom_Clientes.Enter += new System.EventHandler(this.txb_Enter);
             this.txbNumeroDom_Clientes.Leave += new System.EventHandler(this.txb_Leave);
-            this.txbNumeroDom_Clientes.Validated += new System.EventHandler(this.validarNumeros);
             // 
             // txbCalle_Clientes
             // 
@@ -910,7 +909,6 @@
             this.txbCalle_Clientes.Text = "Calle";
             this.txbCalle_Clientes.Enter += new System.EventHandler(this.txb_Enter);
             this.txbCalle_Clientes.Leave += new System.EventHandler(this.txb_Leave);
-            this.txbCalle_Clientes.Validated += new System.EventHandler(this.validarTexto);
             // 
             // txbColonia_Clientes
             // 
@@ -925,7 +923,6 @@
             this.txbColonia_Clientes.Text = "Colonia";
             this.txbColonia_Clientes.Enter += new System.EventHandler(this.txb_Enter);
             this.txbColonia_Clientes.Leave += new System.EventHandler(this.txb_Leave);
-            this.txbColonia_Clientes.Validated += new System.EventHandler(this.validarTexto);
             // 
             // panel8
             // 
@@ -1034,11 +1031,14 @@
             "Mujer"});
             this.cboxSexo_Clientes.Enabled = false;
             this.cboxSexo_Clientes.Font = new System.Drawing.Font("Corbert DemiBold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cboxSexo_Clientes.ForeColor = System.Drawing.Color.Silver;
+            this.cboxSexo_Clientes.ForeColor = System.Drawing.Color.Black;
             this.cboxSexo_Clientes.FormattingEnabled = true;
+            this.cboxSexo_Clientes.Items.AddRange(new object[] {
+            "Hombre",
+            "Mujer"});
             this.cboxSexo_Clientes.Location = new System.Drawing.Point(461, 91);
             this.cboxSexo_Clientes.Name = "cboxSexo_Clientes";
-            this.cboxSexo_Clientes.Size = new System.Drawing.Size(78, 31);
+            this.cboxSexo_Clientes.Size = new System.Drawing.Size(137, 31);
             this.cboxSexo_Clientes.TabIndex = 25;
             this.cboxSexo_Clientes.Tag = "Sexo";
             // 
@@ -1161,16 +1161,14 @@
             // txbNumero_Clientes
             // 
             this.txbNumero_Clientes.Enabled = false;
-            this.txbNumero_Clientes.Font = new System.Drawing.Font("Corbert DemiBold", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txbNumero_Clientes.ForeColor = System.Drawing.Color.Silver;
+            this.txbNumero_Clientes.Font = new System.Drawing.Font("Corbert DemiBold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txbNumero_Clientes.ForeColor = System.Drawing.Color.Black;
             this.txbNumero_Clientes.Location = new System.Drawing.Point(26, 46);
             this.txbNumero_Clientes.Name = "txbNumero_Clientes";
             this.txbNumero_Clientes.Size = new System.Drawing.Size(260, 30);
             this.txbNumero_Clientes.TabIndex = 12;
             this.txbNumero_Clientes.Tag = "Nº de Cliente";
             this.txbNumero_Clientes.Text = "Nº de Cliente";
-            this.txbNumero_Clientes.Enter += new System.EventHandler(this.txb_Enter);
-            this.txbNumero_Clientes.Leave += new System.EventHandler(this.txb_Leave);
             // 
             // btnNuevo_Clientes
             // 

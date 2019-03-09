@@ -31,7 +31,7 @@ namespace Poccel_desktop
 
             camposClientes = new TextBox[]
             {
-                txbNumero_Clientes, txbContraseña_Clientes, txbContraseñaRep_Clientes,
+                txbContraseña_Clientes, txbContraseñaRep_Clientes,
                 txbNombre_Clientes, txbAPaterno_Clientes, txbAMaterno_Clientes,
                 txbEmail_Clientes, txbTelefono_Clientes,
                 txbCalle_Clientes, txbNumeroDom_Clientes, txbCiudad_Clientes, txbColonia_Clientes, txbCP_Clientes
@@ -100,6 +100,7 @@ namespace Poccel_desktop
                 Control.placeHolder_Leave(txb);
                 txb.Enabled = false;
             }
+            txbNumero_Clientes.Text = "Nº de Cliente";
         }
 
         private void cargarPaginaVentas()
@@ -291,11 +292,58 @@ namespace Poccel_desktop
 
         private void btnAceptarModificar_Clientes_Click(object sender, EventArgs e)
         {
-            cargarPaginaClientes();
-            actualizaBotones_Clientes("ocultar");
+
 
             if(btnAceptarModificar_Clientes.Text == "Aceptar")
             {
+                bool error = false;
+                foreach(TextBox txb in camposClientes)
+                {
+                    if(txb.ForeColor == Color.Red || txb.ForeColor == Color.Silver)
+                    {
+                        error = true;
+                    }
+                }
+                if(dtpFecha_Clientes.Value == null || cboxSexo_Clientes.SelectedItem == null)
+                {
+                    error = true;
+                }
+                if(txbContraseña_Clientes.Text != txbContraseñaRep_Clientes.Text)
+                {
+                    MessageBox.Show("Las contraseñas no coinciden");
+                }
+                if(error)
+                {
+                    MessageBox.Show("Existe algún error en el formulario o hace falta algún dato.");
+                }
+                else
+                {
+                    Cliente nuevo = new Cliente(
+                        int.Parse(txbNumero_Clientes.Text), 
+                        txbEmail_Clientes.Text, 
+                        txbContraseña_Clientes.Text, 
+                        dtpFecha_Clientes.Value, 
+                        cboxSexo_Clientes.SelectedItem.ToString()[0],
+                        txbNombre_Clientes.Text,
+                        txbAPaterno_Clientes.Text,
+                        txbAMaterno_Clientes.Text,
+                        txbCalle_Clientes.Text,
+                        txbNumeroDom_Clientes.Text,
+                        txbColonia_Clientes.Text,
+                        txbCiudad_Clientes.Text,
+                        int.Parse(txbCP_Clientes.Text)
+                        );
+
+                    if(MessageBox.Show("¿Está seguro de agregar un nuevo cliente?","Está usted agregando un nuevo cliente.", MessageBoxButtons.YesNo) == DialogResult.Yes)
+                    {
+                        //AgregarBD
+
+                        MessageBox.Show($"Se agregó a {nuevo.nombre} {nuevo.aPaterno} {nuevo.aMaterno} con el número de cliente {nuevo.idCliente} exitosamente.");
+
+                        cargarPaginaClientes();
+                        actualizaBotones_Clientes("ocultar");
+                    }
+                }
 
             }
         }

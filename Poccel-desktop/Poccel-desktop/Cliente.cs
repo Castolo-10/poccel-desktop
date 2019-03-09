@@ -9,33 +9,33 @@ namespace Poccel_desktop
     class Cliente
     {
         public int idCliente { get; }
-        public String correo { get; set; }
-        public String contraseña { get; set; }
+        public string correo { get; set; }
+        public string contraseña { get; set; }
         public DateTime ferchaNacimiento { get; set; }
         public char sexo { get; set; }
-        public String nombre { get; set; }
-        public String aPaterno { get; set; }
-        public String aMaterno { get; set; }
-        public String calle { get; set; }
-        public String numeroDom { get; set; }
-        public String colonia { get; set; }
-        public String ciudad { get; set; }
+        public string nombre { get; set; }
+        public string aPaterno { get; set; }
+        public string aMaterno { get; set; }
+        public string calle { get; set; }
+        public string numeroDom { get; set; }
+        public string colonia { get; set; }
+        public string ciudad { get; set; }
         public int cp { get; set; }
-
-        public Cliente(int id, String c, String p, DateTime fn, char s, String n, String ap, String am, String ca, String nd, String co, String ci, int cp )
+       
+        public Cliente(int id, string c, string p, DateTime fn, char s, string n, string ap, string am, string ca, string nd, string co, string ci, int cp )
         {
             this.idCliente = id;
-            this.correo = c;
-            this.contraseña = p;
+            this.correo = c.ToUpper();
+            this.contraseña = p.ToUpper();
             this.ferchaNacimiento = fn;
             this.sexo = s;
-            this.nombre = n;
-            this.aPaterno = ap;
-            this.aMaterno = am;
-            this.calle = ca;
-            this.numeroDom = nd;
-            this.colonia = co;
-            this.ciudad = ci;
+            this.nombre = n.ToUpper();
+            this.aPaterno = ap.ToUpper();
+            this.aMaterno = am.ToUpper();
+            this.calle = ca.ToUpper();
+            this.numeroDom = nd.ToUpper();
+            this.colonia = co.ToUpper();
+            this.ciudad = ci.ToUpper();
             this.cp = cp;
         }
 

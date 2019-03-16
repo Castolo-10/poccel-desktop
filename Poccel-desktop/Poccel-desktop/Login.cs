@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using ctrlDatos;
 
 namespace Poccel_desktop
 {
@@ -27,12 +28,12 @@ namespace Poccel_desktop
 
         private void txbUsuario_Leave(object sender, EventArgs e)
         {
-            Control.placeHolder_Leave((TextBox)sender);
+            ControlDatos.placeHolder_Leave((TextBox)sender);
         }
 
         private void txbUsuario_Enter(object sender, EventArgs e)
         {
-            Control.placeHolder_Enter((TextBox)sender);
+            ControlDatos.placeHolder_Enter((TextBox)sender);
         }
     }
 }

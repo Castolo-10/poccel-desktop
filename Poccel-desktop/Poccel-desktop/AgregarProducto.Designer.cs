@@ -28,149 +28,176 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button14 = new System.Windows.Forms.Button();
-            this.button13 = new System.Windows.Forms.Button();
-            this.textBox28 = new System.Windows.Forms.TextBox();
-            this.textBox29 = new System.Windows.Forms.TextBox();
-            this.textBox32 = new System.Windows.Forms.TextBox();
-            this.textBox35 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.button1 = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.components = new System.ComponentModel.Container();
+            this.btnCancelar = new System.Windows.Forms.Button();
+            this.btnAceptar = new System.Windows.Forms.Button();
+            this.txbCantidadProducto = new System.Windows.Forms.TextBox();
+            this.txbNombreProducto = new System.Windows.Forms.TextBox();
+            this.txbPrecioProducto = new System.Windows.Forms.TextBox();
+            this.txbDescripcionProducto = new System.Windows.Forms.TextBox();
+            this.txbCodigoProducto = new System.Windows.Forms.TextBox();
+            this.pboxProducto = new System.Windows.Forms.PictureBox();
+            this.btnExaminar = new System.Windows.Forms.Button();
+            this.toolTipMensaje = new System.Windows.Forms.ToolTip(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.pboxProducto)).BeginInit();
             this.SuspendLayout();
             // 
-            // button14
+            // btnCancelar
             // 
-            this.button14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(101)))), ((int)(((byte)(176)))));
-            this.button14.FlatAppearance.BorderColor = System.Drawing.Color.Navy;
-            this.button14.FlatAppearance.BorderSize = 0;
-            this.button14.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Yellow;
-            this.button14.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Navy;
-            this.button14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button14.Font = new System.Drawing.Font("Corbert DemiBold", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button14.ForeColor = System.Drawing.Color.White;
-            this.button14.Location = new System.Drawing.Point(170, 408);
-            this.button14.Name = "button14";
-            this.button14.Size = new System.Drawing.Size(140, 30);
-            this.button14.TabIndex = 33;
-            this.button14.Text = "Cancelar";
-            this.button14.UseVisualStyleBackColor = false;
+            this.btnCancelar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(47)))), ((int)(((byte)(59)))));
+            this.btnCancelar.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.btnCancelar.FlatAppearance.BorderColor = System.Drawing.Color.Navy;
+            this.btnCancelar.FlatAppearance.BorderSize = 0;
+            this.btnCancelar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
+            this.btnCancelar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Navy;
+            this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCancelar.Font = new System.Drawing.Font("Corbert DemiBold", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancelar.ForeColor = System.Drawing.Color.White;
+            this.btnCancelar.Location = new System.Drawing.Point(170, 408);
+            this.btnCancelar.Name = "btnCancelar";
+            this.btnCancelar.Size = new System.Drawing.Size(140, 30);
+            this.btnCancelar.TabIndex = 33;
+            this.btnCancelar.Text = "Cancelar";
+            this.btnCancelar.UseVisualStyleBackColor = false;
             // 
-            // button13
+            // btnAceptar
             // 
-            this.button13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(101)))), ((int)(((byte)(176)))));
-            this.button13.FlatAppearance.BorderColor = System.Drawing.Color.Navy;
-            this.button13.FlatAppearance.BorderSize = 0;
-            this.button13.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Yellow;
-            this.button13.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Navy;
-            this.button13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button13.Font = new System.Drawing.Font("Corbert DemiBold", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button13.ForeColor = System.Drawing.Color.White;
-            this.button13.Location = new System.Drawing.Point(24, 408);
-            this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(140, 30);
-            this.button13.TabIndex = 32;
-            this.button13.Text = "Aceptar";
-            this.button13.UseVisualStyleBackColor = false;
+            this.btnAceptar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(101)))), ((int)(((byte)(176)))));
+            this.btnAceptar.FlatAppearance.BorderColor = System.Drawing.Color.Navy;
+            this.btnAceptar.FlatAppearance.BorderSize = 0;
+            this.btnAceptar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
+            this.btnAceptar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Navy;
+            this.btnAceptar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAceptar.Font = new System.Drawing.Font("Corbert DemiBold", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAceptar.ForeColor = System.Drawing.Color.White;
+            this.btnAceptar.Location = new System.Drawing.Point(24, 408);
+            this.btnAceptar.Name = "btnAceptar";
+            this.btnAceptar.Size = new System.Drawing.Size(140, 30);
+            this.btnAceptar.TabIndex = 32;
+            this.btnAceptar.Text = "Aceptar";
+            this.btnAceptar.UseVisualStyleBackColor = false;
+            this.btnAceptar.Click += new System.EventHandler(this.btnAceptar_Click);
             // 
-            // textBox28
+            // txbCantidadProducto
             // 
-            this.textBox28.Font = new System.Drawing.Font("Corbert DemiBold", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox28.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.textBox28.Location = new System.Drawing.Point(24, 343);
-            this.textBox28.Name = "textBox28";
-            this.textBox28.Size = new System.Drawing.Size(240, 30);
-            this.textBox28.TabIndex = 37;
-            this.textBox28.Text = "Cantidad";
+            this.txbCantidadProducto.Font = new System.Drawing.Font("Corbert DemiBold", 14F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txbCantidadProducto.ForeColor = System.Drawing.Color.Silver;
+            this.txbCantidadProducto.Location = new System.Drawing.Point(24, 341);
+            this.txbCantidadProducto.Name = "txbCantidadProducto";
+            this.txbCantidadProducto.Size = new System.Drawing.Size(140, 30);
+            this.txbCantidadProducto.TabIndex = 37;
+            this.txbCantidadProducto.Tag = "Cantidad, numero, Inserte la cantidad de productos en inventario";
+            this.txbCantidadProducto.Text = "Cantidad";
+            this.txbCantidadProducto.Enter += new System.EventHandler(this.PlaceHolder_Enter);
+            this.txbCantidadProducto.Leave += new System.EventHandler(this.PlaceHolder_Leave);
+            this.txbCantidadProducto.Validated += new System.EventHandler(this.validarCampos);
             // 
-            // textBox29
+            // txbNombreProducto
             // 
-            this.textBox29.Font = new System.Drawing.Font("Corbert DemiBold", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox29.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.textBox29.Location = new System.Drawing.Point(24, 80);
-            this.textBox29.Name = "textBox29";
-            this.textBox29.Size = new System.Drawing.Size(328, 30);
-            this.textBox29.TabIndex = 36;
-            this.textBox29.Text = "Nombre";
+            this.txbNombreProducto.Font = new System.Drawing.Font("Corbert DemiBold", 14F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txbNombreProducto.ForeColor = System.Drawing.Color.Silver;
+            this.txbNombreProducto.Location = new System.Drawing.Point(24, 83);
+            this.txbNombreProducto.Name = "txbNombreProducto";
+            this.txbNombreProducto.Size = new System.Drawing.Size(286, 30);
+            this.txbNombreProducto.TabIndex = 36;
+            this.txbNombreProducto.Tag = "Nombre, alfanumerico, Inserte el nombre del producto";
+            this.txbNombreProducto.Text = "Nombre";
+            this.txbNombreProducto.Enter += new System.EventHandler(this.PlaceHolder_Enter);
+            this.txbNombreProducto.Leave += new System.EventHandler(this.PlaceHolder_Leave);
+            this.txbNombreProducto.Validated += new System.EventHandler(this.validarCampos);
             // 
-            // textBox32
+            // txbPrecioProducto
             // 
-            this.textBox32.Font = new System.Drawing.Font("Corbert DemiBold", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox32.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.textBox32.Location = new System.Drawing.Point(24, 280);
-            this.textBox32.Name = "textBox32";
-            this.textBox32.Size = new System.Drawing.Size(260, 30);
-            this.textBox32.TabIndex = 35;
-            this.textBox32.Text = "Precio";
+            this.txbPrecioProducto.Font = new System.Drawing.Font("Corbert DemiBold", 14F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txbPrecioProducto.ForeColor = System.Drawing.Color.Silver;
+            this.txbPrecioProducto.Location = new System.Drawing.Point(24, 289);
+            this.txbPrecioProducto.Name = "txbPrecioProducto";
+            this.txbPrecioProducto.Size = new System.Drawing.Size(140, 30);
+            this.txbPrecioProducto.TabIndex = 35;
+            this.txbPrecioProducto.Tag = "Precio, moneda, Inserte el precio del producto con dos decimales";
+            this.txbPrecioProducto.Text = "Precio";
+            this.txbPrecioProducto.Enter += new System.EventHandler(this.PlaceHolder_Enter);
+            this.txbPrecioProducto.Leave += new System.EventHandler(this.PlaceHolder_Leave);
+            this.txbPrecioProducto.Validated += new System.EventHandler(this.validarCampos);
             // 
-            // textBox35
+            // txbDescripcionProducto
             // 
-            this.textBox35.Font = new System.Drawing.Font("Corbert DemiBold", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox35.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.textBox35.Location = new System.Drawing.Point(24, 131);
-            this.textBox35.Multiline = true;
-            this.textBox35.Name = "textBox35";
-            this.textBox35.Size = new System.Drawing.Size(340, 132);
-            this.textBox35.TabIndex = 34;
-            this.textBox35.Text = "Descripción";
+            this.txbDescripcionProducto.Font = new System.Drawing.Font("Corbert DemiBold", 14F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txbDescripcionProducto.ForeColor = System.Drawing.Color.Silver;
+            this.txbDescripcionProducto.Location = new System.Drawing.Point(24, 135);
+            this.txbDescripcionProducto.Multiline = true;
+            this.txbDescripcionProducto.Name = "txbDescripcionProducto";
+            this.txbDescripcionProducto.Size = new System.Drawing.Size(286, 132);
+            this.txbDescripcionProducto.TabIndex = 34;
+            this.txbDescripcionProducto.Tag = "Descripción, alfanumerico, Inserte la descripción del producto";
+            this.txbDescripcionProducto.Text = "Descripción";
+            this.txbDescripcionProducto.Enter += new System.EventHandler(this.PlaceHolder_Enter);
+            this.txbDescripcionProducto.Leave += new System.EventHandler(this.PlaceHolder_Leave);
+            this.txbDescripcionProducto.Validated += new System.EventHandler(this.validarCampos);
             // 
-            // textBox1
+            // txbCodigoProducto
             // 
-            this.textBox1.Font = new System.Drawing.Font("Corbert DemiBold", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.textBox1.Location = new System.Drawing.Point(24, 31);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(203, 30);
-            this.textBox1.TabIndex = 38;
-            this.textBox1.Text = "Código";
+            this.txbCodigoProducto.Font = new System.Drawing.Font("Corbert DemiBold", 14F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txbCodigoProducto.ForeColor = System.Drawing.Color.Silver;
+            this.txbCodigoProducto.Location = new System.Drawing.Point(24, 31);
+            this.txbCodigoProducto.Name = "txbCodigoProducto";
+            this.txbCodigoProducto.Size = new System.Drawing.Size(286, 30);
+            this.txbCodigoProducto.TabIndex = 38;
+            this.txbCodigoProducto.Tag = "Código, alfanumerico, Inserte el código del producto";
+            this.txbCodigoProducto.Text = "Código";
+            this.txbCodigoProducto.Enter += new System.EventHandler(this.PlaceHolder_Enter);
+            this.txbCodigoProducto.Leave += new System.EventHandler(this.PlaceHolder_Leave);
+            this.txbCodigoProducto.Validated += new System.EventHandler(this.validarCampos);
             // 
-            // pictureBox2
+            // pboxProducto
             // 
-            this.pictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pictureBox2.Location = new System.Drawing.Point(397, 31);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(242, 342);
-            this.pictureBox2.TabIndex = 39;
-            this.pictureBox2.TabStop = false;
+            this.pboxProducto.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pboxProducto.Location = new System.Drawing.Point(335, 31);
+            this.pboxProducto.Name = "pboxProducto";
+            this.pboxProducto.Size = new System.Drawing.Size(163, 208);
+            this.pboxProducto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pboxProducto.TabIndex = 39;
+            this.pboxProducto.TabStop = false;
             // 
-            // button1
+            // btnExaminar
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(101)))), ((int)(((byte)(176)))));
-            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.Navy;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Yellow;
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Navy;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Corbert DemiBold", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(446, 379);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(140, 30);
-            this.button1.TabIndex = 40;
-            this.button1.Text = "Examinar";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnExaminar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(101)))), ((int)(((byte)(176)))));
+            this.btnExaminar.FlatAppearance.BorderColor = System.Drawing.Color.Navy;
+            this.btnExaminar.FlatAppearance.BorderSize = 0;
+            this.btnExaminar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Yellow;
+            this.btnExaminar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Navy;
+            this.btnExaminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnExaminar.Font = new System.Drawing.Font("Corbert DemiBold", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExaminar.ForeColor = System.Drawing.Color.White;
+            this.btnExaminar.Location = new System.Drawing.Point(346, 245);
+            this.btnExaminar.Name = "btnExaminar";
+            this.btnExaminar.Size = new System.Drawing.Size(140, 30);
+            this.btnExaminar.TabIndex = 40;
+            this.btnExaminar.Text = "Examinar";
+            this.btnExaminar.UseVisualStyleBackColor = false;
+            this.btnExaminar.Click += new System.EventHandler(this.btnExaminar_Click);
             // 
             // AgregarProducto
             // 
-            this.AcceptButton = this.button13;
+            this.AcceptButton = this.btnAceptar;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.CancelButton = this.button14;
-            this.ClientSize = new System.Drawing.Size(684, 450);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.textBox28);
-            this.Controls.Add(this.textBox29);
-            this.Controls.Add(this.textBox32);
-            this.Controls.Add(this.textBox35);
-            this.Controls.Add(this.button14);
-            this.Controls.Add(this.button13);
+            this.BackColor = System.Drawing.Color.LightCyan;
+            this.CancelButton = this.btnCancelar;
+            this.ClientSize = new System.Drawing.Size(525, 450);
+            this.Controls.Add(this.btnExaminar);
+            this.Controls.Add(this.pboxProducto);
+            this.Controls.Add(this.txbCodigoProducto);
+            this.Controls.Add(this.txbCantidadProducto);
+            this.Controls.Add(this.txbNombreProducto);
+            this.Controls.Add(this.txbPrecioProducto);
+            this.Controls.Add(this.txbDescripcionProducto);
+            this.Controls.Add(this.btnCancelar);
+            this.Controls.Add(this.btnAceptar);
             this.Name = "AgregarProducto";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Nuevo Producto";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pboxProducto)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -178,14 +205,15 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button14;
-        private System.Windows.Forms.Button button13;
-        private System.Windows.Forms.TextBox textBox28;
-        private System.Windows.Forms.TextBox textBox29;
-        private System.Windows.Forms.TextBox textBox32;
-        private System.Windows.Forms.TextBox textBox35;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnCancelar;
+        private System.Windows.Forms.Button btnAceptar;
+        private System.Windows.Forms.TextBox txbCantidadProducto;
+        private System.Windows.Forms.TextBox txbNombreProducto;
+        private System.Windows.Forms.TextBox txbPrecioProducto;
+        private System.Windows.Forms.TextBox txbDescripcionProducto;
+        private System.Windows.Forms.TextBox txbCodigoProducto;
+        private System.Windows.Forms.PictureBox pboxProducto;
+        private System.Windows.Forms.Button btnExaminar;
+        private System.Windows.Forms.ToolTip toolTipMensaje;
     }
 }

@@ -13,22 +13,22 @@ using System.Windows.Forms;
 //Color Rojo Poccel: System.Drawing.ColorTranslator.FromHtml("#DF2F3B");
 
 
-namespace Poccel_desktop
+namespace ctrlDatos
 {
-    static class Control
+    static class ControlDatos
     {
         static public void placeHolder_Leave(TextBox txb)
         {
             if (txb.Text == "")
             {
-                Text(txb, txb.Tag.ToString());
+                Text(txb, txb.Tag.ToString().Split(',')[0]);
                 ForeColor(txb, Color.Silver);
                 txb.Font = new Font("Corbert DemiBold", 14.25F, FontStyle.Italic, GraphicsUnit.Point, 1);
             }
         }
         static public void placeHolder_Enter(TextBox txb)
         {
-            if (txb.Text == txb.Tag.ToString() && txb.ForeColor == Color.Silver)
+            if (txb.Text == txb.Tag.ToString().Split(',')[0] && (txb.ForeColor == Color.Silver || txb.ForeColor == Color.Red))
             {
                 Text(txb, "");
                 ForeColor(txb, Color.Black);
@@ -90,69 +90,76 @@ namespace Poccel_desktop
         
         static public void validar(TextBox txb, string str)
         {
-            if(str == "texto")
+            str = str.Trim();
+            str = str.ToLower();
+            bool error = true;
+            if (txb.Text != txb.Tag.ToString().Split(',')[0])
             {
-                if(txb.Text != txb.Tag.ToString())
+                switch (str)
                 {
-                    bool resultado = Regex.IsMatch(txb.Text, @"^[a-zA-ZñÑ\s]+$");
-                    if (!resultado)
-                    {
-                        txb.ForeColor = Color.Red;
-                    }
-                    else
-                    {
-                        txb.ForeColor = Color.Black;
+                    case "alfanumerico":
+                        error = false;
 
-                    }
+                        break;
+                    case "texto":
+                        error = !Regex.IsMatch(txb.Text, @"^[a-zA-ZñÑ\s]+$");
+
+
+                        break;
+                    case "numero":
+                        error = !Regex.IsMatch(txb.Text, @"^[0-9]+$");
+
+                        break;
+                    case "correo":
+                        error = !Regex.IsMatch(txb.Text, @"^[\w!#$%&'*+\-/=?\^_`{|}~]+(\.[\w!#$%&'*+\-/=?\^_`{|}~]+)*" + "@" + @"((([\-\w]+\.)+[a-zA-Z]{2,4})|(([0-9]{1,3}\.){3}[0-9]{1,3}))$");
+
+                        break;
+                    case "telefono":
+                        error = !Regex.IsMatch(txb.Text, @"^[0-9]{10}$");
+
+                        break;
+                    case "moneda":
+                        error = !Regex.IsMatch(txb.Text, @"^[0-9]+(.)+[0-9]{2}$");
+
+
+
+                        break;
+
+                    default: if (str != "alfanumerico") MessageBox.Show("Test"); error = false; break;
                 }
+
             }
-            if(str == "correo")
+            txb.ForeColor = (error) ? Color.Red : Color.Black;
+        }
+        static public bool validar(object[] array)
+        {
+            foreach(TextBox o in (TextBox[]) array)
             {
-                bool resultado = Regex.IsMatch(txb.Text, @"^([\w\.\-]+)@([\w\-]+)((\.(\w){2,3})+)$");
-                if (txb.Text != txb.Tag.ToString())
+                if (o.Text == o.Tag.ToString() || o.ForeColor == Color.Silver || o.ForeColor == Color.Red)
                 {
-                    if (!resultado)
-                    {
-                        txb.ForeColor = Color.Red;
-                    }
-                    else
-                    {
-                        txb.ForeColor = Color.Black;
-
-                    }
+                    return true;
                 }
+
             }
-            if (str == "numeros")
-            {
-                bool resultado = Regex.IsMatch(txb.Text, @"^[0-9]+$");
-                if (txb.Text != txb.Tag.ToString())
-                {
-                    if (!resultado)
-                    {
-                        txb.ForeColor = Color.Red;
-                    }
-                    else
-                    {
-                        txb.ForeColor = Color.Black;
+            return false;
 
-                    }
-                }
+        }
+
+        static public string ImageToBase64String(Image imagen)
+        {
+            using (var ms = new System.IO.MemoryStream())
+            {
+                imagen.Save(ms, imagen.RawFormat);
+                return Convert.ToBase64String(ms.ToArray());
             }
-            if (str == "telefono")
-            {
-                bool resultado = Regex.IsMatch(txb.Text, @"^[0-9]+$");
-                if (txb.Text != txb.Tag.ToString())
-                {
-                    if (!resultado || txb.Text.Length != 10)
-                    {
-                            txb.ForeColor = Color.Red;
-                    }
-                    else
-                    {
-                        txb.ForeColor = Color.Black;
+        }
 
-                    }
-                }
+        static public Image Base64StringToImage(string stringBase64)
+        {
+            byte[] imageBytes = Convert.FromBase64String(stringBase64);
+            using (var ms = new System.IO.MemoryStream(imageBytes, 0, imageBytes.Length))
+            {
+                return Image.FromStream(ms, true);
             }
         }
     }

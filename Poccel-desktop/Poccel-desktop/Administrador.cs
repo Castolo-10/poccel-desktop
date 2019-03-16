@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using ctrlDatos;
 using DataBase;
 
 //Color Azul Poccel: System.Drawing.ColorTranslator.FromHtml("#0965B0");
@@ -38,11 +39,18 @@ namespace Poccel_desktop
             };
             camposEmpleados = new TextBox[]
             {
-                txbNumero_Empleados, txbContraseña_Empleados, txbContraseñaRep_Empleados,
+                txbContraseña_Empleados, txbContraseñaRep_Empleados,
                 txbNombre_Empleados, txbAPaterno_Empleados, txbAMaterno_Empleados,
                 txbEmail_Empleados, txbTelefono_Empleados,
                 txbCalle_Empleados, txbNumeroDom_Empleados, txbCiudad_Empleados, txbColonia_Empleados, txbCP_Empleados
             };
+            foreach(TextBox tb in camposClientes)
+            {
+                toolTipMessage.SetToolTip(tb, tb.Tag.ToString().Split(',')[2]);
+            }
+            toolTipMessage.SetToolTip(txbBuscar_Clientes, "Ingresa el número de cliente a buscar");
+
+
         }
 
         private void button8_Click(object sender, EventArgs e)
@@ -97,23 +105,39 @@ namespace Poccel_desktop
             foreach (TextBox txb in camposClientes)
             {
                 txb.Text = ("");
-                Control.placeHolder_Leave(txb);
+                ControlDatos.placeHolder_Leave(txb);
                 txb.Enabled = false;
             }
             txbNumero_Clientes.Text = "Nº de Cliente";
+            cboxSexo_Clientes.Enabled = false;
+            dtpFecha_Clientes.Enabled = false;
+        }
+        private void cargarPaginaEmpleados()
+        {
+            foreach (TextBox txb in camposEmpleados)
+            {
+                txb.Text = ("");
+                ControlDatos.placeHolder_Leave(txb);
+                txb.Enabled = false;
+            }
+            txbNumero_Empleados.Text = "Nº de Cliente";
+            cboxPuesto_Empleados.Enabled = false;
+            cboxSexo_Empleados.Enabled = false;
+            dtpFecha_Empleados.Enabled = false;
+
         }
 
         private void cargarPaginaVentas()
         {
-            Control.btnUnabled(btnCancelar_Ventas, "rojo", false);
-            Control.btnUnabled(btnContado_Ventas, "gris", true);
-            Control.btnUnabled(btnCredito_Ventas, "gris", true);
-            Control.btnUnabled(btnAgregar_Ventas, "gris", true);
-            Control.btnUnabled(btnEliminar_Ventas, "rojo", false);
-            Control.txbBorrar(txbProducto_Ventas);
-            Control.txbBorrar(txbCantidad_Ventas);
-            Control.txbBorrar(txbBuscar_Ventas);
-            listvProductos_Ventas.Items.Clear();
+            ControlDatos.btnUnabled(btnCancelar_Ventas, "rojo", false);
+            ControlDatos.btnUnabled(btnContado_Ventas, "gris", true);
+            ControlDatos.btnUnabled(btnCredito_Ventas, "gris", true);
+            ControlDatos.btnUnabled(btnAgregar_Ventas, "gris", true);
+            ControlDatos.btnUnabled(btnEliminar_Ventas, "rojo", false);
+            ControlDatos.txbBorrar(txbProducto_Ventas);
+            ControlDatos.txbBorrar(txbCantidad_Ventas);
+            ControlDatos.txbBorrar(txbBuscar_Ventas);
+            dgvProductos_Ventas.Rows.Clear();
             txbProducto_Ventas.Enabled = false;
             txbCantidad_Ventas.Enabled = false;
         }
@@ -152,12 +176,12 @@ namespace Poccel_desktop
         #region PlaceHolder
         private void txb_Leave(object sender, EventArgs e)
         {
-            Control.placeHolder_Leave((TextBox)sender);
+            ControlDatos.placeHolder_Leave((TextBox)sender);
         }
 
         private void txb_Enter(object sender, EventArgs e)
         {
-            Control.placeHolder_Enter((TextBox)sender);
+            ControlDatos.placeHolder_Enter((TextBox)sender);
         }
         #endregion
 
@@ -171,10 +195,11 @@ namespace Poccel_desktop
                     cargarPaginaVentas(); break;
                 case "buscar":
                     btnCancelar_Ventas.Visible = true;
-                    Control.btnEnabled(btnCancelar_Ventas, "rojo");
-                    Control.btnEnabled(btnAgregar_Ventas, "azul");
+                    ControlDatos.btnEnabled(btnCancelar_Ventas, "rojo");
+                    ControlDatos.btnEnabled(btnAgregar_Ventas, "azul");
                     txbProducto_Ventas.Enabled = true;
                     txbCantidad_Ventas.Enabled = true;
+                    
 
 
 
@@ -195,11 +220,11 @@ namespace Poccel_desktop
         private void btnAgregar_Ventas_Click(object sender, EventArgs e)
         {
             //Si agrega un producto
-            Control.txbBorrar(txbProducto_Ventas);
-            Control.txbBorrar(txbCantidad_Ventas);
-            Control.btnEnabled(btnCredito_Ventas, "azul");
-            Control.btnEnabled(btnContado_Ventas, "azul");
-            Control.btnEnabled(btnEliminar_Ventas, "rojo");
+            ControlDatos.txbBorrar(txbProducto_Ventas);
+            ControlDatos.txbBorrar(txbCantidad_Ventas);
+            ControlDatos.btnEnabled(btnCredito_Ventas, "azul");
+            ControlDatos.btnEnabled(btnContado_Ventas, "azul");
+            ControlDatos.btnEnabled(btnEliminar_Ventas, "rojo");
 
         }
 
@@ -213,7 +238,7 @@ namespace Poccel_desktop
         private void btnBuscar_Abonos_Click(object sender, EventArgs e)
         {
             //Si encuentra Cliente y Tiene Cuentas
-            Control.btnEnabled(btnAbonar_Abonos, "azul");
+            ControlDatos.btnEnabled(btnAbonar_Abonos, "azul");
         }
         #endregion
 
@@ -224,22 +249,26 @@ namespace Poccel_desktop
             switch(str.ToLower())
             {
                 case "buscar":
-                    Control.Text(btnAceptarModificar_Clientes, "Modificar");
-                    Control.Text(btnBajaCancelar_Clientes, "Dar de Baja");
-                    Control.btnEnabled(btnAceptarModificar_Clientes, "azul");
-                    Control.btnEnabled(btnBajaCancelar_Clientes, "rojo");
+                    ControlDatos.Text(btnAceptarModificar_Clientes, "Modificar");
+                    ControlDatos.Text(btnBajaCancelar_Clientes, "Dar de Baja");
+                    ControlDatos.btnEnabled(btnAceptarModificar_Clientes, "azul");
+                    ControlDatos.btnEnabled(btnBajaCancelar_Clientes, "rojo");
+                    cboxSexo_Clientes.Enabled = false;
+                    dtpFecha_Clientes.Enabled = false;
                     break;
                 case "nuevo":
-                    Control.Text(btnAceptarModificar_Clientes, "Aceptar");
-                    Control.Text(btnBajaCancelar_Clientes, "Cancelar");
-                    Control.btnEnabled(btnAceptarModificar_Clientes, "azul");
-                    Control.btnEnabled(btnBajaCancelar_Clientes, "rojo");
+                    ControlDatos.Text(btnAceptarModificar_Clientes, "Aceptar");
+                    ControlDatos.Text(btnBajaCancelar_Clientes, "Cancelar");
+                    ControlDatos.btnEnabled(btnAceptarModificar_Clientes, "azul");
+                    ControlDatos.btnEnabled(btnBajaCancelar_Clientes, "rojo");
+                    cboxSexo_Clientes.Enabled = true;
+                    dtpFecha_Clientes.Enabled = true;
                     break;
                 case "ocultar":
-                    Control.Text(btnAceptarModificar_Clientes, "boton");
-                    Control.Text(btnBajaCancelar_Clientes, "boton");
-                    Control.btnUnabled(btnAceptarModificar_Clientes, "azul", false);
-                    Control.btnUnabled(btnBajaCancelar_Clientes, "rojo", false);
+                    ControlDatos.Text(btnAceptarModificar_Clientes, "boton");
+                    ControlDatos.Text(btnBajaCancelar_Clientes, "boton");
+                    ControlDatos.btnUnabled(btnAceptarModificar_Clientes, "azul", false);
+                    ControlDatos.btnUnabled(btnBajaCancelar_Clientes, "rojo", false);
                     break;
             }
 
@@ -254,7 +283,7 @@ namespace Poccel_desktop
             foreach (TextBox txb in camposClientes)
             {
                 txb.Enabled = false;
-                Control.placeHolder_Enter(txb);
+                ControlDatos.placeHolder_Enter(txb);
             }
         }
 
@@ -265,7 +294,7 @@ namespace Poccel_desktop
             {
                 txb.Enabled = true;
                 txb.Text = "";
-                Control.placeHolder_Leave(txb);
+                ControlDatos.placeHolder_Leave(txb);
             }
             txbNumero_Clientes.Enabled = false;
             actualizaBotones_Clientes("nuevo");
@@ -292,18 +321,10 @@ namespace Poccel_desktop
 
         private void btnAceptarModificar_Clientes_Click(object sender, EventArgs e)
         {
-
-
             if(btnAceptarModificar_Clientes.Text == "Aceptar")
             {
                 bool error = false;
-                foreach(TextBox txb in camposClientes)
-                {
-                    if(txb.ForeColor == Color.Red || txb.ForeColor == Color.Silver)
-                    {
-                        error = true;
-                    }
-                }
+                error = ControlDatos.validar(camposClientes);
                 if(dtpFecha_Clientes.Value == null || cboxSexo_Clientes.SelectedItem == null)
                 {
                     error = true;
@@ -311,6 +332,7 @@ namespace Poccel_desktop
                 if(txbContraseña_Clientes.Text != txbContraseñaRep_Clientes.Text)
                 {
                     MessageBox.Show("Las contraseñas no coinciden");
+                    error = true;
                 }
                 if(error)
                 {
@@ -354,21 +376,51 @@ namespace Poccel_desktop
 
         #region Pestaña Empleados
 
+        private void actualizaBotones_Empleados(String str)
+        {
+            switch (str.ToLower())
+            {
+                case "buscar":
+                    ControlDatos.Text(btnAceptarModificar_Empleados, "Modificar");
+                    ControlDatos.Text(btnBajaCancelar_Empleados, "Dar de Baja");
+                    ControlDatos.btnEnabled(btnAceptarModificar_Empleados, "azul");
+                    ControlDatos.btnEnabled(btnBajaCancelar_Empleados, "rojo");
+                    cboxPuesto_Empleados.Enabled = false;
+                    cboxSexo_Empleados.Enabled = false;
+                    dtpFecha_Empleados.Enabled = false;
+                    break;
+                case "nuevo":
+                    ControlDatos.Text(btnAceptarModificar_Empleados, "Aceptar");
+                    ControlDatos.Text(btnBajaCancelar_Empleados, "Cancelar");
+                    ControlDatos.btnEnabled(btnAceptarModificar_Empleados, "azul");
+                    ControlDatos.btnEnabled(btnBajaCancelar_Empleados, "rojo");
+                    cboxPuesto_Empleados.Enabled = true;
+                    cboxSexo_Empleados.Enabled = true;
+                    dtpFecha_Empleados.Enabled = true;
+                    break;
+                case "ocultar":
+                    ControlDatos.Text(btnAceptarModificar_Empleados, "boton");
+                    ControlDatos.Text(btnBajaCancelar_Empleados, "boton");
+                    ControlDatos.btnUnabled(btnAceptarModificar_Empleados, "azul", false);
+                    ControlDatos.btnUnabled(btnBajaCancelar_Empleados, "rojo", false);
+                    break;
+            }
+
+        }
+
         private void btnBuscarEmpleados_Click(object sender, EventArgs e)
         {
             //Si encuentra cliente
-            Control.btnEnabled(btnModificar_Empleados, "azul");
-            Control.btnEnabled(btnBaja_Empleados, "rojo");
+            actualizaBotones_Empleados("buscar");
 
             //Inhabilita Campos
             foreach (TextBox txb in camposEmpleados)
             {
                 txb.Enabled = false;
-                Control.placeHolder_Enter(txb);
+                ControlDatos.placeHolder_Enter(txb);
             }
 
         }
-
         private void btnNuevo_Empleados_Click(object sender, EventArgs e)
         {
             //Habilita Campos
@@ -376,48 +428,26 @@ namespace Poccel_desktop
             {
                 txb.Enabled = true;
                 txb.Text = "";
-                Control.placeHolder_Leave(txb);
+                ControlDatos.placeHolder_Leave(txb);
             }
-            btnModificar_Empleados.Visible = false;
-            btnBaja_Empleados.Visible = false;
-            dtpFecha_Empleados.Enabled = true;
-            cboxSexo_Empleados.Enabled = true;
+            actualizaBotones_Empleados("nuevo");
         }
-
-
-
-
-
-
-
-
-
-
+        private void btnBajaCancelar_Empleados_Click(object sender, EventArgs e)
+        {
+            actualizaBotones_Empleados("ocultar");
+            cargarPaginaEmpleados();
+        }
         #endregion
 
-        private void validarCorreo(object sender, CancelEventArgs e)
-        {
-            TextBox txb = (TextBox)sender;
-            Control.validar(txb, "correo");
-        }
+        #region Eventos validador de TextBox
 
-        private void validarTexto(object sender, EventArgs e)
+        private void validarCampos(object sender, EventArgs e)
         {
             TextBox txb = (TextBox)sender;
-            Control.validar(txb, "texto");
+            ControlDatos.validar(txb, txb.Tag.ToString().Split(',')[1]);
         }
+        #endregion
 
-        private void validarNumeros(object sender, EventArgs e)
-        {
-            TextBox txb = (TextBox)sender;
-            Control.validar(txb, "numeros");
-        }
-
-        private void validarTelefono(object sender, EventArgs e)
-        {
-            TextBox txb = (TextBox)sender;
-            Control.validar(txb, "telefono");
-        }
 
     }
 }

@@ -28,6 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Administrador));
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnSalir = new System.Windows.Forms.Button();
@@ -40,6 +47,12 @@
             this.btnVentas = new System.Windows.Forms.Button();
             this.tabControlAdministrador = new System.Windows.Forms.TabControl();
             this.tabPageVentas = new System.Windows.Forms.TabPage();
+            this.dgvProductos_Ventas = new System.Windows.Forms.DataGridView();
+            this.Column_idProducto = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnDescripcion = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnCantidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnPrecio = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnTotal = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnEliminar_Ventas = new System.Windows.Forms.Button();
             this.lblCliente_Ventas = new System.Windows.Forms.Label();
             this.btnCancelar_Ventas = new System.Windows.Forms.Button();
@@ -53,25 +66,19 @@
             this.btnCredito_Ventas = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.lblTotal_Ventas = new System.Windows.Forms.Label();
-            this.listvProductos_Ventas = new System.Windows.Forms.ListView();
-            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.btnBuscar_Ventas = new System.Windows.Forms.Button();
             this.txbBuscar_Ventas = new System.Windows.Forms.TextBox();
             this.tabPageAbonos = new System.Windows.Forms.TabPage();
-            this.cboxCuenta_Abonos = new System.Windows.Forms.ComboBox();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.ColumnProducto = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnFechaCompra = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnAdeudo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnUltimoAbono = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnAbonoMensual = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnAbonar = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.btnAbonar_Abonos = new System.Windows.Forms.Button();
             this.txbCantida_Abonos = new System.Windows.Forms.TextBox();
             this.lblTotal_Abonos = new System.Windows.Forms.Label();
-            this.lvwCuentasAbonos = new System.Windows.Forms.ListView();
-            this.columnHeader6 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader7 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader8 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader9 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader10 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.lblCliente_Abonos = new System.Windows.Forms.Label();
             this.btnBuscar_Abonos = new System.Windows.Forms.Button();
             this.txbBuscar_Abonos = new System.Windows.Forms.TextBox();
@@ -156,8 +163,8 @@
             this.txbContraseñaRep_Empleados = new System.Windows.Forms.TextBox();
             this.txbNumero_Empleados = new System.Windows.Forms.TextBox();
             this.btnNuevo_Empleados = new System.Windows.Forms.Button();
-            this.btnBaja_Empleados = new System.Windows.Forms.Button();
-            this.btnModificar_Empleados = new System.Windows.Forms.Button();
+            this.btnBajaCancelar_Empleados = new System.Windows.Forms.Button();
+            this.btnAceptarModificar_Empleados = new System.Windows.Forms.Button();
             this.btnBuscarEmpleados = new System.Windows.Forms.Button();
             this.txbBuscar_Empleados = new System.Windows.Forms.TextBox();
             this.tabPageConfiguración = new System.Windows.Forms.TabPage();
@@ -168,12 +175,16 @@
             this.button19 = new System.Windows.Forms.Button();
             this.button20 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.toolTipMessage = new System.Windows.Forms.ToolTip(this.components);
+            this.btnAgregar_Inventario = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.tabControlAdministrador.SuspendLayout();
             this.tabPageVentas.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvProductos_Ventas)).BeginInit();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
             this.tabPageAbonos.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.tabPageClientes.SuspendLayout();
             this.panel9.SuspendLayout();
             this.panel8.SuspendLayout();
@@ -372,13 +383,13 @@
             // tabPageVentas
             // 
             this.tabPageVentas.BackColor = System.Drawing.Color.LightCyan;
+            this.tabPageVentas.Controls.Add(this.dgvProductos_Ventas);
             this.tabPageVentas.Controls.Add(this.btnEliminar_Ventas);
             this.tabPageVentas.Controls.Add(this.lblCliente_Ventas);
             this.tabPageVentas.Controls.Add(this.btnCancelar_Ventas);
             this.tabPageVentas.Controls.Add(this.panel3);
             this.tabPageVentas.Controls.Add(this.panel2);
             this.tabPageVentas.Controls.Add(this.lblTotal_Ventas);
-            this.tabPageVentas.Controls.Add(this.listvProductos_Ventas);
             this.tabPageVentas.Controls.Add(this.btnBuscar_Ventas);
             this.tabPageVentas.Controls.Add(this.txbBuscar_Ventas);
             this.tabPageVentas.ForeColor = System.Drawing.Color.White;
@@ -388,6 +399,87 @@
             this.tabPageVentas.Size = new System.Drawing.Size(1150, 545);
             this.tabPageVentas.TabIndex = 0;
             this.tabPageVentas.Text = "tabPage1";
+            // 
+            // dgvProductos_Ventas
+            // 
+            this.dgvProductos_Ventas.AllowUserToAddRows = false;
+            this.dgvProductos_Ventas.AllowUserToDeleteRows = false;
+            this.dgvProductos_Ventas.AllowUserToResizeRows = false;
+            this.dgvProductos_Ventas.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvProductos_Ventas.BackgroundColor = System.Drawing.Color.White;
+            this.dgvProductos_Ventas.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dgvProductos_Ventas.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Sunken;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(101)))), ((int)(((byte)(176)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Corbert DemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(136)))), ((int)(((byte)(143)))));
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvProductos_Ventas.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgvProductos_Ventas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvProductos_Ventas.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column_idProducto,
+            this.ColumnDescripcion,
+            this.ColumnCantidad,
+            this.ColumnPrecio,
+            this.ColumnTotal});
+            this.dgvProductos_Ventas.EnableHeadersVisualStyles = false;
+            this.dgvProductos_Ventas.GridColor = System.Drawing.Color.White;
+            this.dgvProductos_Ventas.Location = new System.Drawing.Point(52, 127);
+            this.dgvProductos_Ventas.MultiSelect = false;
+            this.dgvProductos_Ventas.Name = "dgvProductos_Ventas";
+            this.dgvProductos_Ventas.ReadOnly = true;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(101)))), ((int)(((byte)(176)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Corbert DemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(47)))), ((int)(((byte)(59)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvProductos_Ventas.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.dgvProductos_Ventas.RowHeadersVisible = false;
+            this.dgvProductos_Ventas.RowHeadersWidth = 25;
+            this.dgvProductos_Ventas.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Corbert DemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.NullValue = "-";
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(134)))), ((int)(((byte)(179)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.White;
+            this.dgvProductos_Ventas.RowsDefaultCellStyle = dataGridViewCellStyle3;
+            this.dgvProductos_Ventas.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvProductos_Ventas.Size = new System.Drawing.Size(844, 201);
+            this.dgvProductos_Ventas.TabIndex = 16;
+            // 
+            // Column_idProducto
+            // 
+            this.Column_idProducto.HeaderText = "ID Producto";
+            this.Column_idProducto.Name = "Column_idProducto";
+            this.Column_idProducto.ReadOnly = true;
+            // 
+            // ColumnDescripcion
+            // 
+            this.ColumnDescripcion.HeaderText = "Descripción";
+            this.ColumnDescripcion.Name = "ColumnDescripcion";
+            this.ColumnDescripcion.ReadOnly = true;
+            // 
+            // ColumnCantidad
+            // 
+            this.ColumnCantidad.HeaderText = "Cantidad";
+            this.ColumnCantidad.Name = "ColumnCantidad";
+            this.ColumnCantidad.ReadOnly = true;
+            // 
+            // ColumnPrecio
+            // 
+            this.ColumnPrecio.HeaderText = "Precio";
+            this.ColumnPrecio.Name = "ColumnPrecio";
+            this.ColumnPrecio.ReadOnly = true;
+            // 
+            // ColumnTotal
+            // 
+            this.ColumnTotal.HeaderText = "Total";
+            this.ColumnTotal.Name = "ColumnTotal";
+            this.ColumnTotal.ReadOnly = true;
             // 
             // btnEliminar_Ventas
             // 
@@ -580,46 +672,6 @@
             this.lblTotal_Ventas.TabIndex = 6;
             this.lblTotal_Ventas.Text = "Total: $0.00";
             // 
-            // listvProductos_Ventas
-            // 
-            this.listvProductos_Ventas.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.columnHeader1,
-            this.columnHeader2,
-            this.columnHeader3,
-            this.columnHeader4,
-            this.columnHeader5});
-            this.listvProductos_Ventas.Location = new System.Drawing.Point(52, 127);
-            this.listvProductos_Ventas.Name = "listvProductos_Ventas";
-            this.listvProductos_Ventas.Size = new System.Drawing.Size(844, 194);
-            this.listvProductos_Ventas.TabIndex = 2;
-            this.listvProductos_Ventas.UseCompatibleStateImageBehavior = false;
-            this.listvProductos_Ventas.View = System.Windows.Forms.View.Details;
-            // 
-            // columnHeader1
-            // 
-            this.columnHeader1.Text = "ID Producto";
-            this.columnHeader1.Width = 188;
-            // 
-            // columnHeader2
-            // 
-            this.columnHeader2.Text = "Descripción";
-            this.columnHeader2.Width = 300;
-            // 
-            // columnHeader3
-            // 
-            this.columnHeader3.Text = "Cantidad";
-            this.columnHeader3.Width = 123;
-            // 
-            // columnHeader4
-            // 
-            this.columnHeader4.Text = "Precio";
-            this.columnHeader4.Width = 115;
-            // 
-            // columnHeader5
-            // 
-            this.columnHeader5.Text = "Total";
-            this.columnHeader5.Width = 113;
-            // 
             // btnBuscar_Ventas
             // 
             this.btnBuscar_Ventas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(101)))), ((int)(((byte)(176)))));
@@ -656,11 +708,10 @@
             // tabPageAbonos
             // 
             this.tabPageAbonos.BackColor = System.Drawing.Color.LightCyan;
-            this.tabPageAbonos.Controls.Add(this.cboxCuenta_Abonos);
+            this.tabPageAbonos.Controls.Add(this.dataGridView1);
             this.tabPageAbonos.Controls.Add(this.btnAbonar_Abonos);
             this.tabPageAbonos.Controls.Add(this.txbCantida_Abonos);
             this.tabPageAbonos.Controls.Add(this.lblTotal_Abonos);
-            this.tabPageAbonos.Controls.Add(this.lvwCuentasAbonos);
             this.tabPageAbonos.Controls.Add(this.lblCliente_Abonos);
             this.tabPageAbonos.Controls.Add(this.btnBuscar_Abonos);
             this.tabPageAbonos.Controls.Add(this.txbBuscar_Abonos);
@@ -671,16 +722,93 @@
             this.tabPageAbonos.TabIndex = 1;
             this.tabPageAbonos.Text = "tabPage2";
             // 
-            // cboxCuenta_Abonos
+            // dataGridView1
             // 
-            this.cboxCuenta_Abonos.Font = new System.Drawing.Font("Corbert DemiBold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cboxCuenta_Abonos.ForeColor = System.Drawing.Color.Silver;
-            this.cboxCuenta_Abonos.FormattingEnabled = true;
-            this.cboxCuenta_Abonos.Location = new System.Drawing.Point(792, 191);
-            this.cboxCuenta_Abonos.Name = "cboxCuenta_Abonos";
-            this.cboxCuenta_Abonos.Size = new System.Drawing.Size(161, 31);
-            this.cboxCuenta_Abonos.TabIndex = 20;
-            this.cboxCuenta_Abonos.Text = "Cuenta";
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
+            this.dataGridView1.AllowUserToResizeRows = false;
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
+            this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Sunken;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(101)))), ((int)(((byte)(176)))));
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Corbert DemiBold", 10F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(136)))), ((int)(((byte)(143)))));
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.ColumnProducto,
+            this.ColumnFechaCompra,
+            this.ColumnAdeudo,
+            this.ColumnUltimoAbono,
+            this.ColumnAbonoMensual,
+            this.ColumnAbonar});
+            this.dataGridView1.EnableHeadersVisualStyles = false;
+            this.dataGridView1.GridColor = System.Drawing.Color.White;
+            this.dataGridView1.Location = new System.Drawing.Point(86, 170);
+            this.dataGridView1.MultiSelect = false;
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(101)))), ((int)(((byte)(176)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Corbert DemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(47)))), ((int)(((byte)(59)))));
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            this.dataGridView1.RowHeadersVisible = false;
+            this.dataGridView1.RowHeadersWidth = 25;
+            this.dataGridView1.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Corbert DemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle6.NullValue = "-";
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(134)))), ((int)(((byte)(179)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.White;
+            this.dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle6;
+            this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dataGridView1.Size = new System.Drawing.Size(874, 278);
+            this.dataGridView1.TabIndex = 21;
+            // 
+            // ColumnProducto
+            // 
+            this.ColumnProducto.HeaderText = "Producto";
+            this.ColumnProducto.Name = "ColumnProducto";
+            this.ColumnProducto.ReadOnly = true;
+            // 
+            // ColumnFechaCompra
+            // 
+            this.ColumnFechaCompra.HeaderText = "Fecha Compra";
+            this.ColumnFechaCompra.Name = "ColumnFechaCompra";
+            this.ColumnFechaCompra.ReadOnly = true;
+            // 
+            // ColumnAdeudo
+            // 
+            this.ColumnAdeudo.HeaderText = "Adeudo";
+            this.ColumnAdeudo.Name = "ColumnAdeudo";
+            this.ColumnAdeudo.ReadOnly = true;
+            // 
+            // ColumnUltimoAbono
+            // 
+            this.ColumnUltimoAbono.HeaderText = "Último Abono";
+            this.ColumnUltimoAbono.Name = "ColumnUltimoAbono";
+            this.ColumnUltimoAbono.ReadOnly = true;
+            // 
+            // ColumnAbonoMensual
+            // 
+            this.ColumnAbonoMensual.HeaderText = "Abono Mensual";
+            this.ColumnAbonoMensual.Name = "ColumnAbonoMensual";
+            this.ColumnAbonoMensual.ReadOnly = true;
+            // 
+            // ColumnAbonar
+            // 
+            this.ColumnAbonar.HeaderText = "Abonar";
+            this.ColumnAbonar.Name = "ColumnAbonar";
+            this.ColumnAbonar.ReadOnly = true;
             // 
             // btnAbonar_Abonos
             // 
@@ -693,7 +821,7 @@
             this.btnAbonar_Abonos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAbonar_Abonos.Font = new System.Drawing.Font("Corbert DemiBold", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAbonar_Abonos.ForeColor = System.Drawing.Color.White;
-            this.btnAbonar_Abonos.Location = new System.Drawing.Point(959, 236);
+            this.btnAbonar_Abonos.Location = new System.Drawing.Point(250, 474);
             this.btnAbonar_Abonos.Name = "btnAbonar_Abonos";
             this.btnAbonar_Abonos.Size = new System.Drawing.Size(93, 30);
             this.btnAbonar_Abonos.TabIndex = 19;
@@ -704,7 +832,7 @@
             // 
             this.txbCantida_Abonos.Font = new System.Drawing.Font("Corbert DemiBold", 14F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txbCantida_Abonos.ForeColor = System.Drawing.Color.Silver;
-            this.txbCantida_Abonos.Location = new System.Drawing.Point(792, 236);
+            this.txbCantida_Abonos.Location = new System.Drawing.Point(83, 475);
             this.txbCantida_Abonos.Name = "txbCantida_Abonos";
             this.txbCantida_Abonos.Size = new System.Drawing.Size(161, 30);
             this.txbCantida_Abonos.TabIndex = 18;
@@ -718,58 +846,18 @@
             this.lblTotal_Abonos.AutoSize = true;
             this.lblTotal_Abonos.Font = new System.Drawing.Font("Corbert DemiBold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTotal_Abonos.ForeColor = System.Drawing.Color.Black;
-            this.lblTotal_Abonos.Location = new System.Drawing.Point(620, 464);
+            this.lblTotal_Abonos.Location = new System.Drawing.Point(82, 135);
             this.lblTotal_Abonos.Name = "lblTotal_Abonos";
             this.lblTotal_Abonos.Size = new System.Drawing.Size(62, 23);
             this.lblTotal_Abonos.TabIndex = 17;
             this.lblTotal_Abonos.Text = "Total:";
-            // 
-            // lvwCuentasAbonos
-            // 
-            this.lvwCuentasAbonos.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.columnHeader6,
-            this.columnHeader7,
-            this.columnHeader8,
-            this.columnHeader9,
-            this.columnHeader10});
-            this.lvwCuentasAbonos.Location = new System.Drawing.Point(52, 145);
-            this.lvwCuentasAbonos.Name = "lvwCuentasAbonos";
-            this.lvwCuentasAbonos.Size = new System.Drawing.Size(706, 303);
-            this.lvwCuentasAbonos.TabIndex = 16;
-            this.lvwCuentasAbonos.UseCompatibleStateImageBehavior = false;
-            this.lvwCuentasAbonos.View = System.Windows.Forms.View.Details;
-            // 
-            // columnHeader6
-            // 
-            this.columnHeader6.Text = "Producto";
-            this.columnHeader6.Width = 210;
-            // 
-            // columnHeader7
-            // 
-            this.columnHeader7.Text = "Fecha Compra";
-            this.columnHeader7.Width = 120;
-            // 
-            // columnHeader8
-            // 
-            this.columnHeader8.Text = "Adeudo";
-            this.columnHeader8.Width = 127;
-            // 
-            // columnHeader9
-            // 
-            this.columnHeader9.Text = "Último Abono";
-            this.columnHeader9.Width = 123;
-            // 
-            // columnHeader10
-            // 
-            this.columnHeader10.Text = "Abono Mensual";
-            this.columnHeader10.Width = 122;
             // 
             // lblCliente_Abonos
             // 
             this.lblCliente_Abonos.AutoSize = true;
             this.lblCliente_Abonos.Font = new System.Drawing.Font("Corbert DemiBold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCliente_Abonos.ForeColor = System.Drawing.Color.Black;
-            this.lblCliente_Abonos.Location = new System.Drawing.Point(48, 81);
+            this.lblCliente_Abonos.Location = new System.Drawing.Point(82, 93);
             this.lblCliente_Abonos.Name = "lblCliente_Abonos";
             this.lblCliente_Abonos.Size = new System.Drawing.Size(87, 23);
             this.lblCliente_Abonos.TabIndex = 15;
@@ -861,11 +949,11 @@
             this.txbCiudad_Clientes.Name = "txbCiudad_Clientes";
             this.txbCiudad_Clientes.Size = new System.Drawing.Size(195, 30);
             this.txbCiudad_Clientes.TabIndex = 18;
-            this.txbCiudad_Clientes.Tag = "Ciudad";
+            this.txbCiudad_Clientes.Tag = "Ciudad, alfanumerico, Ingresa la ciudad";
             this.txbCiudad_Clientes.Text = "Ciudad";
             this.txbCiudad_Clientes.Enter += new System.EventHandler(this.txb_Enter);
             this.txbCiudad_Clientes.Leave += new System.EventHandler(this.txb_Leave);
-            this.txbCiudad_Clientes.Validating += new System.ComponentModel.CancelEventHandler(this.validarTexto);
+            this.txbCiudad_Clientes.Validated += new System.EventHandler(this.validarCampos);
             // 
             // txbCP_Clientes
             // 
@@ -876,11 +964,11 @@
             this.txbCP_Clientes.Name = "txbCP_Clientes";
             this.txbCP_Clientes.Size = new System.Drawing.Size(89, 30);
             this.txbCP_Clientes.TabIndex = 16;
-            this.txbCP_Clientes.Tag = "C.P.";
+            this.txbCP_Clientes.Tag = "C.P., numero, Ingresa el Código Postal";
             this.txbCP_Clientes.Text = "C.P.";
             this.txbCP_Clientes.Enter += new System.EventHandler(this.txb_Enter);
             this.txbCP_Clientes.Leave += new System.EventHandler(this.txb_Leave);
-            this.txbCP_Clientes.Validated += new System.EventHandler(this.validarNumeros);
+            this.txbCP_Clientes.Validated += new System.EventHandler(this.validarCampos);
             // 
             // txbNumeroDom_Clientes
             // 
@@ -891,10 +979,11 @@
             this.txbNumeroDom_Clientes.Name = "txbNumeroDom_Clientes";
             this.txbNumeroDom_Clientes.Size = new System.Drawing.Size(100, 30);
             this.txbNumeroDom_Clientes.TabIndex = 15;
-            this.txbNumeroDom_Clientes.Tag = "Nº";
+            this.txbNumeroDom_Clientes.Tag = "Nº,  alfanumerico, Ingresa el número de domicilio";
             this.txbNumeroDom_Clientes.Text = "Nº";
             this.txbNumeroDom_Clientes.Enter += new System.EventHandler(this.txb_Enter);
             this.txbNumeroDom_Clientes.Leave += new System.EventHandler(this.txb_Leave);
+            this.txbNumeroDom_Clientes.Validated += new System.EventHandler(this.validarCampos);
             // 
             // txbCalle_Clientes
             // 
@@ -905,10 +994,11 @@
             this.txbCalle_Clientes.Name = "txbCalle_Clientes";
             this.txbCalle_Clientes.Size = new System.Drawing.Size(260, 30);
             this.txbCalle_Clientes.TabIndex = 13;
-            this.txbCalle_Clientes.Tag = "Calle";
+            this.txbCalle_Clientes.Tag = "Calle, alfanumerico, Ingresa el nombre de la calle";
             this.txbCalle_Clientes.Text = "Calle";
             this.txbCalle_Clientes.Enter += new System.EventHandler(this.txb_Enter);
             this.txbCalle_Clientes.Leave += new System.EventHandler(this.txb_Leave);
+            this.txbCalle_Clientes.Validated += new System.EventHandler(this.validarCampos);
             // 
             // txbColonia_Clientes
             // 
@@ -919,10 +1009,11 @@
             this.txbColonia_Clientes.Name = "txbColonia_Clientes";
             this.txbColonia_Clientes.Size = new System.Drawing.Size(260, 30);
             this.txbColonia_Clientes.TabIndex = 17;
-            this.txbColonia_Clientes.Tag = "Colonia";
+            this.txbColonia_Clientes.Tag = "Colonia, alfanumerico, Ingresa el nombre de la colonia";
             this.txbColonia_Clientes.Text = "Colonia";
             this.txbColonia_Clientes.Enter += new System.EventHandler(this.txb_Enter);
             this.txbColonia_Clientes.Leave += new System.EventHandler(this.txb_Leave);
+            this.txbColonia_Clientes.Validated += new System.EventHandler(this.validarCampos);
             // 
             // panel8
             // 
@@ -956,11 +1047,11 @@
             this.txbTelefono_Clientes.Name = "txbTelefono_Clientes";
             this.txbTelefono_Clientes.Size = new System.Drawing.Size(260, 30);
             this.txbTelefono_Clientes.TabIndex = 26;
-            this.txbTelefono_Clientes.Tag = "Teléfono";
+            this.txbTelefono_Clientes.Tag = "Teléfono, telefono, Ingresa un número de teléfono a 10 dígitos";
             this.txbTelefono_Clientes.Text = "Teléfono";
             this.txbTelefono_Clientes.Enter += new System.EventHandler(this.txb_Enter);
             this.txbTelefono_Clientes.Leave += new System.EventHandler(this.txb_Leave);
-            this.txbTelefono_Clientes.Validated += new System.EventHandler(this.validarTelefono);
+            this.txbTelefono_Clientes.Validated += new System.EventHandler(this.validarCampos);
             // 
             // txbEmail_Clientes
             // 
@@ -971,11 +1062,11 @@
             this.txbEmail_Clientes.Name = "txbEmail_Clientes";
             this.txbEmail_Clientes.Size = new System.Drawing.Size(260, 30);
             this.txbEmail_Clientes.TabIndex = 9;
-            this.txbEmail_Clientes.Tag = "Correo Electrónico";
+            this.txbEmail_Clientes.Tag = "Correo Electrónico, correo, Ingresa una dirección de correo electrónico";
             this.txbEmail_Clientes.Text = "Correo Electrónico";
             this.txbEmail_Clientes.Enter += new System.EventHandler(this.txb_Enter);
             this.txbEmail_Clientes.Leave += new System.EventHandler(this.txb_Leave);
-            this.txbEmail_Clientes.Validating += new System.ComponentModel.CancelEventHandler(this.validarCorreo);
+            this.txbEmail_Clientes.Validated += new System.EventHandler(this.validarCampos);
             // 
             // panel7
             // 
@@ -1068,11 +1159,11 @@
             this.txbAMaterno_Clientes.Name = "txbAMaterno_Clientes";
             this.txbAMaterno_Clientes.Size = new System.Drawing.Size(199, 30);
             this.txbAMaterno_Clientes.TabIndex = 8;
-            this.txbAMaterno_Clientes.Tag = "Apellido Paterno";
+            this.txbAMaterno_Clientes.Tag = "Apellido Paterno, texto, Ingresa el Apellido Materno";
             this.txbAMaterno_Clientes.Text = "Apellido Paterno";
             this.txbAMaterno_Clientes.Enter += new System.EventHandler(this.txb_Enter);
             this.txbAMaterno_Clientes.Leave += new System.EventHandler(this.txb_Leave);
-            this.txbAMaterno_Clientes.Validated += new System.EventHandler(this.validarTexto);
+            this.txbAMaterno_Clientes.Validated += new System.EventHandler(this.validarCampos);
             // 
             // txbAPaterno_Clientes
             // 
@@ -1083,11 +1174,11 @@
             this.txbAPaterno_Clientes.Name = "txbAPaterno_Clientes";
             this.txbAPaterno_Clientes.Size = new System.Drawing.Size(199, 30);
             this.txbAPaterno_Clientes.TabIndex = 7;
-            this.txbAPaterno_Clientes.Tag = "Apellido Paterno";
+            this.txbAPaterno_Clientes.Tag = "Apellido Paterno, texto, Ingresa el apellido paterno";
             this.txbAPaterno_Clientes.Text = "Apellido Paterno";
             this.txbAPaterno_Clientes.Enter += new System.EventHandler(this.txb_Enter);
             this.txbAPaterno_Clientes.Leave += new System.EventHandler(this.txb_Leave);
-            this.txbAPaterno_Clientes.Validated += new System.EventHandler(this.validarTexto);
+            this.txbAPaterno_Clientes.Validated += new System.EventHandler(this.validarCampos);
             // 
             // txbNombre_Clientes
             // 
@@ -1099,11 +1190,11 @@
             this.txbNombre_Clientes.Name = "txbNombre_Clientes";
             this.txbNombre_Clientes.Size = new System.Drawing.Size(199, 30);
             this.txbNombre_Clientes.TabIndex = 6;
-            this.txbNombre_Clientes.Tag = "Nombre";
+            this.txbNombre_Clientes.Tag = "Nombre, texto, Ingresa el nombre del cliente";
             this.txbNombre_Clientes.Text = "Nombre";
             this.txbNombre_Clientes.Enter += new System.EventHandler(this.txb_Enter);
             this.txbNombre_Clientes.Leave += new System.EventHandler(this.txb_Leave);
-            this.txbNombre_Clientes.Validated += new System.EventHandler(this.validarTexto);
+            this.txbNombre_Clientes.Validated += new System.EventHandler(this.validarCampos);
             // 
             // panel6
             // 
@@ -1139,10 +1230,11 @@
             this.txbContraseña_Clientes.Name = "txbContraseña_Clientes";
             this.txbContraseña_Clientes.Size = new System.Drawing.Size(260, 30);
             this.txbContraseña_Clientes.TabIndex = 23;
-            this.txbContraseña_Clientes.Tag = "Contraseña";
+            this.txbContraseña_Clientes.Tag = "Contraseña, alfanumerico, Ingresa una contraseña";
             this.txbContraseña_Clientes.Text = "Contraseña";
             this.txbContraseña_Clientes.Enter += new System.EventHandler(this.txb_Enter);
             this.txbContraseña_Clientes.Leave += new System.EventHandler(this.txb_Leave);
+            this.txbContraseña_Clientes.Validated += new System.EventHandler(this.validarCampos);
             // 
             // txbContraseñaRep_Clientes
             // 
@@ -1153,10 +1245,11 @@
             this.txbContraseñaRep_Clientes.Name = "txbContraseñaRep_Clientes";
             this.txbContraseñaRep_Clientes.Size = new System.Drawing.Size(260, 30);
             this.txbContraseñaRep_Clientes.TabIndex = 22;
-            this.txbContraseñaRep_Clientes.Tag = "Repite Contraseña";
+            this.txbContraseñaRep_Clientes.Tag = "Repite Contraseña, alfanumerico, Repite la contraseña";
             this.txbContraseñaRep_Clientes.Text = "Repite Contraseña";
             this.txbContraseñaRep_Clientes.Enter += new System.EventHandler(this.txb_Enter);
             this.txbContraseñaRep_Clientes.Leave += new System.EventHandler(this.txb_Leave);
+            this.txbContraseñaRep_Clientes.Validated += new System.EventHandler(this.validarCampos);
             // 
             // txbNumero_Clientes
             // 
@@ -1167,7 +1260,7 @@
             this.txbNumero_Clientes.Name = "txbNumero_Clientes";
             this.txbNumero_Clientes.Size = new System.Drawing.Size(260, 30);
             this.txbNumero_Clientes.TabIndex = 12;
-            this.txbNumero_Clientes.Tag = "Nº de Cliente";
+            this.txbNumero_Clientes.Tag = "Nº de Cliente, numero";
             this.txbNumero_Clientes.Text = "Nº de Cliente";
             // 
             // btnNuevo_Clientes
@@ -1306,6 +1399,7 @@
             this.txbMensaje_Chat.Name = "txbMensaje_Chat";
             this.txbMensaje_Chat.Size = new System.Drawing.Size(606, 30);
             this.txbMensaje_Chat.TabIndex = 8;
+            this.txbMensaje_Chat.Tag = "Nuevo Mensaje";
             this.txbMensaje_Chat.Text = "Nuevo Mensaje";
             this.txbMensaje_Chat.Enter += new System.EventHandler(this.txb_Enter);
             this.txbMensaje_Chat.Leave += new System.EventHandler(this.txb_Leave);
@@ -1345,6 +1439,7 @@
             this.txbEmpleado_Chat.Name = "txbEmpleado_Chat";
             this.txbEmpleado_Chat.Size = new System.Drawing.Size(260, 30);
             this.txbEmpleado_Chat.TabIndex = 6;
+            this.txbEmpleado_Chat.Tag = "Nº de Empleado";
             this.txbEmpleado_Chat.Text = "Nº de Empleado";
             this.txbEmpleado_Chat.Enter += new System.EventHandler(this.txb_Enter);
             this.txbEmpleado_Chat.Leave += new System.EventHandler(this.txb_Leave);
@@ -1374,6 +1469,7 @@
             // tabPageInventario
             // 
             this.tabPageInventario.BackColor = System.Drawing.Color.LightCyan;
+            this.tabPageInventario.Controls.Add(this.btnAgregar_Inventario);
             this.tabPageInventario.Controls.Add(this.btnEliminar_Inventario);
             this.tabPageInventario.Controls.Add(this.btnModificar_Inventario);
             this.tabPageInventario.Controls.Add(this.pboxProducto_Inventario);
@@ -1402,7 +1498,7 @@
             this.btnEliminar_Inventario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEliminar_Inventario.Font = new System.Drawing.Font("Corbert DemiBold", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEliminar_Inventario.ForeColor = System.Drawing.Color.White;
-            this.btnEliminar_Inventario.Location = new System.Drawing.Point(724, 155);
+            this.btnEliminar_Inventario.Location = new System.Drawing.Point(724, 198);
             this.btnEliminar_Inventario.Name = "btnEliminar_Inventario";
             this.btnEliminar_Inventario.Size = new System.Drawing.Size(140, 30);
             this.btnEliminar_Inventario.TabIndex = 31;
@@ -1537,8 +1633,8 @@
             this.tabPageEmpleados.Controls.Add(this.panel12);
             this.tabPageEmpleados.Controls.Add(this.panel13);
             this.tabPageEmpleados.Controls.Add(this.btnNuevo_Empleados);
-            this.tabPageEmpleados.Controls.Add(this.btnBaja_Empleados);
-            this.tabPageEmpleados.Controls.Add(this.btnModificar_Empleados);
+            this.tabPageEmpleados.Controls.Add(this.btnBajaCancelar_Empleados);
+            this.tabPageEmpleados.Controls.Add(this.btnAceptarModificar_Empleados);
             this.tabPageEmpleados.Controls.Add(this.btnBuscarEmpleados);
             this.tabPageEmpleados.Controls.Add(this.txbBuscar_Empleados);
             this.tabPageEmpleados.Location = new System.Drawing.Point(4, 22);
@@ -1583,10 +1679,11 @@
             this.txbCiudad_Empleados.Name = "txbCiudad_Empleados";
             this.txbCiudad_Empleados.Size = new System.Drawing.Size(195, 30);
             this.txbCiudad_Empleados.TabIndex = 18;
-            this.txbCiudad_Empleados.Tag = "Ciudad";
+            this.txbCiudad_Empleados.Tag = "Ciudad, alfanumerico, Ingresa la ciudad";
             this.txbCiudad_Empleados.Text = "Ciudad";
             this.txbCiudad_Empleados.Enter += new System.EventHandler(this.txb_Enter);
             this.txbCiudad_Empleados.Leave += new System.EventHandler(this.txb_Leave);
+            this.txbCiudad_Empleados.Validated += new System.EventHandler(this.validarCampos);
             // 
             // txbCP_Empleados
             // 
@@ -1597,10 +1694,11 @@
             this.txbCP_Empleados.Name = "txbCP_Empleados";
             this.txbCP_Empleados.Size = new System.Drawing.Size(89, 30);
             this.txbCP_Empleados.TabIndex = 16;
-            this.txbCP_Empleados.Tag = "C.P.";
+            this.txbCP_Empleados.Tag = "C.P., numero, Ingresa el código postal";
             this.txbCP_Empleados.Text = "C.P.";
             this.txbCP_Empleados.Enter += new System.EventHandler(this.txb_Enter);
             this.txbCP_Empleados.Leave += new System.EventHandler(this.txb_Leave);
+            this.txbCP_Empleados.Validated += new System.EventHandler(this.validarCampos);
             // 
             // txbNumeroDom_Empleados
             // 
@@ -1611,10 +1709,11 @@
             this.txbNumeroDom_Empleados.Name = "txbNumeroDom_Empleados";
             this.txbNumeroDom_Empleados.Size = new System.Drawing.Size(100, 30);
             this.txbNumeroDom_Empleados.TabIndex = 15;
-            this.txbNumeroDom_Empleados.Tag = "Nº";
+            this.txbNumeroDom_Empleados.Tag = "Nº, alfanumerico, Ingresa el número de domicilio";
             this.txbNumeroDom_Empleados.Text = "Nº";
             this.txbNumeroDom_Empleados.Enter += new System.EventHandler(this.txb_Enter);
             this.txbNumeroDom_Empleados.Leave += new System.EventHandler(this.txb_Leave);
+            this.txbNumeroDom_Empleados.Validated += new System.EventHandler(this.validarCampos);
             // 
             // txbCalle_Empleados
             // 
@@ -1625,10 +1724,11 @@
             this.txbCalle_Empleados.Name = "txbCalle_Empleados";
             this.txbCalle_Empleados.Size = new System.Drawing.Size(260, 30);
             this.txbCalle_Empleados.TabIndex = 13;
-            this.txbCalle_Empleados.Tag = "Calle";
+            this.txbCalle_Empleados.Tag = "Calle, alfanumerico, Ingresa el nombre de la calle";
             this.txbCalle_Empleados.Text = "Calle";
             this.txbCalle_Empleados.Enter += new System.EventHandler(this.txb_Enter);
             this.txbCalle_Empleados.Leave += new System.EventHandler(this.txb_Leave);
+            this.txbCalle_Empleados.Validated += new System.EventHandler(this.validarCampos);
             // 
             // txbColonia_Empleados
             // 
@@ -1639,10 +1739,11 @@
             this.txbColonia_Empleados.Name = "txbColonia_Empleados";
             this.txbColonia_Empleados.Size = new System.Drawing.Size(260, 30);
             this.txbColonia_Empleados.TabIndex = 17;
-            this.txbColonia_Empleados.Tag = "Colonia";
+            this.txbColonia_Empleados.Tag = "Colonia, alfanumerico, Ingresa el nombre de la colonia";
             this.txbColonia_Empleados.Text = "Colonia";
             this.txbColonia_Empleados.Enter += new System.EventHandler(this.txb_Enter);
             this.txbColonia_Empleados.Leave += new System.EventHandler(this.txb_Leave);
+            this.txbColonia_Empleados.Validated += new System.EventHandler(this.validarCampos);
             // 
             // panel11
             // 
@@ -1676,10 +1777,11 @@
             this.txbTelefono_Empleados.Name = "txbTelefono_Empleados";
             this.txbTelefono_Empleados.Size = new System.Drawing.Size(260, 30);
             this.txbTelefono_Empleados.TabIndex = 26;
-            this.txbTelefono_Empleados.Tag = "Teléfono";
+            this.txbTelefono_Empleados.Tag = "Teléfono, telefono, Ingresa un número de teléfono de 10 dígitos";
             this.txbTelefono_Empleados.Text = "Teléfono";
             this.txbTelefono_Empleados.Enter += new System.EventHandler(this.txb_Enter);
             this.txbTelefono_Empleados.Leave += new System.EventHandler(this.txb_Leave);
+            this.txbTelefono_Empleados.Validated += new System.EventHandler(this.validarCampos);
             // 
             // txbEmail_Empleados
             // 
@@ -1690,10 +1792,11 @@
             this.txbEmail_Empleados.Name = "txbEmail_Empleados";
             this.txbEmail_Empleados.Size = new System.Drawing.Size(260, 30);
             this.txbEmail_Empleados.TabIndex = 9;
-            this.txbEmail_Empleados.Tag = "Correo Electrónico";
+            this.txbEmail_Empleados.Tag = "Correo Electrónico, correo, Ingresa una dirección del correo electrónico";
             this.txbEmail_Empleados.Text = "Correo Electrónico";
             this.txbEmail_Empleados.Enter += new System.EventHandler(this.txb_Enter);
             this.txbEmail_Empleados.Leave += new System.EventHandler(this.txb_Leave);
+            this.txbEmail_Empleados.Validated += new System.EventHandler(this.validarCampos);
             // 
             // panel12
             // 
@@ -1731,9 +1834,8 @@
             this.cboxPuesto_Empleados.AutoCompleteCustomSource.AddRange(new string[] {
             "Hombre",
             "Mujer"});
-            this.cboxPuesto_Empleados.Enabled = false;
             this.cboxPuesto_Empleados.Font = new System.Drawing.Font("Corbert DemiBold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cboxPuesto_Empleados.ForeColor = System.Drawing.Color.Silver;
+            this.cboxPuesto_Empleados.ForeColor = System.Drawing.Color.Black;
             this.cboxPuesto_Empleados.FormattingEnabled = true;
             this.cboxPuesto_Empleados.Items.AddRange(new object[] {
             "Administrador",
@@ -1776,10 +1878,12 @@
             this.cboxSexo_Empleados.AutoCompleteCustomSource.AddRange(new string[] {
             "Hombre",
             "Mujer"});
-            this.cboxSexo_Empleados.Enabled = false;
             this.cboxSexo_Empleados.Font = new System.Drawing.Font("Corbert DemiBold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cboxSexo_Empleados.ForeColor = System.Drawing.Color.Silver;
+            this.cboxSexo_Empleados.ForeColor = System.Drawing.Color.Black;
             this.cboxSexo_Empleados.FormattingEnabled = true;
+            this.cboxSexo_Empleados.Items.AddRange(new object[] {
+            "Hombre",
+            "Mujer"});
             this.cboxSexo_Empleados.Location = new System.Drawing.Point(461, 91);
             this.cboxSexo_Empleados.Name = "cboxSexo_Empleados";
             this.cboxSexo_Empleados.Size = new System.Drawing.Size(78, 31);
@@ -1812,10 +1916,11 @@
             this.txbAMaterno_Empleados.Name = "txbAMaterno_Empleados";
             this.txbAMaterno_Empleados.Size = new System.Drawing.Size(199, 30);
             this.txbAMaterno_Empleados.TabIndex = 8;
-            this.txbAMaterno_Empleados.Tag = "Apellido Materno";
+            this.txbAMaterno_Empleados.Tag = "Apellido Materno, texto, Ingresa apellido materno del empleado";
             this.txbAMaterno_Empleados.Text = "Apellido Materno";
             this.txbAMaterno_Empleados.Enter += new System.EventHandler(this.txb_Enter);
             this.txbAMaterno_Empleados.Leave += new System.EventHandler(this.txb_Leave);
+            this.txbAMaterno_Empleados.Validated += new System.EventHandler(this.validarCampos);
             // 
             // txbAPaterno_Empleados
             // 
@@ -1826,10 +1931,11 @@
             this.txbAPaterno_Empleados.Name = "txbAPaterno_Empleados";
             this.txbAPaterno_Empleados.Size = new System.Drawing.Size(199, 30);
             this.txbAPaterno_Empleados.TabIndex = 7;
-            this.txbAPaterno_Empleados.Tag = "Apellido Paterno";
+            this.txbAPaterno_Empleados.Tag = "Apellido Paterno, texto, Ingresa apellido paterno del empleado";
             this.txbAPaterno_Empleados.Text = "Apellido Paterno";
             this.txbAPaterno_Empleados.Enter += new System.EventHandler(this.txb_Enter);
             this.txbAPaterno_Empleados.Leave += new System.EventHandler(this.txb_Leave);
+            this.txbAPaterno_Empleados.Validated += new System.EventHandler(this.validarCampos);
             // 
             // txbNombre_Empleados
             // 
@@ -1840,10 +1946,11 @@
             this.txbNombre_Empleados.Name = "txbNombre_Empleados";
             this.txbNombre_Empleados.Size = new System.Drawing.Size(199, 30);
             this.txbNombre_Empleados.TabIndex = 6;
-            this.txbNombre_Empleados.Tag = "Nombre";
+            this.txbNombre_Empleados.Tag = "Nombre, texto, Ingresa nombre del empleado";
             this.txbNombre_Empleados.Text = "Nombre";
             this.txbNombre_Empleados.Enter += new System.EventHandler(this.txb_Enter);
             this.txbNombre_Empleados.Leave += new System.EventHandler(this.txb_Leave);
+            this.txbNombre_Empleados.Validated += new System.EventHandler(this.validarCampos);
             // 
             // panel13
             // 
@@ -1879,10 +1986,11 @@
             this.txbContraseña_Empleados.Name = "txbContraseña_Empleados";
             this.txbContraseña_Empleados.Size = new System.Drawing.Size(260, 30);
             this.txbContraseña_Empleados.TabIndex = 23;
-            this.txbContraseña_Empleados.Tag = "Contraseña";
+            this.txbContraseña_Empleados.Tag = "Contraseña, alfanumerico, Ingresa contraseña";
             this.txbContraseña_Empleados.Text = "Contraseña";
             this.txbContraseña_Empleados.Enter += new System.EventHandler(this.txb_Enter);
             this.txbContraseña_Empleados.Leave += new System.EventHandler(this.txb_Leave);
+            this.txbContraseña_Empleados.Validated += new System.EventHandler(this.validarCampos);
             // 
             // txbContraseñaRep_Empleados
             // 
@@ -1893,24 +2001,26 @@
             this.txbContraseñaRep_Empleados.Name = "txbContraseñaRep_Empleados";
             this.txbContraseñaRep_Empleados.Size = new System.Drawing.Size(260, 30);
             this.txbContraseñaRep_Empleados.TabIndex = 22;
-            this.txbContraseñaRep_Empleados.Tag = "Repite Contraseña";
+            this.txbContraseñaRep_Empleados.Tag = "Repite Contraseña, alfanumerico, Repite la contraseña";
             this.txbContraseñaRep_Empleados.Text = "Repite Contraseña";
             this.txbContraseñaRep_Empleados.Enter += new System.EventHandler(this.txb_Enter);
             this.txbContraseñaRep_Empleados.Leave += new System.EventHandler(this.txb_Leave);
+            this.txbContraseñaRep_Empleados.Validated += new System.EventHandler(this.validarCampos);
             // 
             // txbNumero_Empleados
             // 
             this.txbNumero_Empleados.Enabled = false;
-            this.txbNumero_Empleados.Font = new System.Drawing.Font("Corbert DemiBold", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txbNumero_Empleados.ForeColor = System.Drawing.Color.Silver;
+            this.txbNumero_Empleados.Font = new System.Drawing.Font("Corbert DemiBold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txbNumero_Empleados.ForeColor = System.Drawing.Color.Black;
             this.txbNumero_Empleados.Location = new System.Drawing.Point(26, 46);
             this.txbNumero_Empleados.Name = "txbNumero_Empleados";
             this.txbNumero_Empleados.Size = new System.Drawing.Size(260, 30);
             this.txbNumero_Empleados.TabIndex = 12;
-            this.txbNumero_Empleados.Tag = "Nº de Empleado";
+            this.txbNumero_Empleados.Tag = "Nº de Empleado, numero";
             this.txbNumero_Empleados.Text = "Nº de Empleado";
             this.txbNumero_Empleados.Enter += new System.EventHandler(this.txb_Enter);
             this.txbNumero_Empleados.Leave += new System.EventHandler(this.txb_Leave);
+            this.txbNumero_Empleados.Validated += new System.EventHandler(this.validarCampos);
             // 
             // btnNuevo_Empleados
             // 
@@ -1930,43 +2040,44 @@
             this.btnNuevo_Empleados.UseVisualStyleBackColor = false;
             this.btnNuevo_Empleados.Click += new System.EventHandler(this.btnNuevo_Empleados_Click);
             // 
-            // btnBaja_Empleados
+            // btnBajaCancelar_Empleados
             // 
-            this.btnBaja_Empleados.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(47)))), ((int)(((byte)(59)))));
-            this.btnBaja_Empleados.Enabled = false;
-            this.btnBaja_Empleados.FlatAppearance.BorderColor = System.Drawing.Color.Navy;
-            this.btnBaja_Empleados.FlatAppearance.BorderSize = 0;
-            this.btnBaja_Empleados.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
-            this.btnBaja_Empleados.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Navy;
-            this.btnBaja_Empleados.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBaja_Empleados.Font = new System.Drawing.Font("Corbert DemiBold", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBaja_Empleados.ForeColor = System.Drawing.Color.White;
-            this.btnBaja_Empleados.Location = new System.Drawing.Point(275, 484);
-            this.btnBaja_Empleados.Name = "btnBaja_Empleados";
-            this.btnBaja_Empleados.Size = new System.Drawing.Size(197, 30);
-            this.btnBaja_Empleados.TabIndex = 35;
-            this.btnBaja_Empleados.Text = "Dar de Baja";
-            this.btnBaja_Empleados.UseVisualStyleBackColor = false;
-            this.btnBaja_Empleados.Visible = false;
+            this.btnBajaCancelar_Empleados.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(47)))), ((int)(((byte)(59)))));
+            this.btnBajaCancelar_Empleados.Enabled = false;
+            this.btnBajaCancelar_Empleados.FlatAppearance.BorderColor = System.Drawing.Color.Navy;
+            this.btnBajaCancelar_Empleados.FlatAppearance.BorderSize = 0;
+            this.btnBajaCancelar_Empleados.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
+            this.btnBajaCancelar_Empleados.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Navy;
+            this.btnBajaCancelar_Empleados.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBajaCancelar_Empleados.Font = new System.Drawing.Font("Corbert DemiBold", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBajaCancelar_Empleados.ForeColor = System.Drawing.Color.White;
+            this.btnBajaCancelar_Empleados.Location = new System.Drawing.Point(275, 484);
+            this.btnBajaCancelar_Empleados.Name = "btnBajaCancelar_Empleados";
+            this.btnBajaCancelar_Empleados.Size = new System.Drawing.Size(197, 30);
+            this.btnBajaCancelar_Empleados.TabIndex = 35;
+            this.btnBajaCancelar_Empleados.Text = "Dar de Baja";
+            this.btnBajaCancelar_Empleados.UseVisualStyleBackColor = false;
+            this.btnBajaCancelar_Empleados.Visible = false;
+            this.btnBajaCancelar_Empleados.Click += new System.EventHandler(this.btnBajaCancelar_Empleados_Click);
             // 
-            // btnModificar_Empleados
+            // btnAceptarModificar_Empleados
             // 
-            this.btnModificar_Empleados.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(101)))), ((int)(((byte)(176)))));
-            this.btnModificar_Empleados.Enabled = false;
-            this.btnModificar_Empleados.FlatAppearance.BorderColor = System.Drawing.Color.Navy;
-            this.btnModificar_Empleados.FlatAppearance.BorderSize = 0;
-            this.btnModificar_Empleados.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
-            this.btnModificar_Empleados.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Navy;
-            this.btnModificar_Empleados.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnModificar_Empleados.Font = new System.Drawing.Font("Corbert DemiBold", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnModificar_Empleados.ForeColor = System.Drawing.Color.White;
-            this.btnModificar_Empleados.Location = new System.Drawing.Point(71, 484);
-            this.btnModificar_Empleados.Name = "btnModificar_Empleados";
-            this.btnModificar_Empleados.Size = new System.Drawing.Size(196, 30);
-            this.btnModificar_Empleados.TabIndex = 34;
-            this.btnModificar_Empleados.Text = "Modificar";
-            this.btnModificar_Empleados.UseVisualStyleBackColor = false;
-            this.btnModificar_Empleados.Visible = false;
+            this.btnAceptarModificar_Empleados.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(101)))), ((int)(((byte)(176)))));
+            this.btnAceptarModificar_Empleados.Enabled = false;
+            this.btnAceptarModificar_Empleados.FlatAppearance.BorderColor = System.Drawing.Color.Navy;
+            this.btnAceptarModificar_Empleados.FlatAppearance.BorderSize = 0;
+            this.btnAceptarModificar_Empleados.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
+            this.btnAceptarModificar_Empleados.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Navy;
+            this.btnAceptarModificar_Empleados.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAceptarModificar_Empleados.Font = new System.Drawing.Font("Corbert DemiBold", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAceptarModificar_Empleados.ForeColor = System.Drawing.Color.White;
+            this.btnAceptarModificar_Empleados.Location = new System.Drawing.Point(71, 484);
+            this.btnAceptarModificar_Empleados.Name = "btnAceptarModificar_Empleados";
+            this.btnAceptarModificar_Empleados.Size = new System.Drawing.Size(196, 30);
+            this.btnAceptarModificar_Empleados.TabIndex = 34;
+            this.btnAceptarModificar_Empleados.Text = "Modificar";
+            this.btnAceptarModificar_Empleados.UseVisualStyleBackColor = false;
+            this.btnAceptarModificar_Empleados.Visible = false;
             // 
             // btnBuscarEmpleados
             // 
@@ -2113,6 +2224,33 @@
             this.pictureBox1.TabIndex = 5;
             this.pictureBox1.TabStop = false;
             // 
+            // toolTipMessage
+            // 
+            this.toolTipMessage.AutomaticDelay = 100;
+            this.toolTipMessage.AutoPopDelay = 5000;
+            this.toolTipMessage.ForeColor = System.Drawing.Color.Gray;
+            this.toolTipMessage.InitialDelay = 100;
+            this.toolTipMessage.ReshowDelay = 20;
+            // 
+            // btnAgregar_Inventario
+            // 
+            this.btnAgregar_Inventario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(101)))), ((int)(((byte)(176)))));
+            this.btnAgregar_Inventario.Enabled = false;
+            this.btnAgregar_Inventario.FlatAppearance.BorderColor = System.Drawing.Color.Navy;
+            this.btnAgregar_Inventario.FlatAppearance.BorderSize = 0;
+            this.btnAgregar_Inventario.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
+            this.btnAgregar_Inventario.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Navy;
+            this.btnAgregar_Inventario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAgregar_Inventario.Font = new System.Drawing.Font("Corbert DemiBold", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAgregar_Inventario.ForeColor = System.Drawing.Color.White;
+            this.btnAgregar_Inventario.Location = new System.Drawing.Point(724, 152);
+            this.btnAgregar_Inventario.Name = "btnAgregar_Inventario";
+            this.btnAgregar_Inventario.Size = new System.Drawing.Size(140, 30);
+            this.btnAgregar_Inventario.TabIndex = 32;
+            this.btnAgregar_Inventario.Text = "Agregar";
+            this.btnAgregar_Inventario.UseVisualStyleBackColor = false;
+            this.btnAgregar_Inventario.Visible = false;
+            // 
             // Administrador
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -2130,12 +2268,14 @@
             this.tabControlAdministrador.ResumeLayout(false);
             this.tabPageVentas.ResumeLayout(false);
             this.tabPageVentas.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvProductos_Ventas)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.tabPageAbonos.ResumeLayout(false);
             this.tabPageAbonos.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.tabPageClientes.ResumeLayout(false);
             this.tabPageClientes.PerformLayout();
             this.panel9.ResumeLayout(false);
@@ -2190,12 +2330,6 @@
         private System.Windows.Forms.Button btnBuscar_Ventas;
         private System.Windows.Forms.TextBox txbBuscar_Ventas;
         private System.Windows.Forms.Button btnAgregar_Ventas;
-        private System.Windows.Forms.ListView listvProductos_Ventas;
-        private System.Windows.Forms.ColumnHeader columnHeader1;
-        private System.Windows.Forms.ColumnHeader columnHeader2;
-        private System.Windows.Forms.ColumnHeader columnHeader3;
-        private System.Windows.Forms.ColumnHeader columnHeader4;
-        private System.Windows.Forms.ColumnHeader columnHeader5;
         private System.Windows.Forms.Button btnCancelar_Ventas;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label2;
@@ -2210,12 +2344,6 @@
         private System.Windows.Forms.Label lblCliente_Abonos;
         private System.Windows.Forms.Button btnBuscar_Abonos;
         private System.Windows.Forms.TextBox txbBuscar_Abonos;
-        private System.Windows.Forms.ListView lvwCuentasAbonos;
-        private System.Windows.Forms.ColumnHeader columnHeader6;
-        private System.Windows.Forms.ColumnHeader columnHeader7;
-        private System.Windows.Forms.ColumnHeader columnHeader8;
-        private System.Windows.Forms.ColumnHeader columnHeader9;
-        private System.Windows.Forms.ColumnHeader columnHeader10;
         private System.Windows.Forms.Button btnAbonar_Abonos;
         private System.Windows.Forms.TextBox txbCantida_Abonos;
         private System.Windows.Forms.Label lblTotal_Abonos;
@@ -2256,7 +2384,6 @@
         private System.Windows.Forms.TextBox textBox38;
         private System.Windows.Forms.Button button19;
         private System.Windows.Forms.Button button20;
-        private System.Windows.Forms.ComboBox cboxCuenta_Abonos;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.TabPage tabPageClientes;
         private System.Windows.Forms.DateTimePicker dtpFecha_Clientes;
@@ -2304,12 +2431,27 @@
         private System.Windows.Forms.TextBox txbContraseñaRep_Empleados;
         private System.Windows.Forms.TextBox txbNumero_Empleados;
         private System.Windows.Forms.Button btnNuevo_Empleados;
-        private System.Windows.Forms.Button btnBaja_Empleados;
-        private System.Windows.Forms.Button btnModificar_Empleados;
+        private System.Windows.Forms.Button btnBajaCancelar_Empleados;
+        private System.Windows.Forms.Button btnAceptarModificar_Empleados;
         private System.Windows.Forms.Button btnBuscarEmpleados;
         private System.Windows.Forms.TextBox txbBuscar_Empleados;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.ComboBox cboxPuesto_Empleados;
         private System.Windows.Forms.Button btnEliminar_Ventas;
+        private System.Windows.Forms.DataGridView dgvProductos_Ventas;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column_idProducto;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnDescripcion;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnCantidad;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnPrecio;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnTotal;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnProducto;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnFechaCompra;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnAdeudo;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnUltimoAbono;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnAbonoMensual;
+        private System.Windows.Forms.DataGridViewCheckBoxColumn ColumnAbonar;
+        private System.Windows.Forms.ToolTip toolTipMessage;
+        private System.Windows.Forms.Button btnAgregar_Inventario;
     }
 }
